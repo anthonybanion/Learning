@@ -1,7 +1,6 @@
-/*Brief: programming logic exercises, including concepts such as variables, 
- *conditionals (if), alerts (alert), requests (prompt)
- * Detail: Programming logic: Dive into programming with javasript
- * Date: 07/06/2024*/
+/*Brief: programming logic exercises
+ *Location: Programming logic: Dive into programming with javasript/ Starting whit JavaScript
+ *Date: 07/06/2024*/
 
 
 //1. Displays an alert with the message "Welcome and welcome to our website!" 
