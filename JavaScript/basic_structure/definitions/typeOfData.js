@@ -32,6 +32,7 @@ console.log(typeof test);  // output: undefined
 // type of date symbol
 let id = Symbol("id");
 alert(id.description);
+console.log(id);
 console.log(typeof id);  // output: symbol
 
 // type of date array
@@ -49,11 +50,13 @@ function sayHi() {
   alert("Hello");
 }
 alert(sayHi);
+console.log(sayHi);
 console.log(typeof sayHi);  // output: function
 
 // type of date set
 let set = new Set([1, 2, 3, 4, 5]);
 alert(set);
+console.log(set);
 console.log(typeof set);   // output: object
 
 // type of date map
@@ -61,6 +64,7 @@ let map = new Map();
 map.set("1", "str1");
 map.set(1, "num1");
 alert(map);
+console.log(map);
 console.log(typeof map);  // output: object
 
 // type of date object
@@ -68,6 +72,16 @@ let user = {name: "John", lastName: "Smith"};
 alert(user);
 console.log(user); 
 console.log(typeof user);  // output: object
+
+//Type class
+class User {
+  constructor(name, lastName) {
+    this.name = name;
+    this.lastName = lastName;
+  }
+}
+console.log(User);
+console.log(typeof User);  // output: function
 
 // type of date date
 let date = new Date();
