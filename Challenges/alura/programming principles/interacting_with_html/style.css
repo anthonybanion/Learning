@@ -7,7 +7,7 @@
 header {
   text-align: center;
   font-size: 30px;
-  color: #279EFF;
+  color: #360969;
 }
 
 main, html {
@@ -17,12 +17,12 @@ main, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0C356A;
+  background-color: #6b3eb4;
 }
 
 .container {
   text-align: center;
-  color: #279EFF;
+  color: #28bb23;
 }
 
 .button {

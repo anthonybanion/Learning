@@ -1,5 +1,6 @@
-/*Brief: functions exercises
+/*Brief: HTML interaction exercises
  *Location : Programming logic: exploring functions and lists / Interacting with HTML
+ *Files: index.html; style.css; app.js
  *Date: 20/06/2024 
 */
 
