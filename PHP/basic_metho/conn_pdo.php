@@ -8,7 +8,7 @@
 $serve = "localhost";
 $user = "root";
 $pass = "5_Argentina";
-$db = "php";
+$db = "student management";
 try {
     $conn = new PDO("mysql:host=$serve;dbname=$db", $user, $pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
