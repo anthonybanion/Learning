@@ -1,3 +1,6 @@
 # Byte-compiled / optimized / DLL files
+#python
 __pycache__
 *.pyc
+# database file
+*.db
