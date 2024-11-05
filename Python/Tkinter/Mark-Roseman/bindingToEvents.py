@@ -13,5 +13,5 @@ l.bind('<Leave>', lambda e: l.configure(text='Moved mouse outside'))
 l.bind('<ButtonPress-1>', lambda e: l.configure(text='Clicked left mouse button'))
 l.bind('<3>', lambda e: l.configure(text='Clicked right mouse button'))
 l.bind('<Double-1>', lambda e: l.configure(text='Double clicked'))
-l.bind('<B3-Motion>', lambda e: l.configure(text='right button drag to %d,%d' % (e.x, e.y)))
+l.bind('<B3-Motion>', lambda e: l.configure(text='right button drag to %d,%d' % (e.x, e.y)))  #capture mouse movement
 root.mainloop()
