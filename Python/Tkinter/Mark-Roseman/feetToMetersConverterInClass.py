@@ -27,6 +27,12 @@ class FeetToMeters:
         feet_entry.focus()
         root.bind("<Return>",self.calculate)
 
+        def print_hierarchy(w, depth=0): # To obtain information about the window we use the winfo command
+            print(' '*depth + w.winfo_class() + ' w=' + str(w.winfo_width()) + ' h=' + str(w.winfo_height()) + ' x=' + str(w.winfo_x()) + ' y=' + str(w.winfo_y()))
+            for i in w.winfo_children():
+                print(i, depth+1)
+        print_hierarchy(root)
+
     def calculate(self, *args):
         try:
             value = float(self.feet.get())
@@ -34,6 +40,8 @@ class FeetToMeters:
             0.5)/10000.0)
         except ValueError:
             pass
+    
+ 
 
 root = Tk()
 FeetToMeters(root)
