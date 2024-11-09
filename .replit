@@ -1,10 +1,12 @@
-modules = ["python-3.12", "nodejs-20", "web", "php-8.2"]
-run = "php PHP/basic_concept/area.php"
+
+modules = ["python-3.12", "java-graalvm22.3", "nodejs-20", "web", "php-8.2", "c-clang14", "cpp-clang14", "bash", "go-1.21", "r-4.4", "ruby-3.2", "rust-stable", "swift-5.8", "typescript-language-server", "vue-node-20", "fpc-3.2.2"]
+run = "run = \"echo 'Hello, Replit!'\""
 
 [nix]
 channel = "stable-24_05"
 
-#[deployment]
-#run = ["sh", "-c", "run = \"php'\""]
 [deployment]
+
 run = ["php", "PHP/basic_concept/area.php"]
+#run = ["sh", "-c", "run = \"echo 'Hello, Replit!'\""]
+
