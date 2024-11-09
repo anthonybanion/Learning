@@ -4,21 +4,33 @@
  */
 
 
+ import java.util.Scanner;
+
 
 public class Movie {
     public static void main(String[] args) {
-        System.out.println("Welcome to Screen Mach");
-        System.out.println("Movie Matrix");
-
-        int releaseDate = 1999;
+        Scanner keyboard = new Scanner(System.in);
         boolean includedInThePlan = false;
-        double rating = 8.7;
-        double media = (8.2 + 6.0 + 9.0) /3;
+        
         String sinopsis ="""
                 Matrix is a 1999 science fiction action film written and directed by the Wachowskis.
                 """; 
-        int calificaton = (int) (media/2);
+        
         String typeOfPlan = "plus";
+
+        System.out.println("Enter the name of the movie: ");
+        String movie = keyboard.nextLine();
+
+        System.out.println("Please enter the release date of the movie: ");
+        int releaseDate = keyboard.nextInt();
+
+        System.out.println("What is the rating of the movie: ");
+        double rating = keyboard.nextDouble();
+        double media = (8.2 + rating + 9.0) /3;
+        int calificaton = (int) (media/2);
+
+        System.out.println("Welcome to Screen Mach");
+        System.out.println("Movie " + movie);
         System.out.println("Release Date: " + releaseDate);
         System.out.println("Included in the Plan: " + includedInThePlan);
         System.out.println("Rating: " + rating);
@@ -37,5 +49,6 @@ public class Movie {
         } else {
             System.out.println("movie not available on your current plan");
         }
+    keyboard.close();
     }
 }
