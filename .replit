@@ -1,8 +1,10 @@
 modules = ["python-3.12", "nodejs-20", "web", "php-8.2"]
-run = "run = \"learning'\""
+run = "php PHP/basic_concept/area.php"
 
 [nix]
 channel = "stable-24_05"
 
+#[deployment]
+#run = ["sh", "-c", "run = \"php'\""]
 [deployment]
-run = ["sh", "-c", "run = \"learning'\""]
+run = ["php", "PHP/basic_concept/area.php"]
