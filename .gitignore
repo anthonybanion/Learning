@@ -11,6 +11,7 @@ __pycache__
 out/
 #es para pascal
 **/*.o
+**/*.exe
 
 ### VS Code ###
 .vscode/

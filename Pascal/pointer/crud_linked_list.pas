@@ -3,8 +3,7 @@
  * @file crud_linked_list.pas
  * @date 05/01/2014
  * @version 1.0}
-program crud_linked_list;
-uses crt;
+Program crud_linked_list;
 type
   node_linker = ^node;
   node = record
