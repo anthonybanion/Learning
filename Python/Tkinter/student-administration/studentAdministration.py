@@ -5,7 +5,7 @@
 import sqlite3
 
 def abrir_conexion():
-    conexion=sqlite3.connect('alumnos.db')
+    conexion=sqlite3.connect('Python/Tkinter/student-administration/alumnos.db')
     return conexion
 
 
@@ -55,7 +55,7 @@ def listar_alumnos():
 def eliminar_alumnos(id):
     conexion = abrir_conexion()
     cursor=conexion.cursor()
-    cursor.execute("DELETE alumnos SET nombre='GABI' WHERE id=2",(id))
+    cursor.execute("DELETE alumnos SET nombre='GABI' WHERE id=?",(id))
     conexion.commit()
     conexion.close()
 
