@@ -55,7 +55,7 @@ def listar_alumnos():
 def eliminar_alumnos(id):
     conexion = abrir_conexion()
     cursor=conexion.cursor()
-    cursor.execute("DELETE alumnos SET nombre='GABI' WHERE id=?",(id))
+    cursor.execute("DELETE FROM alumnos WHERE id=? ",(id,))
     conexion.commit()
     conexion.close()
 
@@ -82,3 +82,4 @@ def buscar_alumnos(id):
     conexion.commit()
     conexion.close()
     return lista
+

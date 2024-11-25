@@ -7,6 +7,7 @@ from tkinter import ttk #todos los botones de Tkinter
 #from crud import *  #importamos todas las funciones
 from studentAdministration import listar_alumnos, crear_alumnos, buscar_alumnos, editar_alumnos, eliminar_alumnos  #importamos las funciones 
 from tkinter import messagebox
+from yearOfStudy import listar_yearOftudy, crear_tabla_yearOftudy
 
 def main():
     ventana = tk.Tk()
@@ -61,6 +62,7 @@ def main():
         tk.Label(tab_ads_alumno, text="Nombre:").grid(pady=5, row=0, column=0)
         tk.Label(tab_ads_alumno, text="Apellido:").grid(pady=5, row=1, column=0)
         tk.Label(tab_ads_alumno, text="DNI:").grid(pady=5, row=2, column=0)
+        tk.Label(tab_ads_alumno, text="Selecciona el Año de Cursada:").grid(pady=5, row=5, column=1)
 
         entry_nombre = tk.Entry(tab_ads_alumno, width=40)
         entry_nombre.grid(padx=5, row=0, column=1)
@@ -70,6 +72,9 @@ def main():
 
         entry_dni = tk.Entry(tab_ads_alumno, width=40)
         entry_dni.grid(padx=5, row=2, column=1)
+
+        años = listar_yearOftudy()
+        combo = ttk.Combobox(tab_ads_alumno, values=años).grid(pady=5, row=6, column=1)
 
         def guardar_alumno():
             nombre = entry_nombre.get()
