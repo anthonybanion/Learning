@@ -5,8 +5,9 @@
 import tkinter as tk
 from tkinter import ttk #todos los botones de Tkinter
 #from crud import *  #importamos todas las funciones
-from studentAdministration import listar_alumnos, crear_alumnos, buscar_alumnos, editar_alumnos  #importamos las funciones 
+from studentAdministration import listar_alumnos, crear_alumnos, buscar_alumnos, editar_alumnos, eliminar_alumnos  #importamos las funciones 
 from tkinter import messagebox
+from yearOfStudy import listar_yearOftudy, crear_tabla_yearOftudy
 
 def main():
     ventana = tk.Tk()
@@ -20,10 +21,8 @@ def main():
     notebook.add(tab_ver_alumnos, text="Ver Alumnos")
     tab_ads_alumno = ttk.Frame(notebook)
     notebook.add(tab_ads_alumno, text="Agregar Alumno")
-    tab_modificar_alumno = ttk.Frame(notebook)
-    notebook.add(tab_modificar_alumno, text="Modificar Alumno")
-    tab_buscar_alumno = ttk.Frame(tab_modificar_alumno)
-    tab_modificar_alumno.add(tab_buscar_alumno, text="Buscar Alumno")
+    tab_buscar_alumno = ttk.Frame(notebook)
+    notebook.add(tab_buscar_alumno, text="Buscar Alumno")
 
     # def mostrar_alumnos():
     #     alumnos = listar_alumnos()
@@ -63,6 +62,7 @@ def main():
         tk.Label(tab_ads_alumno, text="Nombre:").grid(pady=5, row=0, column=0)
         tk.Label(tab_ads_alumno, text="Apellido:").grid(pady=5, row=1, column=0)
         tk.Label(tab_ads_alumno, text="DNI:").grid(pady=5, row=2, column=0)
+        tk.Label(tab_ads_alumno, text="Selecciona el Año de Cursada:").grid(pady=5, row=5, column=1)
 
         entry_nombre = tk.Entry(tab_ads_alumno, width=40)
         entry_nombre.grid(padx=5, row=0, column=1)
@@ -72,6 +72,9 @@ def main():
 
         entry_dni = tk.Entry(tab_ads_alumno, width=40)
         entry_dni.grid(padx=5, row=2, column=1)
+
+        años = listar_yearOftudy()
+        combo = ttk.Combobox(tab_ads_alumno, values=años).grid(pady=5, row=6, column=1)
 
         def guardar_alumno():
             nombre = entry_nombre.get()
@@ -108,6 +111,29 @@ def main():
         
         # Función para realizar la búsqueda
         def buscar():
+            def modificar_alumno():
+                nombre = entry_nombre.get()
+                apellido = entry_apellido.get()
+                dni = entry_dni.get()
+                if id and nombre:
+                    try:
+                        editar_alumnos(id, nombre, apellido, dni)
+                        messagebox.showinfo("Éxito", "Alumno modificado correctamente.")
+                        notebook.tab(tab_ver_alumnos, state="normal")
+                        notebook.select(tab_ver_alumnos)
+                    except Exception as e:
+                        messagebox.showerror("Error", f"Ocurrió un error al modificar el alumno: {e}")
+
+            def eliminar_alumno():
+                if id:
+                    try:
+                        eliminar_alumnos(id)
+                        messagebox.showinfo("Éxito", "Alumno eliminado correctamente.")
+                        notebook.tab(tab_ver_alumnos, state="normal")
+                        notebook.select(tab_ver_alumnos)
+                    except Exception as e:
+                        messagebox.showerror("Error", f"Ocurrió un error al eliminar el alumno: {e}")
+
             id = id_entry.get()
             # Verificar que el ID no esté vacío y sea un número positivo
             if not id.isdigit():
@@ -120,7 +146,27 @@ def main():
             if alumnos:  # Si la lista de alumnos no está vacía
                 # Mostrar los detalles del primer alumno encontrado
                 alumno = alumnos[0]  # Suponiendo que la lista devuelve una tupla de (ID, Nombre, Apellido, DNI)
-                messagebox.showinfo("Alumno encontrado", f"ID: {alumno[0]}\nNombre: {alumno[1]}\nApellido: {alumno[2]}\nDNI: {alumno[3]}")
+                #messagebox.showinfo("Alumno encontrado", f"ID: {alumno[0]}\nNombre: {alumno[1]}\nApellido: {alumno[2]}\nDNI: {alumno[3]}")
+                tk.Label(tab_buscar_alumno, text="Nombre:").grid(pady=5, row=2, column=0)
+                tk.Label(tab_buscar_alumno, text="Apellido:").grid(pady=5, row=3, column=0)
+                tk.Label(tab_buscar_alumno, text="DNI:").grid(pady=5, row=4, column=0)
+
+                entry_nombre = tk.Entry(tab_buscar_alumno, width=40)
+                entry_nombre.insert(0, alumno[1])
+                entry_nombre.grid(padx=5, row=2, column=1)
+
+                entry_apellido = tk.Entry(tab_buscar_alumno, width=40)
+                entry_apellido.insert(0, alumno[2])
+                entry_apellido.grid(padx=5, row=3, column=1)
+
+                entry_dni = tk.Entry(tab_buscar_alumno, width=40)
+                entry_dni.insert(0, alumno[3])
+                entry_dni.grid(padx=5, row=4, column=1)
+
+                button_modify = tk.Button(tab_buscar_alumno, text="Modificar", width=50, command=modificar_alumno)
+                button_modify.grid(padx=10, pady=10, row=5, column=0, columnspan=2)
+                button_delete = tk.Button(tab_buscar_alumno, text="Eliminar", width=50, command=eliminar_alumno)
+                button_delete.grid(padx=10, pady=10, row=6, column=0, columnspan=2)
 
             else:
                 messagebox.showerror("Error", "El alumno no existe.")
@@ -133,27 +179,8 @@ def main():
         button.grid(padx=10, pady=10, row=1, column=0, columnspan=2)
 
 
-        def Modificar_alumno():
-            tk.Label(tab_modificar_alumno, text="ID:").grid(pady=5, row=0, column=0)
-            tk.Label(tab_modificar_alumno, text="Nombre:").grid(pady=5, row=1, column=0)
-            entry_id = tk.Entry(tab_modificar_alumno, width=40)
-            entry_id.grid(padx=5, row=0, column=1)
-            entry_nombre = tk.Entry(tab_modificar_alumno, width=40)
-            entry_nombre.grid(padx=5, row=1, column=1)
-            def guardar_alumno():
-                id = entry_id.get()
-                nombre = entry_nombre.get()
-                if id and nombre:
-                    try:
-                        editar_alumnos(id, nombre)
-                        messagebox.showinfo("Éxito", "Alumno modificado correctamente.")
-                        entry_id.delete(0, tk.END)
-                        entry_nombre.delete(0, tk.END)
-                        notebook.tab(tab_ver_alumnos, state="normal")
-                        notebook.select(tab_ver_alumnos)
-                    except Exception as e:
-                        messagebox.showerror("Error", f"Ocurrió un error al modificar el alumno: {e}")
-            tk.Button(tab_modificar_alumno, text="Aceptar", width=50, command=guardar_alumno).grid(padx=10, pady=10, row=2, column=0, columnspan=2)
+       
+           
 
 
 

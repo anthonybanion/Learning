@@ -5,8 +5,13 @@ __pycache__
 # database file
 *.db
 
-#Java
-.class
+#Java elimina todos los archivos .class
+
+**/*.class  
+out/
+#es para pascal
+**/*.o
+**/*.exe
 
 ### VS Code ###
 .vscode/

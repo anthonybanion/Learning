@@ -3,7 +3,6 @@
  @date 04/01/2024
  @version 1.0}
 Program linked_list;
-uses crt;
 type
  node_linker = ^node;
   node = record
