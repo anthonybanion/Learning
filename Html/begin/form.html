@@ -1,0 +1,40 @@
+<!--@brief this program shows a basic formulary
+    @versio 2.0
+    @date 09/01/2024-->
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Create form</h1>
+    <h4>search</h4>
+    <fom action="bin/guestbook.php"> <!--action informs the browser of the destination url-->
+        <input type="text" value="search"/>
+    </fom>
+    <br><br>
+    <form action="bin/guestbook.php">
+        <input type="password" value="hellow word">
+    <br><br>
+    <textarea>write a comment here</textarea>  
+    </form>
+    <br><br>
+    <form action="bin/guestbook.php"> 
+        <input type="checkbox"/>windows <!--checkboxes are used to select multiple options-->
+        <input type="checkbox"/>Linux
+        <input type="checkbox"/>Mac
+        <input type="checkbox"/>Android
+    </form>
+    <br><br>
+    <form action=”bin/guestbook.php”>
+        <input type="radio" name= “color” />Windows <!--radio buttons are used to select only one option-->
+        <input type="radio" name= “color” />Linux
+        <input type="radio" name= “color” />Mac
+        <input type="radio" name= “color” />Android
+    </form>
+</body>
+</html>
