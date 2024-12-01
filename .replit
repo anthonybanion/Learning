@@ -1,6 +1,6 @@
 modules = ["python-3.12", "java-graalvm22.3", "nodejs-20", "web", "php-8.2", "c-clang14", "cpp-clang14", "bash", "go-1.21", "r-4.4", "ruby-3.2", "rust-stable", "swift-5.8", "typescript-language-server", "vue-node-20", "fpc-3.2.2"]
 #run = "javac Java/basic/Hola.java && java Java/basic/Hola.java"
-run ="php "
+run ="php PHP/procedure/bucle/tableMultiplay.php"
 
 [nix]
 channel = "stable-24_05"
@@ -8,3 +8,4 @@ channel = "stable-24_05"
 [deployment]
 #run = ["sh", "-c", "run = \"echo 'Hello, Replit!'\""]
 #run = ["java","Java/basic/Hola.java"]
+run=["php","PHP/procedure/bucle/tableMultiplay.php"]
