@@ -1,5 +1,9 @@
 #Python
-__pycache__
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 *.pyc
 # database file
 *.db
@@ -20,6 +24,19 @@ out/
 #C files
 **/*
 !**/*/
-# Ignore all C files
+# Ignore everything
 !**/*.c
 !**/*.h
+!**/*.cpp
+!**/*.py
+!**/*.java
+!**/*.pas
+!**/*.txt
+!**/*.sh
+!**/*.cs
+!**/*.json
+!**/*.js
+!**/*.html
+!**/*.css
+!**/*.php
+!**/*.psc
