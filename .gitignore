@@ -1,17 +1,25 @@
-# Byte-compiled / optimized / DLL files
-#python
+#Python
 __pycache__
 *.pyc
 # database file
 *.db
 
-#Java elimina todos los archivos .class
-
+#Java delete all .class files
 **/*.class  
 out/
-#es para pascal
+
+#Pascal delete all binary and execute files
 **/*.o
 **/*.exe
 
-### VS Code ###
+# VS Code files
 .vscode/
+
+
+
+#C files
+**/*
+!**/*/
+# Ignore all C files
+!**/*.c
+!**/*.h
