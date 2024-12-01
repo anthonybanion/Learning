@@ -1,41 +1,32 @@
-#Brief: Virtual Library Management System
+#Brief: Sistema de Gestión de Biblioteca Digital
+# Este sistema permite gestionar una biblioteca digital, 
+# incluyendo el registro de libros, usuarios y el manejo de préstamos. 
+# Los usuarios pueden tomar libros prestados por un tiempo determinado y 
+# devolverlos. La biblioteca ofrece funciones para agregar libros, 
+# listar los disponibles, registrar usuarios y mostrar los préstamos activos.
 #Date: 25/11/2021
-# Sistema de gestión de una Biblioteca Digital
-# Objetos: Libro, Autor, Usuario, Prestamo.
-# Conceptos aplicados: 
-# - Herencia: Persona -> Autor, Usuario
-# - Polimorfismo: método `mostrar_informacion()` sobrecargado
-# - Abstracción: clases abstractas (Persona, ElementoBibliografico)
-# - Relaciones: 
-#   - Composición: Autor -> Libro
-#   - Agregación: Usuario -> Libro prestado
-#   - Asociación: Prestamo -> Usuario, Libro
-# Métodos: registro, préstamo, devolución, búsqueda de libros y usuarios.
 #Version: 2.0
 
 from abc import ABC, abstractmethod
 from datetime import datetime, timedelta
 
 
-# Clase base abstracta
 class Persona(ABC):
     def __init__(self, nombre):
-        self.__nombre = nombre  # Atributo privado
+        self.__nombre = nombre  
 
     @abstractmethod
     def mostrar_informacion(self):
         pass
 
-    # Getter para el nombre (acceso controlado)
     def get_nombre(self):
         return self.__nombre
 
 
-# Clases derivadas de Persona
 class Autor(Persona):
     def __init__(self, nombre):
         super().__init__(nombre)
-        self._lista_libros = []  # Atributo protegido
+        self._lista_libros = []  # Lista de libros escritos por el autor
 
     def mostrar_informacion(self):
         return f'Autor: {self.get_nombre()}'
@@ -50,8 +41,8 @@ class Autor(Persona):
 class Usuario(Persona):
     def __init__(self, nombre, email):
         super().__init__(nombre)
-        self._email = email  # Atributo protegido
-        self._lista_libros_prestados = []  # Atributo protegido
+        self._email = email  
+        self._lista_libros_prestados = [] # Lista de libros prestados al usuario
 
     def mostrar_informacion(self):
         return f'Usuario: {self.get_nombre()}, Email: {self._email}'
@@ -63,45 +54,43 @@ class Usuario(Persona):
         if libro in self._lista_libros_prestados:
             self._lista_libros_prestados.remove(libro)
 
-    # Getter para la lista de libros prestados
     def obtener_libros_prestados(self):
         return self._lista_libros_prestados
 
 
-# Clase Libro
 class Libro:
     def __init__(self, titulo, autor, numero_paginas):
-        self.__titulo = titulo  # Atributo privado
-        self.__autor = autor  # Atributo privado
-        self.__numero_paginas = numero_paginas  # Atributo privado
-        self.__prestado = False  # Atributo privado
+        self.__titulo = titulo  
+        self.__autor = autor  # Autor es ahora una instancia de la clase Autor
+        self.__numero_paginas = numero_paginas  
+        self.__prestado = False  
 
     def __str__(self):
         estado = "Prestado" if self.__prestado else "Disponible"
-        return f'{self.__titulo} - {self.__autor} - {self.__numero_paginas} páginas - {estado}'
+        return f'{self.__titulo} - {self.__autor.get_nombre()} - {self.__numero_paginas} páginas - {estado}'
 
-    # Métodos privados para controlar el estado del libro
     def marcar_prestado(self):
         self.__prestado = True
 
     def marcar_devuelto(self):
         self.__prestado = False
 
-    # Getters para los atributos privados
     def get_titulo(self):
         return self.__titulo
 
     def get_estado(self):
         return self.__prestado
 
+    def get_autor(self):
+        return self.__autor
 
-# Clase Prestamo
+
 class Prestamo:
     def __init__(self, usuario, libro, fecha_prestamo, fecha_devolucion):
-        self._usuario = usuario  # Atributo protegido
-        self._libro = libro  # Atributo protegido
-        self.__fecha_prestamo = fecha_prestamo  # Atributo privado
-        self.__fecha_devolucion = fecha_devolucion  # Atributo privado
+        self._usuario = usuario  
+        self._libro = libro  
+        self.__fecha_prestamo = fecha_prestamo 
+        self.__fecha_devolucion = fecha_devolucion  
 
     def mostrar_informacion(self):
         return (f'Préstamo del libro "{self._libro.get_titulo()}" a {self._usuario.get_nombre()}. '
@@ -109,7 +98,6 @@ class Prestamo:
                 f'Fecha de devolución: {self.__fecha_devolucion.strftime("%Y-%m-%d")}.')
 
 
-# Nueva clase para manejar el catálogo de libros
 class CatalogoLibros:
     def __init__(self):
         self._libros = []
@@ -124,7 +112,6 @@ class CatalogoLibros:
         return "\n".join(str(libro) for libro in self._libros)
 
 
-# Nueva clase para manejar usuarios
 class GestorUsuarios:
     def __init__(self):
         self._usuarios = []
@@ -139,7 +126,6 @@ class GestorUsuarios:
         return "\n".join(usuario.mostrar_informacion() for usuario in self._usuarios)
 
 
-# Refactor de la clase Biblioteca
 class Biblioteca:
     def __init__(self):
         self.catalogo = CatalogoLibros()
@@ -178,28 +164,45 @@ class Biblioteca:
 # Código principal
 biblioteca = Biblioteca()
 
-# Crear y registrar libros
-biblioteca.registrar_libro(Libro("El principito", "Antoine de Saint-Exupéry", 96))
-biblioteca.registrar_libro(Libro("Cien años de soledad", "Gabriel García Márquez", 417))
+# Crear autores
+autor1 = Autor("Antoine de Saint-Exupéry")
+autor2 = Autor("Gabriel García Márquez")
+
+# Crear libros y asignarles un autor
+libro1 = Libro("El principito", autor1, 96)
+libro2 = Libro("Cien años de soledad", autor2, 417)
+
+
+# Asignar el libro a la lista de libros del autor correspondiente
+autor1.escribir_libro(libro1)
+autor2.escribir_libro(libro2)
+
+# Crear y registrar libros en la biblioteca
+biblioteca.registrar_libro(libro1)
+biblioteca.registrar_libro(libro2)
 
 # Crear y registrar usuarios
 usuario1 = Usuario("Juan Pérez", "juan.perez@example.com")
+usuario2 = Usuario("Mario", "mario@gmail.com")
 biblioteca.registrar_usuario(usuario1)
 
 # Realizar préstamo
 fecha_hoy = datetime.now()
 fecha_devolucion = fecha_hoy + timedelta(days=7)
 biblioteca.realizar_prestamo(usuario1, biblioteca.catalogo.buscar_libro("El principito")[0], fecha_hoy, fecha_devolucion)
-
+biblioteca.realizar_prestamo(usuario2, biblioteca.catalogo.buscar_libro("El principito")[0], fecha_hoy, fecha_devolucion)
 # Mostrar información
 print("Libros en la biblioteca:")
 print(biblioteca.catalogo.listar_libros())
 
 print("\nPréstamos realizados:")
 print(biblioteca.mostrar_prestamos())
-
+s
 # Devolver libro
-biblioteca.devolver_libro(usuario1, biblioteca.catalogo.buscar_libro("El principito")[0])
+# biblioteca.devolver_libro(usuario1, biblioteca.catalogo.buscar_libro("El principito")[0])
 
 print("\nEstado actualizado de los libros:")
 print(biblioteca.catalogo.listar_libros())
+
+# print(f"Libros de {autor1.get_nombre()}:")
+# print([libro.get_titulo() for libro in autor1.obtener_libros()])
