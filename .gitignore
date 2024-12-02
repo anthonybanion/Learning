@@ -19,7 +19,10 @@ out/
 # VS Code files
 .vscode/
 
-
+#replit
+*.replit
+*.nix
+*.cache/
 
 #C files
 **/*
