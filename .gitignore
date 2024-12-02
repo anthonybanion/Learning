@@ -20,9 +20,9 @@ out/
 .vscode/
 
 #replit
-*.replit
-*.nix
-*.cache/
+.replit
+replit.nix
+
 
 #C files
 **/*
