@@ -43,3 +43,4 @@ replit.nix
 !**/*.css
 !**/*.php
 !**/*.psc
+!**/*.pl
