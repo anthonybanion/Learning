@@ -13,6 +13,6 @@ elif (IMC >= 18.5) and (IMC < 24.9):
 elif (IMC >= 25) and (IMC < 29.9):
     print("sobrepeso")
 else :
-    print("Obesidad") 
-    
+    print("Obesidad")
+
 
