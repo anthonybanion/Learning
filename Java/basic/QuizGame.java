@@ -82,7 +82,7 @@ public class QuizGame {
             default:
                 System.out.println("Invalid input. No points awarded.\n");
         }
-
+        
         // Question 4
         System.out.println("4. What is the largest ocean on Earth?");
         System.out.println("A. Atlantic");
