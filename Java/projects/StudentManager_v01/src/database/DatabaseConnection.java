@@ -1,4 +1,4 @@
-package src.database;
+package database;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,7 +20,16 @@ public class DatabaseConnection {
         }
 
         // Obtener la URL de la base de datos
-        String dbUrl = properties.getProperty("db.url");
+            // Corregir la asignación a la variable de instancia
+        this.dbUrl = properties.getProperty("db.url");
+        //String dbUrl = properties.getProperty("db.url");
+
+        try {
+            Class.forName("org.sqlite.JDBC");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Error: No se encontró el driver de SQLite");
+        }
+
 
         // Establecer conexión
         try {

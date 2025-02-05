@@ -1,6 +1,6 @@
-package src.methods.deleteRegister;
+package methods.deleteRegister;
 
-import src.database.DatabaseConnection;
+import database.DatabaseConnection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -48,6 +48,7 @@ public class DeleteEntity extends DatabaseConnection {
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+        scanner.close();
     }
 
     public void deleteProfessor() {
@@ -74,6 +75,8 @@ public class DeleteEntity extends DatabaseConnection {
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+        scanner.close();
+
     }
 
     public void deleteSubject() {
@@ -100,52 +103,102 @@ public class DeleteEntity extends DatabaseConnection {
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+        scanner.close();
     }
 
+    // public void deleteAll() {
+    //     Scanner scanner = new Scanner(System.in);
+    //     if (!hasRecords("alumno") &&
+    //         !hasRecords("profesor") &&
+    //         !hasRecords("materia")) {
+    //         System.out.println("Error, no hay registros en ninguna de las tablas. Primero debe ingresar datos.");
+    //         return; // Regresar al menú sin hacer nada más
+    //     }
+    //     int userDecisions;
+    //     System.out.print("¡ATENCION! ESTA OPCION BORRA EL CONTENIDO DE LA BASE DE DATOS");
+
+    //     while (true) {
+    //         System.out.print("\n¿USTED ESTA SEGURO DE CONTINUAR?");
+    //         System.out.print("""
+    //                 \n
+    //                 1. SI
+    //                 2. NO
+    //                 """);
+    //         userDecisions = scanner.nextInt();
+
+    //         // Este if solo se validará si el usuario ingresó la opción 1
+    //         if (userDecisions == 1) {
+    //             // Estableciendo conexión en la DB y ejecuta la eliminación completa
+    //             try (Connection connection = DriverManager.getConnection(dbUrl)) {
+    //                 // Ejecutar eliminación para cada tabla
+    //                 String[] tables = {"alumno", "profesor", "materia", "alumno_materia"};
+    //                 for (String table : tables) {
+    //                     String sql = "DELETE FROM " + table;
+    //                     try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+    //                         int rowsAffected = preparedStatement.executeUpdate();
+    //                         System.out.println("Se eliminaron " + rowsAffected + " registros de la tabla " + table + ".");
+    //                     }
+    //                 }
+    //                 System.out.println("Todos los registros de la base de datos fueron eliminados exitosamente.");
+    //             } catch (SQLException e) {
+    //                 System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
+    //             }
+    //             break; // Sale del bucle y regresa al menú principal
+    //         } else if (userDecisions == 2) {
+    //             System.out.println("No se efectuaron eliminaciones. Los registros permanecen sin cambios.");
+    //             return; // Regresa al menú de eliminación
+    //         } else {
+    //             System.out.println("Opción no válida. Por favor, ingrese 1 o 2.");
+    //         }
+    //     }
+    // }
     public void deleteAll() {
-        if (!hasRecords("alumno") &&
-            !hasRecords("profesor") &&
-            !hasRecords("materia")) {
-            System.out.println("Error, no hay registros en ninguna de las tablas. Primero debe ingresar datos.");
-            return; // Regresar al menú sin hacer nada más
-        }
-        int userDecisions;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("¡ATENCION! ESTA OPCION BORRA EL CONTENIDO DE LA BASE DE DATOS");
-
-        while (true) {
-            System.out.print("\n¿USTED ESTA SEGURO DE CONTINUAR?");
-            System.out.print("""
-                    \n
-                    1. SI
-                    2. NO
-                    """);
-            userDecisions = scanner.nextInt();
-
-            // Este if solo se validará si el usuario ingresó la opción 1
-            if (userDecisions == 1) {
-                // Estableciendo conexión en la DB y ejecuta la eliminación completa
-                try (Connection connection = DriverManager.getConnection(dbUrl)) {
-                    // Ejecutar eliminación para cada tabla
-                    String[] tables = {"alumno", "profesor", "materia", "alumno_materia"};
-                    for (String table : tables) {
-                        String sql = "DELETE FROM " + table;
-                        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-                            int rowsAffected = preparedStatement.executeUpdate();
-                            System.out.println("Se eliminaron " + rowsAffected + " registros de la tabla " + table + ".");
-                        }
-                    }
-                    System.out.println("Todos los registros de la base de datos fueron eliminados exitosamente.");
-                } catch (SQLException e) {
-                    System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
-                }
-                break; // Sale del bucle y regresa al menú principal
-            } else if (userDecisions == 2) {
-                System.out.println("No se efectuaron eliminaciones. Los registros permanecen sin cambios.");
-                return; // Regresa al menú de eliminación
-            } else {
-                System.out.println("Opción no válida. Por favor, ingrese 1 o 2.");
+        try {
+            if (!hasRecords("alumno") &&
+                !hasRecords("profesor") &&
+                !hasRecords("materia")) {
+                System.out.println("Error, no hay registros en ninguna de las tablas. Primero debe ingresar datos.");
+                return;
             }
+            int userDecisions;
+            System.out.print("¡ATENCION! ESTA OPCION BORRA EL CONTENIDO DE LA BASE DE DATOS");
+    
+            while (true) {
+                System.out.print("\n¿USTED ESTA SEGURO DE CONTINUAR?");
+                System.out.print("""
+                        \n
+                        1. SI
+                        2. NO
+                        """);
+                userDecisions = scanner.nextInt();
+    
+                if (userDecisions == 1) {
+                    try (Connection connection = DriverManager.getConnection(dbUrl)) {
+                        String[] tables = {"alumno", "profesor", "materia", "alumno_materia"};
+                        for (String table : tables) {
+                            String sql = "DELETE FROM " + table;
+                            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                                int rowsAffected = preparedStatement.executeUpdate();
+                                System.out.println("Se eliminaron " + rowsAffected + " registros de la tabla " + table + ".");
+                            }
+                        }
+                        System.out.println("Todos los registros de la base de datos fueron eliminados exitosamente.");
+                    } catch (SQLException e) {
+                        System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
+                    }
+                    break;
+                } else if (userDecisions == 2) {
+                    System.out.println("No se efectuaron eliminaciones. Los registros permanecen sin cambios.");
+                    return;
+                } else {
+                    System.out.println("Opción no válida. Por favor, ingrese 1 o 2.");
+                }
+            }
+        } finally {
+            scanner.close(); // Cierra el Scanner para evitar la advertencia
         }
     }
+    
+
 }

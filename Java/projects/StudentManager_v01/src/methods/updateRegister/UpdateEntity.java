@@ -1,11 +1,11 @@
-package src.methods.updateRegister;
+package methods.updateRegister;
 
 import java.sql.*;
 import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
-import src.database.DatabaseConnection;
+import database.DatabaseConnection;
 
 public class UpdateEntity extends DatabaseConnection {
     public String dbUrl;
@@ -62,6 +62,7 @@ public class UpdateEntity extends DatabaseConnection {
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+    scanner.close();
     }
 
     public void updateProfessor() {
@@ -97,6 +98,7 @@ public class UpdateEntity extends DatabaseConnection {
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+    scanner.close();
     }
 
     public void updateSubject() {
@@ -128,5 +130,6 @@ public class UpdateEntity extends DatabaseConnection {
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+    scanner.close();
     }
 }

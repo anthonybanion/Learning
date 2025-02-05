@@ -1,4 +1,4 @@
-package src.methods.readRegister;
+package methods.readRegister;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
-import src.database.DatabaseConnection;
+import database.DatabaseConnection;
 
 public class ReadEntity extends DatabaseConnection{
     public String dbUrl;
@@ -53,6 +53,7 @@ public class ReadEntity extends DatabaseConnection{
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+    scanner.close();
     }
 
     public void readTeacher() {
@@ -82,6 +83,7 @@ public class ReadEntity extends DatabaseConnection{
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+        scanner.close();
     }
 
     public void readSubject() {
@@ -110,5 +112,6 @@ public class ReadEntity extends DatabaseConnection{
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+        scanner.close();
     }
 }

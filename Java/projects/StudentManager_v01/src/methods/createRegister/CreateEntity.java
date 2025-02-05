@@ -1,4 +1,4 @@
-package src.methods.createRegister;
+package methods.createRegister;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -61,6 +61,7 @@ public class CreateEntity {
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+    scanner.close();
     }
 
     // Métodos para crear profesor y materia
@@ -94,6 +95,7 @@ public class CreateEntity {
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+    scanner.close();
     }
 
     public void createSubject() {
@@ -122,5 +124,6 @@ public class CreateEntity {
         } catch (SQLException e) {
             System.out.println("Error inesperado al intentar conectar a la base de datos: " + e.getMessage());
         }
+        scanner.close();
     }
 }

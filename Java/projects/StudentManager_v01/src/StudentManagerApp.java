@@ -1,7 +1,7 @@
-import src.methods.createRegister.CreateEntity;
-import src.methods.readRegister.ReadEntity;
-import src.methods.updateRegister.UpdateEntity;
-import src.methods.deleteRegister.DeleteEntity;
+import methods.createRegister.CreateEntity;
+import methods.readRegister.ReadEntity;
+import methods.updateRegister.UpdateEntity;
+import methods.deleteRegister.DeleteEntity;
 
 import java.util.Scanner;
 
