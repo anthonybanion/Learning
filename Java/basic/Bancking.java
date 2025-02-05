@@ -10,6 +10,7 @@ public class Bancking {
         System.out.print("Enter your name: ");
         customer = keyboard.nextLine();
         System.out.println("Welcome " + customer);
+        keyboard.close();
     }
 
 
@@ -38,7 +39,6 @@ public class Bancking {
     public static void main(String[] arg){
         Scanner keyboard = new Scanner(System.in);
         String customer = " ";
-        String accountType = "corriente";
         double availableBalance = 1599.99;
         int option = 0;
         login(customer);

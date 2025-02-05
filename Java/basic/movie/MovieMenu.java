@@ -27,6 +27,7 @@ public class MovieMenu {
     }
 
     public static double average(){
+        @SuppressWarnings("resource")
         Scanner keyboard = new Scanner(System.in);
         double gradeAverage = 0;
         for (int i = 0; i < ACOUNT; i++) {
@@ -48,7 +49,7 @@ public class MovieMenu {
         System.out.println("Average rating: " + average());
          System.out.println("Movie: " + movie);
         System.out.println("Release Date: " + releaseDate);
-     
+     keyboard.close();
     }
 
 
