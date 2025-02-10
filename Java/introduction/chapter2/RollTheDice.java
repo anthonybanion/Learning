@@ -1,10 +1,13 @@
-package Java.introduction.chapter2;
-public class RollTheDice {
-   
-    /*  This program simulates rolling a pair of dice.
+/*Brief: This program simulates rolling a pair of dice.
         The number that comes up on each die is output,
         followed by the total of the two dice.
-    */
+ *Detail: Exercise 2.2
+ *Source: https://math.hws.edu/eck/cs124/javanotes9-swing/c2/ex2-ans.html
+ *Date: 09/02/2025
+ *Version: 1.0
+*/
+package Java.introduction.chapter2;
+public class RollTheDice {
  
     public static void main(String[] args) {
     

@@ -1,3 +1,10 @@
+/*Brief: Write a program that helps the user count his change.
+ *Detail: Exercise 2.4
+ *Source: https://math.hws.edu/eck/cs124/javanotes9-swing/c2/ex4-ans.html
+ *Date: 09/02/2025
+ *Version: 1.0
+*/
+
 package Java.introduction.chapter2;
 import java.util.Scanner;
 
