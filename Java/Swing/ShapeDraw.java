@@ -1,3 +1,8 @@
+/* Description: A very simple drawing program that lets the user add shapes to a drawing
+ * Filename: ShapeDraw.java
+ * Creation date: 17/03/2025*/
+
+
 package Java.Swing;
 import java.awt.*;
 import java.awt.event.*;

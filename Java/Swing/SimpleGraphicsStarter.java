@@ -1,3 +1,8 @@
+/* Description: This file can be used to draw simple pictures.
+ * Filename: SimpleGraphicsStarter.java
+ * Creation date: 17/03/2025*/
+
+
 package Java.Swing;
 
 
