@@ -1,3 +1,9 @@
+/* Descrition: This program contains methods to calculate the average price of a stock, find the maximum price,
+ * File name: StockAnalysis.java
+ * Creation date: 17/03/2025
+ * Last update: 17/03/2025
+*/
+
 import java.util.ArrayList;
 
 public class StockAnalysis {

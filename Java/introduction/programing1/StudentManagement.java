@@ -1,3 +1,11 @@
+/* Description: This program demonstrates a simple student management.
+ * File name: StudentManagement.java
+ * Creation date: 17/03/2025
+ * Last update: 17/03/2025
+ * 
+ */
+
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
