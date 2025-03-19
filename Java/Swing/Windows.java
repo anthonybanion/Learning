@@ -3,7 +3,7 @@
  * Creation date: 17/03/2025*/
 
 
-package Java.Swing;
+package Java.swing;
 import javax.swing.JFrame;
 
 
