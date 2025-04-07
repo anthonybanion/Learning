@@ -3,6 +3,8 @@
  * Date:  04/02/2020
  * Version: 1.0
  */
+
+package Java.basic;
 import java.util.Scanner;
 
 public class QuizGame {

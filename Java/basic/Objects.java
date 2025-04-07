@@ -1,4 +1,4 @@
-
+package Java.basic;
 
 public class Objects{
     String name;
