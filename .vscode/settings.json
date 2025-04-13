@@ -1,0 +1,16 @@
+{
+    "java.project.referencedLibraries": [
+      "/home/anthony/Documentos/xubuntu/javafx-sdk-21.0.6/lib/**/*.jar"
+    ],
+    "java.project.sourcePaths": [
+      "Java"
+    ],
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-21",
+        "path": "/usr/lib/jvm/java-21-openjdk-amd64",
+        "default": true
+      }
+    ]
+  }
+  

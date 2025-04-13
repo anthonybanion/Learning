@@ -1,0 +1,73 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "shell",
+        "label": "build actual",
+        "command": "sh",
+        "args": [
+          "-c",
+          "ext='${file##*.}'; if [ \"$ext\" = \"c\" ]; then gcc -g '${file}' -o '${fileDirname}/${fileBasenameNoExtension}'; elif [ \"$ext\" = \"cpp\" ]; then g++ -g '${file}' -o '${fileDirname}/${fileBasenameNoExtension}'; fi"
+        ],
+        "problemMatcher": [],
+        "group": "build"
+      },
+      {
+        "type": "cppbuild",
+        "label": "C/C++: gcc compilar archivo activo",
+        "command": "/usr/bin/gcc",
+        "args": [
+          "-fdiagnostics-color=always",
+          "-g",
+          "${file}",
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}"
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "detail": "Tarea generada por el depurador."
+      },
+      {
+        "label": "Compilar Java actual",
+        "type": "shell",
+        "command": "javac",
+        "args": [
+          "${file}"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}/Java"
+        },
+        "group": "build",
+        "problemMatcher": []
+      },
+      {
+        "label": "Compilar JavaFX actual",
+        "type": "shell",
+        "command": "javac",
+        "args": [
+          "--module-path",
+          "/home/anthony/Documentos/xubuntu/javafx-sdk-21.0.6/lib",
+          "--add-modules",
+          "javafx.controls,javafx.fxml",
+          "${file}"
+          
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "group": "build",
+        "problemMatcher": []
+      }
+    ],
+
+  }
+  
+  
