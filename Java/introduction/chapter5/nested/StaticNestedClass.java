@@ -9,7 +9,7 @@
                 It cannot access non-static data members and methods.*/
 
 
-package Java.introduction.chapter5.nested;
+package introduction.chapter5.nested;
 
 public class StaticNestedClass {
     public static class Nested {

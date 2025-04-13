@@ -6,6 +6,7 @@
  *Version: 1.0
 */
 
+package introduction.chapter3;
 
  public class SnakeEyes {
   

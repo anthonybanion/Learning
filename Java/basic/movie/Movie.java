@@ -3,7 +3,7 @@
  * Version: 1.0
  */
 
-
+package basic.movie;
 import java.util.Scanner;
 
 

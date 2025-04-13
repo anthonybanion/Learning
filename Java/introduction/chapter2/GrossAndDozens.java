@@ -8,7 +8,7 @@
 */
 
 
-package Java.introduction.chapter2;
+package introduction.chapter2;
 import java.util.Scanner;  // Import the Scanner class
 public class GrossAndDozens {
 

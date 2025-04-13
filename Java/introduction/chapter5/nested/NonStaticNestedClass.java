@@ -52,7 +52,7 @@
 
  
 
-package Java.introduction.chapter5.nested;
+package introduction.chapter5.nested;
 
 class NonStaticNestedClass {
     class Inner {

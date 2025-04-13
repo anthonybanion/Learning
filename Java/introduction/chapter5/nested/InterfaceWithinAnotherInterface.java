@@ -3,7 +3,7 @@
  * Creation date: 17/03/2025
  * Last update: 17/03/2025*/
 
-package Java.introduction.chapter5.nested;
+package introduction.chapter5.nested;
 
 // Interface within another interface
 interface OuterInterface {  

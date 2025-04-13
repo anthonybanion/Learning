@@ -1,4 +1,7 @@
-package Java.basic;
+
+
+package basic;
+
 public class PrimitiveExample {
     public static void main(String[] args) {
         int number = 100;

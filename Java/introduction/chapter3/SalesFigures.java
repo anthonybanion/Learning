@@ -9,17 +9,18 @@
  * which the figure was not available.
  */
 
+package introduction.chapter3;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
     public class SalesFigures {
         public static void main( String[] args ) {
-              Scanner stdin = new Scanner(System.in);
               /* Open file for reading; if it can't be opened, end the program */
               
+              Scanner fileScanner = null; // Declare fileScanner outside the try block
               try {
-                 Scanner fileScanner = new Scanner(new File("sales.dat"));
+                 fileScanner = new Scanner(new File("sales.dat"));
               }
               catch (FileNotFoundException e) {
                  System.out.println("Can't open file \"sales.dat\" for reading!");
@@ -38,7 +39,6 @@ import java.io.FileNotFoundException;
               
             while (fileScanner.hasNextLine()) {  // process one line of data.
                 String line = fileScanner.nextLine();
-                char ch = line.charAt(line.indexOf(':') + 1);
                 String dataString = line.substring(line.indexOf(':') + 2);
                 
                 try {

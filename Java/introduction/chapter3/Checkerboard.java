@@ -1,6 +1,9 @@
+
+package introduction.chapter3;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+
 
 public class Checkerboard extends JPanel implements ActionListener {
 
@@ -40,7 +43,7 @@ public class Checkerboard extends JPanel implements ActionListener {
       window.setLocation(100,50);
       window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       window.setResizable(false); // The user can't change the size.
-      Timer frameTimer = new Timer(20,drawingArea);
+      //Timer frameTimer = new Timer(20,drawingArea);
       window.setVisible(true);
       //frameTimer.start(); // commented out so we don't get an animation
 

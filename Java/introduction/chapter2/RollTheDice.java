@@ -6,7 +6,7 @@
  *Date: 09/02/2025
  *Version: 1.0
 */
-package Java.introduction.chapter2;
+package introduction.chapter2;
 public class RollTheDice {
  
     public static void main(String[] args) {

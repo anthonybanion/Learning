@@ -2,7 +2,8 @@
  * Date: 09/11/2024
  * Version: 1.0
 */
-package Java.basic;
+
+package basic;
 import java.util.Scanner;
 public class Bancking {
 

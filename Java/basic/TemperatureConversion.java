@@ -3,7 +3,7 @@
  * Version: 1.0
  */
 
-package Java.basic;
+package basic;
 public class TemperatureConversion {
 
     public static void main(String[] args) {

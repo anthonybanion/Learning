@@ -2,7 +2,7 @@
  * File name: StatiClassesWithinInterfaces.java
  * Creation date: 17/03/2025*/
 
-package Java.introduction.chapter5.nested;
+package introduction.chapter5.nested;
 
 interface OuterInterface {
 
