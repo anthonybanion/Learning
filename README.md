@@ -86,10 +86,7 @@ Learning/
 │
 ├── C#/
 │   ├── README.md
-│   |── imperative/
-│   |── poo/
-│   |── generic/
-│   ├── function/
+|   |── .../
 │   |── declarative/
 │   |── reactive/
 │   └── .../
@@ -102,20 +99,16 @@ Learning/
 │   └── ...
 │
 |── Html/
-|   └── ...
+│   ├── README.md
+│   └── .../
 |
 ├── Java/
 │   ├── README.md
-│   |── imperative/
-│   |── poo/
-│   ├── function/
-│   └── ...
+│   └── .../
 |
 ├── Javascript/
 │   ├── README.md
-│   |── imperative/
-│   |── poo/
-│   ├── function/
+|   |── .../
 │   ├── event-driven/
 │   ├── asynchronous/
 │   └── ...
@@ -130,7 +123,6 @@ Learning/
 ├── Pascal/
 │   ├── README.md
 │   |── imperative/
-│   |── poo/
 │   └── ...
 |
 ├── Perl/
@@ -139,22 +131,16 @@ Learning/
 │   |── poo/
 │   ├── function/
 │   |── declarative/
-│   └── ...
+│   └── .../
 |
 ├── Php/
 │   ├── README.md
-│   |── imperative/
-│   |── poo/
-│   ├── function/
-│   |── declarative/
-│   └── ...
+│   └── .../
 |
 ├── Pseint/
-|    ├── conditional/
-│    |── bucle/
-│    |── array/
-│    ├── function/
-│    └── ...
+│   ├── README.md
+│   |── imperative/
+│   └── .../
 |
 └── Python/
     ├── README.md
