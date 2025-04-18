@@ -31,19 +31,20 @@ If you're just starting out or brushing up on your skills, feel free to explore 
 
 This repository includes examples and practices in the following languages:
 
-- Bash
-- C
-- C++
-- C#
-- CSS
-- HTML
-- Java
-- JavaScript
-- PSeInt
-- Pascal
-- Perl
-- PHP
-- Python
+- [Assets](./Assets/readme.md)
+- [Bash](./Bash/readme.md)
+- [C](./C/readme.md)
+- [C#](./C%23/readme.md)
+- [C++](./C++/readme.md)
+- [CSS](./Css/readme.md)
+- [HTML](./Html/readme.md)
+- [Java](./Java/readme.md)
+- [JavaScript](./Javascript/readme.md)
+- [Pascal](./Pascal/readme.md)
+- [Perl](./Perl/readme.md)
+- [PHP](./Php/readme.md)
+- [PSeInt](./Pseint/readme.md)
+- [Python](./Python/readme.md)
 
 ---
 
@@ -52,102 +53,93 @@ This repository includes examples and practices in the following languages:
 The folder structure is organized by language:
 
 ```
-Learning/
+Learning/ 
 │
 ├── README.md                  <- Explain the purpose of repo
 │
+├── Assets/
+│   ├── fonts/
+│   |── images/
+│   ├── music/
+│   |── videos/
+│   |── othres/
+│   └── .../
 ├── Bash/
-│   ├── README.md              <- Describe the purpose of each language
+│   ├── readme.md              <- Describe the purpose of each language
 |   ├── conditional/
 │   |── bucle/
 │   |── function/
 │   └── .../
-|
 ├── C/
-│   ├── README.md              
-|   ├── conditional/
-│   |── bucle/
-│   |── array/
-│   |── set/
-│   |── enum/
-│   ├── function/
-│   |── pointer/
-│   ├── stack/
-│   |── queque/
-│   └── .../
-|   
-├── C++/
-│   ├── README.md
-│   |── imperative/
-│   |── poo/
-│   |── generic/
-│   ├── function/
-│   └── .../
-│
+│   ├── readme.md               
+│   └── paradigm-imperative/
+│       ├── conditional/
+│       |── bucle/
+│       |── array/
+│       └── .../
 ├── C#/
-│   ├── README.md
-|   |── .../
-│   |── declarative/
-│   |── reactive/
+│   ├── readme.md
+│   |── paradigm-imperative/
+│   |── paradigm-oop/
+│   |── paradigm-generic/
+│   ├── paradigm-function/
 │   └── .../
-│
+├── C++/
+│   ├── readme.md
+│   |── paradigm-imperative/
+│   |── paradigm-oop/
+│   |── paradigm-generic/
+│   ├── paradigm-function/
+│   └── .../
 ├── Css/
-│   ├── README.md
-│   |── bem/
-│   |── smacss/
-│   |── oocss/
-│   └── ...
-│
+│   ├── readme.md
+│   |── methodology-bem/
+│   |── methodology-smacss/
+│   |── methodology-oocss/
+│   └── .../
 |── Html/
-│   ├── README.md
+│   ├── readme.md
+│   |── semantics/
+│   |── forms-and-inputs/
+│   |── tables-and-lists/
 │   └── .../
-|
-├── Java/
-│   ├── README.md
+├── Java/ 
+│   ├── readme.md
+│   |── data-structures/
+│   |── paradigm-oop/
+│   |── paradigm-event-drive/
+│   ├── gui-javafx/
 │   └── .../
-|
 ├── Javascript/
-│   ├── README.md
-|   |── .../
-│   ├── event-driven/
-│   ├── asynchronous/
-│   └── ...
-│
-├── assets/
-│   ├── images/
-│   |── music/
-│   ├── videos/
-│   |── fonts/
-│   └── ...
-|
+│   ├── readme.md
+│   |── paradigm-imperative/
+│   |── paradigm-oop/
+│   |── paradigm-generic/
+│   ├── paradigm-function/
+│   └── .../
 ├── Pascal/
-│   ├── README.md
-│   |── imperative/
-│   └── ...
-|
+│   ├── readme.md
+│   |── paradigm-imperative/
+│   |── paradigm-oop/
+│   |── data-structures/
+│   ├── projects/
+│   └── .../
 ├── Perl/
-│   ├── README.md
-│   |── imperative/
-│   |── poo/
-│   ├── function/
-│   |── declarative/
+│   ├── readme.md
 │   └── .../
-|
 ├── Php/
-│   ├── README.md
+│   ├── readme.md
 │   └── .../
-|
 ├── Pseint/
-│   ├── README.md
-│   |── imperative/
+│   ├── readme.md
+│   |── exercises/
 │   └── .../
-|
 └── Python/
-    ├── README.md
-    |── imperative/
-    |── poo/
-    ├── function/
-    ├── event-driven/
+    ├── readme.md
+    |── paradigm-imperative/
+    |── paradigm-oop/
+    |── testing/
+    ├── gui-tkinter/
     └── .../
 
 ```
