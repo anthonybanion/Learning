@@ -31,20 +31,20 @@ If you're just starting out or brushing up on your skills, feel free to explore 
 
 This repository includes examples and practices in the following languages:
 
-- [Assets](./Assets/readme.md)
-- [Bash](./Bash/readme.md)
-- [C](./C/readme.md)
-- [C#](./C%23/readme.md)
-- [C++](./C++/readme.md)
-- [CSS](./Css/readme.md)
-- [HTML](./Html/readme.md)
-- [Java](./Java/readme.md)
-- [JavaScript](./Javascript/readme.md)
-- [Pascal](./Pascal/readme.md)
-- [Perl](./Perl/readme.md)
-- [PHP](./Php/readme.md)
-- [PSeInt](./Pseint/readme.md)
-- [Python](./Python/readme.md)
+- [Assets](./Assets/README.md)
+- [Bash](./Bash/README.md)
+- [C](./C/README.md)
+- [C#](./C%23/README.md)
+- [C++](./C++/README.md)
+- [CSS](./Css/README.md)
+- [HTML](./Html/README.md)
+- [Java](./Java/README.md)
+- [JavaScript](./Javascript/README.md)
+- [Pascal](./Pascal/README.md)
+- [Perl](./Perl/README.md)
+- [PHP](./Php/README.md)
+- [PSeInt](./Pseint/README.md)
+- [Python](./Python/README.md)
 
 ---
 
@@ -65,77 +65,77 @@ Learning/
 │   |── othres/
 │   └── .../
 ├── Bash/
-│   ├── readme.md              <- Describe the purpose of each language
+│   ├── README.md              <- Describe the purpose of each language
 |   ├── conditional/
 │   |── bucle/
 │   |── function/
 │   └── .../
 ├── C/
-│   ├── readme.md               
+│   ├── README.md               
 │   └── paradigm-imperative/
 │       ├── conditional/
 │       |── bucle/
 │       |── array/
 │       └── .../
 ├── C#/
-│   ├── readme.md
+│   ├── README.md
 │   |── paradigm-imperative/
 │   |── paradigm-oop/
 │   |── paradigm-generic/
 │   ├── paradigm-function/
 │   └── .../
 ├── C++/
-│   ├── readme.md
+│   ├── README.md
 │   |── paradigm-imperative/
 │   |── paradigm-oop/
 │   |── paradigm-generic/
 │   ├── paradigm-function/
 │   └── .../
 ├── Css/
-│   ├── readme.md
+│   ├── README.md
 │   |── methodology-bem/
 │   |── methodology-smacss/
 │   |── methodology-oocss/
 │   └── .../
 |── Html/
-│   ├── readme.md
+│   ├── README.md
 │   |── semantics/
 │   |── forms-and-inputs/
 │   |── tables-and-lists/
 │   └── .../
 ├── Java/ 
-│   ├── readme.md
+│   ├── README.md
 │   |── data-structures/
 │   |── paradigm-oop/
 │   |── paradigm-event-drive/
 │   ├── gui-javafx/
 │   └── .../
 ├── Javascript/
-│   ├── readme.md
+│   ├── README.md
 │   |── paradigm-imperative/
 │   |── paradigm-oop/
 │   |── paradigm-generic/
 │   ├── paradigm-function/
 │   └── .../
 ├── Pascal/
-│   ├── readme.md
+│   ├── README.md
 │   |── paradigm-imperative/
 │   |── paradigm-oop/
 │   |── data-structures/
 │   ├── projects/
 │   └── .../
 ├── Perl/
-│   ├── readme.md
+│   ├── README.md
 │   └── .../
 ├── Php/
-│   ├── readme.md
+│   ├── README.md
 │   └── .../
 ├── Pseint/
-│   ├── readme.md
+│   ├── README.md
 │   |── exercises/
 │   └── .../
 └── Python/
-    ├── readme.md
+    ├── README.md
     |── paradigm-imperative/
     |── paradigm-oop/
     |── testing/
