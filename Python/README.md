@@ -93,3 +93,6 @@ Python/
 - 🔗 Python Package Index (PyPI)
 - 🔗 Python Cheatsheet
 
+<div align="right" style="font-size: 2em;">
+    <a href="../README.md">⬅️ Back</a>
+</div>

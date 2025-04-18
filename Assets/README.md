@@ -32,3 +32,7 @@ Assets/
 |Audio editing	|Audacity|
 |Font resources	|Google Fonts|
 |Video compression	|HandBrake|
+
+<div align="right" style="font-size: 2em;">
+    <a href="../README.md">⬅️ Back</a>
+</div>

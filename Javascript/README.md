@@ -95,7 +95,7 @@ JavaScript/
 - Learn how the event loop works to debug async behavior
 - Explore dom-manipulation/ if working on browser-based projects
 - Use modules-and-scope/ to write clean, organized code
-- Review best-practices/ to become a confident, modern JavaScript developer## 
+- Review best-practices/ to become a confident, modern JavaScript developer
 
 <div align="right" style="font-size: 2em;">
     <a href="../README.md">⬅️ Back</a>
