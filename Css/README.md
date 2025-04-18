@@ -10,37 +10,37 @@ This section is organized by **methodologies** and **conceptual categories** to 
 
 ```bash
 CSS/
-├── methodology-bem/           # Block Element Modifier methodology
+├── methodology_bem/           # Block Element Modifier methodology
 │   ├── concepts/              # BEM principles: Block, Element, Modifier
 │   ├── examples/              # Real-world BEM examples
 │   └── components/            # Button, card, form using BEM
-├── methodology-oocss/         # Object Oriented CSS methodology
+├── methodology_oocss/         # Object Oriented CSS methodology
 │   ├── concepts/              # Separation of structure and skin, reusable objects
 │   ├── examples/              # Sample layouts and components
 │   └── utilities/             # OOCSS utility classes
-├── methodology-smacss/        # Scalable and Modular Architecture for CSS
+├── methodology_smacss/        # Scalable and Modular Architecture for CSS
 │   ├── base/                  # Normalize, reset, global base rules
 │   ├── layout/                # Grid systems, wrappers, containers
 │   ├── module/                # Modules like navbars, cards, etc.
 │   ├── state/                 # Classes for state changes (.is-active, .is-hidden)
 │   └── theme/                 # Color schemes, font families, etc.
-├── methodology-atomic/         # Atomic CSS methodology
+├── methodology_atomic/         # Atomic CSS methodology
 │   ├── concepts/              # Atomic principles: utility classes, single-purpose styles
 │   ├── examples/              # Atomic CSS examples
 │   └── utilities/             # Atomic utility classes
-├── methodology-css-modules/   # CSS Modules methodology
+├── methodology_css_modules/   # CSS Modules methodology
 │   ├── concepts/              # CSS Modules principles: local scope, modularity
 │   ├── examples/              # CSS Modules examples
 │   └── utilities/             # CSS Modules utility classes
 ├── core-concepts/             # Selectors, specificity, inheritance
-├── animations-and-transitions/ # CSS animations, transitions, keyframes
-├── responsive-design/         # Media queries, fluid grids, mobile-first design
-├── modern-css/                # Flexbox, Grid, clamp(), logical properties
-├── best-practices/            # Naming conventions, performance tips, accessibility
+├── animations_and_transitions/ # CSS animations, transitions, keyframes
+├── responsive_design/         # Media queries, fluid grids, mobile-first design
+├── modern_css/                # Flexbox, Grid, clamp(), logical properties
+├── best_practices/            # Naming conventions, performance tips, accessibility
 └── projects/
-    ├── small-projects/       # Simple projects to practice concepts
-    ├── medium-projects/      # Intermediate projects to apply knowledge
-    └── large-projects/       # Complex projects to challenge skills
+    ├── small_projects/       # Simple projects to practice concepts
+    ├── medium_projects/      # Intermediate projects to apply knowledge
+    └── large_projects/       # Complex projects to challenge skills
 
 ```
 

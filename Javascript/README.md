@@ -10,69 +10,69 @@ This directory is organized by **programming paradigms**, **core topics**, and *
 
 ```bash
 JavaScript/
-├── paradigm-imperative/             # Flow control, variables, functions, and logic
-│   ├── variables-and-types/         # let, const, var and primitive types
+├── paradigm_imperative/             # Flow control, variables, functions, and logic
+│   ├── variables_and_types/         # let, const, var and primitive types
 │   ├── conditionals/                # if, switch, and ternary operations
 │   ├── loops/                       # for, while, do-while, for...of, for...in
 │   ├── functions/                   # Function declarations and expressions
-│   └── input-output/                # Console I/O and alerts
-├── paradigm-oop/        # Object-based programming features
-│   ├── objects-and-classes/         # Object literals, classes, constructors
+│   └── input_output/                # Console I/O and alerts
+├── paradigm_oop/        # Object-based programming features
+│   ├── objects_and_classes/         # Object literals, classes, constructors
 │   ├── inheritance/                 # Prototypes and ES6 class inheritance
 │   ├── encapsulation/               # Closures and private fields
 │   └── polymorphism/                # Method overriding and duck typing
-├── paradigm-functional/             # Functional programming in JavaScript
-│   ├── pure-functions/              # Stateless and side-effect-free functions
-│   ├── higher-order-functions/      # Functions that take or return other functions
+├── paradigm_functional/             # Functional programming in JavaScript
+│   ├── pure_functions/              # Stateless and side-effect-free functions
+│   ├── higher_order_functions/      # Functions that take or return other functions
 │   ├── closures/                    # Capturing outer scope values
-│   ├── currying-and-partials/       # Function composition techniques
-│   └── array-methods/               # map, filter, reduce, etc.
-├── paradigm-event-driven/           # Event handling and reactive programming
-│   ├── browser-events/              # DOM events like click, submit, keypress
-│   ├── async-events/                # setTimeout, setInterval
-│   ├── event-loop/                  # JS concurrency model
-│   └── custom-events/               # Creating and dispatching custom events
-├── async-programming/               # Asynchronous patterns
+│   ├── currying_and_partials/       # Function composition techniques
+│   └── array_methods/               # map, filter, reduce, etc.
+├── paradigm_event_driven/           # Event handling and reactive programming
+│   ├── browser_events/              # DOM events like click, submit, keypress
+│   ├── async_events/                # setTimeout, setInterval
+│   ├── event_loop/                  # JS concurrency model
+│   └── custom_events/               # Creating and dispatching custom events
+├── async_programming/               # Asynchronous patterns
 │   ├── callbacks/                   # Handling async behavior via functions
 │   ├── promises/                    # Modern async control flow
-│   ├── async-await/                 # Cleaner syntax for async operations
-│   └── fetch-api/                   # HTTP requests with Fetch
-├── data-structures/                 # Built-in and custom structures
+│   ├── async_await/                 # Cleaner syntax for async operations
+│   └── fetch_api/                   # HTTP requests with Fetch
+├── data_structures/                 # Built-in and custom structures
 │   ├── arrays/                      # Indexed collections
 │   ├── objects/                     # Key-value mappings
 │   ├── maps/                        # Map data structure (ES6)
 │   ├── sets/                        # Set data structure (ES6)
-│   └── stacks-and-queues/           # LIFO and FIFO implementations
+│   └── stacks_and_queues/           # LIFO and FIFO implementations
 ├── algorithms/                      # Core algorithmic logic
 │   ├── searching/                   # Linear search, binary search
 │   ├── sorting/                     # Bubble, quick, merge, etc.
 │   └── recursion/                   # Recursive problem solving
-├── modules-and-scope/               # Managing code organization
-│   ├── module-syntax/               # import/export (ES6 modules)
-│   ├── variable-scope/              # Global, function, block scope
+├── modules_and_scope/               # Managing code organization
+│   ├── module_syntax/               # import/export (ES6 modules)
+│   ├── variable_scope/              # Global, function, block scope
 │   └── hoisting/                    # Variable/function hoisting rules
 ├── dom-manipulation/                # Interacting with the HTML DOM
 │   ├── selectors/                   # querySelector, getElementById, etc.
-│   ├── attributes-and-styles/       # Accessing and modifying elements
-│   └── events-and-listeners/        # DOM event handling
-├── error-handling/                  # Writing robust code
-│   ├── try-catch-finally/           # Exception handling syntax
-│   ├── throwing-errors/             # Custom error messages
-│   └── debugging-tips/              # Common pitfalls and console tools
-├── built-in-objects/                # JavaScript standard library
+│   ├── attributes_and_styles/       # Accessing and modifying elements
+│   └── events_and_listeners/        # DOM event handling
+├── error_handling/                  # Writing robust code
+│   ├── try_catch_finally/           # Exception handling syntax
+│   ├── throwing_errors/             # Custom error messages
+│   └── debugging_tips/              # Common pitfalls and console tools
+├── built_in_objects/                # JavaScript standard library
 │   ├── math/                        # Math functions and constants
 │   ├── date/                        # Working with Date objects
 │   ├── string/                      # String methods and operations
 │   ├── number/                      # Number parsing and formatting
 │   └── json/                        # JSON.stringify and JSON.parse
-├── best-practices/                  # Clean, idiomatic, maintainable code
-│   ├── naming-conventions/          # Standard naming guidelines
-│   ├── code-style/                  # Linting and formatting with Prettier/ESLint
-│   └── performance-tips/            # Writing efficient JavaScript
-└── testing-and-debugging/           # Unit testing and debugging techniques
-    ├── unit-testing/                # Writing tests with Jest or Mocha
-    ├── debugging-tools/              # Chrome DevTools, Node.js debugging
-    └── test-driven-development/      # TDD principles and practices
+├── best_practices/                  # Clean, idiomatic, maintainable code
+│   ├── naming_conventions/          # Standard naming guidelines
+│   ├── code_style/                  # Linting and formatting with Prettier/ESLint
+│   └── performance_tips/            # Writing efficient JavaScript
+└── testing_and_debugging/           # Unit testing and debugging techniques
+    ├── unit_testing/                # Writing tests with Jest or Mocha
+    ├── debugging_tools/              # Chrome DevTools, Node.js debugging
+    └── test_driven_development/      # TDD principles and practices
 
 ```
 ## 🎯 Objectives

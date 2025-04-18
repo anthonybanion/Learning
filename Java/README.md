@@ -10,28 +10,28 @@ This section is structured by **programming paradigms**, **core concepts**, and 
 
 ```bash
 Java/
-├── paradigm-imperative/             # Fundamentals: flow control, variables, and logic
+├── paradigm_imperative/             # Fundamentals: flow control, variables, and logic
 │   ├── variables/         # Declaring variables and data types
 │   ├── conditionals/                # if, switch, and other conditional statements
 │   ├── loops/                       # for, while, and do-while loops
 │   ├── procedures/                  # Methods and code reuse
 │   ├── arrays/                      # Working with static arrays
-│   └── input-output/                # Basic input and output (console, Scanner, etc.)
-├── paradigm-oop/        # Core of OOP: encapsulation, inheritance, and polymorphism
-│   ├── classes-and-objects/         # Creating and using classes and objects
+│   └── input_output/                # Basic input and output (console, Scanner, etc.)
+├── paradigm_oop/        # Core of OOP: encapsulation, inheritance, and polymorphism
+│   ├── classes_and_objects/         # Creating and using classes and objects
 │   ├── inheritance/                 # Reusing code through class inheritance
 │   ├── polymorphism/                # Dynamic method dispatch and overloading
 │   ├── encapsulation/               # Access control and data protection
 │   ├── interfaces/                  # Abstractions and multiple inheritance
-│   └── exceptions-handling/         # Try-catch blocks and error management
-├── paradigm-functional/             # Functional programming features in Java
+│   └── exceptions_handling/         # Try-catch blocks and error management
+├── paradigm_functional/             # Functional programming features in Java
 │   ├── lambdas/                     # Lambda expressions and syntax
 │   ├── streams/                     # Functional-style operations on collections
-│   └── functional-interfaces/       # Defining and using functional interfaces
-├── paradigm-event-driven/           # Event-handling model for interactive apps
-│   ├── event-handling-model/        # Basics of the event-driven architecture
+│   └── functional_interfaces/       # Defining and using functional interfaces
+├── paradigm-event_driven/           # Event-handling model for interactive apps
+│   ├── event_handling_model/        # Basics of the event-driven architecture
 │   ├── listeners/                   # Implementing event listeners
-│   └── gui-interactions/            # Handling GUI user interactions
+│   └── gui_interactions/            # Handling GUI user interactions
 ├── data-structures/                 # Common data structures in Java
 │   ├── lists/                       # ArrayList, LinkedList, etc.
 │   ├── queues/                      # FIFO structures
@@ -42,30 +42,30 @@ Java/
 │   ├── sorting/                     # Bubble sort, quicksort, etc.
 │   ├── searching/                   # Linear search, binary search
 │   └── recursion/                   # Recursive problem-solving
-├── concurrency-and-threads/         # Multithreading and concurrent programming
+├── concurrency_and_threads/         # Multithreading and concurrent programming
 │   ├── threads/                     # Creating and managing threads
 │   ├── synchronization/            # Preventing race conditions
 │   └── executors/                   # Using thread pools and ExecutorService
-├── files-and-serialization/         # File manipulation and object persistence
-│   ├── file-read-write/             # Reading from and writing to files
-│   └── object-serialization/        # Saving and loading Java objects
-├── gui-swing/                       # Java Swing for desktop GUI apps
-│   ├── basic-windows/               # Creating basic windows and frames
-│   ├── layout-managers/             # Organizing GUI components
+├── files_and_serialization/         # File manipulation and object persistence
+│   ├── file_read_write/             # Reading from and writing to files
+│   └── object_serialization/        # Saving and loading Java objects
+├── gui_swing/                       # Java Swing for desktop GUI apps
+│   ├── basic_windows/               # Creating basic windows and frames
+│   ├── layout_managers/             # Organizing GUI components
 │   ├── components/                  # Buttons, labels, text fields, etc.
-│   └── event-handling/              # Responding to GUI events
+│   └── event_handling/              # Responding to GUI events
 ├── gui-javafx/                      # JavaFX framework for modern GUI apps
-│   ├── application-structure/       # Setting up a JavaFX project
-│   ├── scenes-and-layouts/          # Designing the UI structure
+│   ├── application_structure/       # Setting up a JavaFX project
+│   ├── scenes_and_layouts/          # Designing the UI structure
 │   ├── controls/                    # JavaFX UI controls (buttons, sliders, etc.)
-│   └── animations-and-effects/      # Adding animations and visual effects
-├── annotations-and-reflection/      # Advanced Java features for meta-programming
-│   ├── custom-annotations/          # Creating and using annotations
-│   └── reflection-api/              # Inspecting classes and methods at runtime
-├── best-practices/                  # Writing clean and maintainable Java code
-│   ├── naming-conventions/          # Standard naming styles for code readability
-│   ├── code-style/                  # Formatting and organization
-│   └── exception-handling/          # Effective error management strategies
+│   └── animations_and_effects/      # Adding animations and visual effects
+├── annotations_and_reflection/      # Advanced Java features for meta-programming
+│   ├── custom_annotations/          # Creating and using annotations
+│   └── reflection_api/              # Inspecting classes and methods at runtime
+├── best_practices/                  # Writing clean and maintainable Java code
+│   ├── naming_conventions/          # Standard naming styles for code readability
+│   ├── code_style/                  # Formatting and organization
+│   └── exception_handling/          # Effective error management strategies
 └── README.md                        # Overview and objectives of the Java learning path
 ```
 

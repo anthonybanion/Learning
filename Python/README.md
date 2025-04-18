@@ -30,7 +30,7 @@ Python/
 │   ├── recursion/                     # Recursion over loops
 │   ├── lambda_and_higher_order/       # Lambda, map, filter, reduce
 │   └── immutability/                  # Immutable types and structures
-├── data-structures/                   # Problem-solving techniques
+├── data_structures/                   # Problem-solving techniques
 │   ├── lists/                         # List operations and comprehensions
 │   ├── tuples_and_sets/               # Tuples, sets, and set theory basics
 │   ├── dictionaries/                  # Key-value structures
@@ -53,7 +53,7 @@ Python/
 │   ├── multiprocessing/               # Process-based parallelism
 │   ├── async_and_await/               # Asynchronous programming with async/await
 │   └── asyncio/                       # Event loop and async libraries
-├── gui-tkinter/                       # Building GUI applications with Tkinter
+├── gui_tkinter/                       # Building GUI applications with Tkinter
 │   ├── basic_windows/                 # Creating basic windows and frames
 │   ├── widgets/                       # Buttons, labels, text fields, etc.
 │   ├── layout_management/             # Organizing GUI components; pack, grid, place
@@ -65,7 +65,7 @@ Python/
 │   ├── themes/                        # Estilos personalizados, dark/light themes
 │   └─ mini_projects/                  # Mini aplicaciones funcionales con GUI
 ├── web_development/                   # Web development basics
-│   ├── http-_nd_requests/             # Making HTTP requests
+│   ├── http_nd_requests/             # Making HTTP requests
 │   ├── web_scraping/                  # Scraping data from websites
 │   ├── REST_apis/                     # Building and consuming REST APIs
 │   ├── web_frameworks/                # Overview of Flask, Django, FastAPI

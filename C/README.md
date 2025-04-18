@@ -8,7 +8,7 @@ C is a low-level, high-performance language that follows the **imperative paradi
 
 ```bash
 C/
-├── paradigm-imperative/
+├── paradigm_imperative/
 │   ├── basics/               # Syntax, compilation, structure of a program
 │   ├── variables/            # Data types, declarations, initialization
 │   ├── operators/            # Arithmetic, logical, relational, bitwise
@@ -18,36 +18,36 @@ C/
 │   ├── pointers/             # Memory addresses, dereferencing, pointer arithmetic
 │   ├── arrays/               # One-dimensional, multi-dimensional arrays
 │   ├── strings/              # Character arrays, string manipulation
-│   ├── structs-and-enums/    # struct, typedef, enum usage
-│   ├── memory-management/    # malloc, calloc, free, memory leaks
-│   ├── file-handling/        # fopen, fread, fwrite, fclose
-│   └── modular-programming/  # Multiple source files, headers, modular design
-├── paradigm-oop/
-│   └── oop-simulation/       # Structs + function pointers (simulating OOP)
-├── testing-and-debugging/
-│   ├── unit-tests/           # Test cases for functions
-│   ├── debugging-tools/      # gdb, valgrind usage
+│   ├── structs_and_enums/    # struct, typedef, enum usage
+│   ├── memory_management/    # malloc, calloc, free, memory leaks
+│   ├── file_handling/        # fopen, fread, fwrite, fclose
+│   └── modular_programming/  # Multiple source files, headers, modular design
+├── paradigm_oop/
+│   └── oop_simulation/       # Structs + function pointers (simulating OOP)
+├── testing_and_debugging/
+│   ├── unit_tests/           # Test cases for functions
+│   ├── debugging_tools/      # gdb, valgrind usage
 │   └── logging/              # Simple debug logs and trace messages
-├── data-structures/
+├── data_structures/
 │   ├── sorting/              # Bubble sort, quicksort, mergesort
 │   ├── searching/            # Linear search, binary search
-│   ├── linked-lists/         # Singly linked lists, doubly linked lists
+│   ├── linked_lists/         # Singly linked lists, doubly linked lists
 │   ├── trees/                # Binary trees, binary search trees
 │   ├── graphs/               # Graph representation, traversal algorithms
-│   └── hash-tables/          # Hash functions, collision resolution
-├── libraries-and-APIs/
-│   ├── standard-library/     # stdlib, stdio, string, math
-│   ├── third-party-libraries/ # Using libraries like SDL, OpenGL, etc.
+│   └── hash_tables/          # Hash functions, collision resolution
+├── libraries_and_APIs/
+│   ├── standard_library/     # stdlib, stdio, string, math
+│   ├── third_party_libraries/ # Using libraries like SDL, OpenGL, etc.
 │   └── APIs/                 # REST APIs, JSON parsing
-├── best-practices/
-│   ├── coding-style/         # Naming conventions, formatting
+├── best_practices/
+│   ├── coding_style/         # Naming conventions, formatting
 │   ├── documentation/        # Commenting, README files
-│   ├── version-control/      # Using Git for version control
-│   └── code-reviews/         # Best practices for code reviews
+│   ├── version_control/      # Using Git for version control
+│   └── code_reviews/         # Best practices for code reviews
 └── projects/
-    ├── small-projects/       # Simple projects to practice concepts
-    ├── medium-projects/      # Intermediate projects to apply knowledge
-    └── large-projects/       # Complex projects to challenge skills
+    ├── small_projects/       # Simple projects to practice concepts
+    ├── medium_projects/      # Intermediate projects to apply knowledge
+    └── large_projects/       # Complex projects to challenge skills
 
 ```
 
