@@ -62,7 +62,7 @@ Learning/
 │   |── images/
 │   ├── music/
 │   |── videos/
-│   |── othres/
+│   |── others/
 │   └── .../
 ├── Bash/
 │   ├── readme.md              <- Describe the purpose of each language
