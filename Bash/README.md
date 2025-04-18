@@ -10,7 +10,7 @@ Bash is not organized around formal programming paradigms like OOP or Functional
 Bash/
 ├── basics/                    # Syntax, variables, built-in commands
 ├── scripting/                 # Writing and running scripts (shebang, permissions)
-├── conditionals/             # if, else, ifel, case
+├── conditionals/              # if, else, ifel, case
 ├── loops/                     # for, while, until, select
 ├── functions/                 # Defining and using functions
 ├── io-redirection/            # stdin, stdout, stderr, pipes, redirection operators
