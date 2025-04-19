@@ -17,27 +17,27 @@ PSeInt/
 ├── arrays/                        # Simple arrays (Vectores)
 ├── matrices/                      # Matrices
 ├── traversals/                    # Iterating over arrays/matrices
-├── algorithm-design/              # Solving algorithmic problems
+├── algorithm_design/              # Solving algorithmic problems
 │   ├── flowcharts/                # Visual representation of logic
-│   ├── dry-run-exercises/         # Manual tracing of pseudocode
-│   └── classic-problems/          # Basic math and logic problems
-├── input-validation/              # Checking and handling invalid user input
-│   ├── numeric-validation/        # Verifying correct number input
-│   ├── range-checking/            # Enforcing valid ranges
-│   └── retry-loops/               # Asking again when input is invalid
-├── files-and-persistence/         # (Optional) Simulated file operations
-│   └── simulated-file-io/         # Storing and retrieving mock data
-├── sorting-and-searching/         # (Optional) Basic algorithms
+│   ├── dry_run_exercises/         # Manual tracing of pseudocode
+│   └── classic_problems/          # Basic math and logic problems
+├── input_validation/              # Checking and handling invalid user input
+│   ├── numeric_validation/        # Verifying correct number input
+│   ├── range_checking/            # Enforcing valid ranges
+│   └── retry_loops/               # Asking again when input is invalid
+├── files_and_persistence/         # (Optional) Simulated file operations
+│   └── simulated_file_io/         # Storing and retrieving mock data
+├── sorting_and_searching/         # (Optional) Basic algorithms
 │   ├── sorting/                   # Sorting algorithms (Bubble, Selection, etc.)
 │   └── searching/                 # Searching algorithms (Linear, Binary)
 |── exercises/                     # Practice problems and solutions
-|   ├── basic-exercises/           # Simple exercises for beginners
-|   ├── intermediate-exercises/     # More complex problems
-|   └── advanced-exercises/         # Challenging algorithmic problems
+|   ├── basic_exercises/           # Simple exercises for beginners
+|   ├── intermediate_exercises/     # More complex problems
+|   └── advanced_exercises/         # Challenging algorithmic problems
 └── projects/
-    ├── small-projects/              # Simple projects to practice concepts
-    ├── medium-projects/             # Intermediate projects to apply knowledge
-    └── large-projects/              # Complex projects to challenge skills
+    ├── small_projects/              # Simple projects to practice concepts
+    ├── medium_projects/             # Intermediate projects to apply knowledge
+    └── large_projects/              # Complex projects to challenge skills
 
 ```
 

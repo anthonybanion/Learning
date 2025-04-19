@@ -11,19 +11,19 @@ This section is organized by **semantic structure**, **learning stages**, and **
 ```bash
 HTML/
 ├── foundations/               # Basic tags and document structure
-│   ├── html-skeleton/         # <!DOCTYPE>, <html>, <head>, <body>
-│   ├── text-elements/         # <p>, <h1>–<h6>, <strong>, <em>, etc.
-│   └── comments-and-entities/ # HTML comments, special characters, etc.
+│   ├── html_skeleton/         # <!DOCTYPE>, <html>, <head>, <body>
+│   ├── text_elements/         # <p>, <h1>–<h6>, <strong>, <em>, etc.
+│   └── comments_and_entities/ # HTML comments, special characters, etc.
 ├── semantics/                 # Modern semantic tags
-│   ├── layout-elements/       # <header>, <footer>, <main>, <section>, <article>, <aside>
-│   └── inline-elements/       # <span>, <abbr>, <time>, etc.
-├── forms-and-inputs/          # <form>, <input>, <textarea>, <select>, validations
-├── media-elements/            # <img>, <video>, <audio>, <source>
-├── tables-and-lists/          # <table>, <thead>, <tbody>, <ul>, <ol>, <dl>
+│   ├── layout_elements/       # <header>, <footer>, <main>, <section>, <article>, <aside>
+│   └── inline_elements/       # <span>, <abbr>, <time>, etc.
+├── forms_and_inputs/          # <form>, <input>, <textarea>, <select>, validations
+├── media_elements/            # <img>, <video>, <audio>, <source>
+├── tables_and_lists/          # <table>, <thead>, <tbody>, <ul>, <ol>, <dl>
 ├── accessibility/             # ARIA roles, alt text, semantic focus
-├── metadata-and-seo/          # <meta>, Open Graph, SEO best practices
-├── html5-apis/                # Web Storage, Geolocation, etc.
-├── best-practices/            # Code readability, nesting, structure, progressive enhancement
+├── metadata_and_seo/          # <meta>, Open Graph, SEO best practices
+├── html5_apis/                # Web Storage, Geolocation, etc.
+├── best_practices/            # Code readability, nesting, structure, progressive enhancement
 └── examples/                  # Real-world examples and projects
 
 ```

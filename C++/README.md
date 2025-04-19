@@ -8,64 +8,64 @@ This section is structured based on **paradigms** and **subcategories** to give 
 
 ```bash
 C++/
-├── paradigm-imperative/
+├── paradigm_imperative/
 │   ├── basics/               # Syntax, structure, variables, types
 │   ├── operators/            # Arithmetic, logical, relational, bitwise operators
-│   ├── control-flow/         # if, switch, loops (for, while, do-while)
+│   ├── control_flow/         # if, switch, loops (for, while, do-while)
 │   ├── functions/            # Functions, parameters, return values, function overloading
-│   ├── arrays-and-pointers/  # Arrays, pointer manipulation, memory management
+│   ├── arrays_and_pointers/  # Arrays, pointer manipulation, memory management
 │   ├── strings/              # C-strings, std::string, string manipulation
 │   ├── exceptions/           # Exception handling, try-catch, custom exceptions
-│   ├── file-handling/        # fstream, reading/writing files
-│   ├── memory-management/    # new, delete, malloc, free, smart pointers (std::unique_ptr, std::shared_ptr)
-│   └── modular-programming/  # Header files, namespaces, multiple source files
-├── paradigm-oop/
-│   ├── classes-and-objects/  # Classes, objects, constructors, destructors
+│   ├── file_handling/        # fstream, reading/writing files
+│   ├── memory_management/    # new, delete, malloc, free, smart pointers (std::unique_ptr, std::shared_ptr)
+│   └── modular_programming/  # Header files, namespaces, multiple source files
+├── paradigm_oop/
+│   ├── classes_and_objects/  # Classes, objects, constructors, destructors
 │   ├── inheritance/          # Inheritance, polymorphism, virtual functions, overriding
 │   ├── interfaces/           # Abstract classes, pure virtual functions, interfaces
 │   ├── encapsulation/        # Access modifiers, getter/setter functions
-│   ├── operator-overloading/ # Overloading operators (e.g., +, -, [])
-│   ├── friend-functions/    # Friend functions and classes
-│   └── virtual-functions/   # Virtual functions, dynamic dispatch
-├── paradigm-generic/
+│   ├── operator_overloading/ # Overloading operators (e.g., +, -, [])
+│   ├── friend_functions/    # Friend functions and classes
+│   └── virtual_functions/   # Virtual functions, dynamic dispatch
+├── paradigm_generic/
 │   ├── templates/            # Function templates, class templates
-│   ├── template-specialization/ # Specializing templates for specific types
-│   ├── std-containers/       # STL containers (vector, map, set, etc.)
+│   ├── template_specialization/ # Specializing templates for specific types
+│   ├── std_containers/       # STL containers (vector, map, set, etc.)
 │   └── iterators/            # Iterators, reverse iterators, algorithms
-├── paradigm-functional/
+├── paradigm_functional/
 │   ├── lambdas/              # Lambda expressions, capturing variables
-│   ├── function-pointers/    # Function pointers, callbacks
+│   ├── function_pointers/    # Function pointers, callbacks
 │   └── immutability/         # Constant variables, const correctness
-├── paradigm-concurrent/
+├── paradigm_concurrent/
 │   ├── threading/            # Threads, synchronization, mutexes, conditions
-│   ├── async-await/          # Asynchronous programming (C++11 async)
-│   └── future-promises/      # Using future and promise for parallel computation
-├── testing-and-debugging/
-│   ├── unit-testing/         # Google Test, Catch2, Boost Test examples
-│   ├── debugging-tools/      # gdb, valgrind, debugging C++ code
+│   ├── async_await/          # Asynchronous programming (C++11 async)
+│   └── future_promises/      # Using future and promise for parallel computation
+├── testing_and_debugging/
+│   ├── unit_testing/         # Google Test, Catch2, Boost Test examples
+│   ├── debugging_tools/      # gdb, valgrind, debugging C++ code
 │   ├── logging/              # Logging in C++ with libraries (spdlog, log4cpp)
-│   └── performance-testing/   # Profiling and performance testing tools
+│   └── performance_testing/   # Profiling and performance testing tools
 ├── data-structures/
 │   ├── sorting/              # Sorting algorithms (quick, merge, bubble)
 │   ├── searching/            # Searching algorithms (linear, binary)
-│   ├── linked-lists/         # Singly and doubly linked lists
+│   ├── linked_lists/         # Singly and doubly linked lists
 │   ├── trees/                # Binary trees, binary search trees, AVL trees
 │   ├── graphs/               # Graph representation, traversal algorithms (DFS, BFS)
-│   ├── hash-tables/          # Hash functions, collision resolution
-│   └── dynamic-programming/   # Dynamic programming concepts and examples
-├── libraries-and-APIs/
-│   ├── standard-library/     # STL, algorithms, utilities
-│   ├── third-party-libraries/ # Using libraries like Boost, OpenCV, etc.
+│   ├── hash_tables/          # Hash functions, collision resolution
+│   └── dynamic_programming/   # Dynamic programming concepts and examples
+├── libraries_and_APIs/
+│   ├── standard_library/     # STL, algorithms, utilities
+│   ├── third_party_libraries/ # Using libraries like Boost, OpenCV, etc.
 │   └── APIs/                 # REST APIs, JSON parsing (nlohmann/json)
-├── best-practices/
-│   ├── coding-style/         # Naming conventions, formatting
+├── best_practices/
+│   ├── coding_style/         # Naming conventions, formatting
 │   ├── documentation/        # Commenting, README files
-│   ├── version-control/      # Using Git for version control
-│   └── code-reviews/         # Best practices for code reviews
+│   ├── version_control/      # Using Git for version control
+│   └── code_reviews/         # Best practices for code reviews
 └── projects/
-    ├── small-projects/       # Simple projects to practice concepts
-    ├── medium-projects/      # Intermediate projects to apply knowledge
-    └── large-projects/       # Complex projects to challenge skills
+    ├── small_projects/       # Simple projects to practice concepts
+    ├── medium_projects/      # Intermediate projects to apply knowledge
+    └── large_projects/       # Complex projects to challenge skills
 
 ```
 ## 🎯 Objectives

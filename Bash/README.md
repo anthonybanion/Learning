@@ -13,21 +13,21 @@ Bash/
 ├── conditionals/              # if, else, ifel, case
 ├── loops/                     # for, while, until, select
 ├── functions/                 # Defining and using functions
-├── io-redirection/            # stdin, stdout, stderr, pipes, redirection operators
-├── arrays-and-strings/        # Array usage, string manipulation
-├── file-handling/             # Reading, writing, and processing files
-├── system-commands/           # Useful system tools (top, ps, df, etc.)
-├── process-management/        # Job control, background/foreground, signals
-├── user-and-permissions/      # Managing users, groups, file permissions
+├── io_redirection/            # stdin, stdout, stderr, pipes, redirection operators
+├── arrays_and_strings/        # Array usage, string manipulation
+├── file_handling/             # Reading, writing, and processing files
+├── system_commands/           # Useful system tools (top, ps, df, etc.)
+├── process_management/        # Job control, background/foreground, signals
+├── user_and_permissions/      # Managing users, groups, file permissions
 ├── networking/                # Network tools: ping, curl, wget, etc.
-├── package-management/        # Tools like apt, dpkg, pacman, yum
+├── package_management/        # Tools like apt, dpkg, pacman, yum
 ├── automation/                # Cron jobs, backups, maintenance scripts
 ├── security/                  # Basic hardening, SSH, secure scripts
-├── testing-and-debugging/     # Exit codes, `set -x`, `test`, echo debugging
+├── testing_and_debugging/     # Exit codes, `set -x`, `test`, echo debugging
 └── projects/
-    ├── small-projects/        # Simple projects to practice concepts
-    ├── medium-projects/       # Intermediate projects to apply knowledge
-    └── large-projects/        # Complex projects to challenge skills
+    ├── small_projects/        # Simple projects to practice concepts
+    ├── medium_projects/       # Intermediate projects to apply knowledge
+    └── large_projects/        # Complex projects to challenge skills
 
 
 ```

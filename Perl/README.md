@@ -10,60 +10,60 @@ This directory is organized by **programming paradigms**, **core constructs**, a
 
 ```bash
 Perl/
-├── paradigm-imperative/             # Core imperative structures of Perl
+├── paradigm_imperative/             # Core imperative structures of Perl
 │   ├── variables/         # Scalars, arrays, hashes and data types
 │   ├── conditionals/                # if, unless, given/when statements
 │   ├── loops/                       # for, foreach, while, until loops
 │   ├── subroutines/                 # Defining and calling subroutines
-│   └── input-output/                # Reading and writing to files and STDIN/STDOUT
-├── paradigm-procedural/             # Procedural programming practices
-│   ├── modular-code/                # Organizing code with modules and packages
-│   ├── scope-and-contexts/          # Variable scoping (my, our, local) and contexts
+│   └── input_output/                # Reading and writing to files and STDIN/STDOUT
+├── paradigm_procedural/             # Procedural programming practices
+│   ├── modular_code/                # Organizing code with modules and packages
+│   ├── scope_and_contexts/          # Variable scoping (my, our, local) and contexts
 │   └── recursion/                   # Writing recursive subroutines
-├── paradigm-oop/        # Object-Oriented Perl (bless and OOP frameworks)
-│   ├── objects-and-classes/         # Creating and using objects with bless
+├── paradigm_oop/        # Object-Oriented Perl (bless and OOP frameworks)
+│   ├── objects_and_classes/         # Creating and using objects with bless
 │   ├── inheritance/                 # Base classes and @ISA array
 │   ├── encapsulation/               # Data privacy with packages and subs
-│   └── Moose-and-Moo/               # Modern Perl OOP systems
-├── regular-expressions/             # Powerful regex processing
+│   └── Moose_and_Moo/               # Modern Perl OOP systems
+├── regular_expressions/             # Powerful regex processing
 │   ├── basics/                      # Match, substitute, and translate operators
-│   ├── advanced-patterns/           # Lookaheads, backreferences, etc.
-│   └── regex-flags/                 # Case insensitive, multiline, global flags
-├── data-structures/                 # Complex structures using references
+│   ├── advanced_patterns/           # Lookaheads, backreferences, etc.
+│   └── regex_flags/                 # Case insensitive, multiline, global flags
+├── data_structures/                 # Complex structures using references
 │   ├── arrays/                      # Manipulating arrays and list context
 │   ├── hashes/                      # Key-value storage and iteration
 │   ├── references/                  # Scalar refs, array refs, hash refs
-│   ├── nested-structures/           # Multidimensional data using refs
-│   └── file-handling/               # Open, read, write, and close files
-├── text-processing/                 # Parsing and manipulating text
-│   ├── string-operations/           # Concatenation, split, join, substr
-│   ├── pattern-matching/            # Text analysis and extraction
-│   └── text-filters/                # One-liners and Perl filtering tricks
-├── scripting-and-automation/        # Scripting for sysadmin and daily tasks
-│   ├── environment-vars/            # Accessing and modifying ENV
-│   ├── shell-commands/              # Backticks and system calls
-│   ├── cron-scripts/                # Writing automated scripts
-│   └── command-line-arguments/      # @ARGV and input parameter parsing
-├── file-structure-and-syntax/       # Perl script anatomy
-│   ├── shebang-and-perlrun/         # Script execution and flags (-w, -T, -e)
-│   ├── use-strict-and-warnings/     # Safer Perl code practices
+│   ├── nested_structures/           # Multidimensional data using refs
+│   └── file_handling/               # Open, read, write, and close files
+├── text_processing/                 # Parsing and manipulating text
+│   ├── string_operations/           # Concatenation, split, join, substr
+│   ├── pattern_matching/            # Text analysis and extraction
+│   └── text_filters/                # One-liners and Perl filtering tricks
+├── scripting_and_automation/        # Scripting for sysadmin and daily tasks
+│   ├── environment_vars/            # Accessing and modifying ENV
+│   ├── shell_commands/              # Backticks and system calls
+│   ├── cron_scripts/                # Writing automated scripts
+│   └── command_line_arguments/      # @ARGV and input parameter parsing
+├── file_structure_and_syntax/       # Perl script anatomy
+│   ├── shebang_and_perlrun/         # Script execution and flags (-w, -T, -e)
+│   ├── use_strict_and_warnings/     # Safer Perl code practices
 │   └── documentation/               # Using POD (Plain Old Documentation)
-├── error-handling/                  # Debugging and safe coding
-│   ├── eval-and-die/                # Exception handling with eval
-│   ├── error-codes/                 # System error tracking with $!
-│   └── warnings-and-debugging/      # Using -w, use warnings, and Data::Dumper
-├── perl-ecosystem/                  # Language tools and ecosystem
-│   ├── cpan-modules/                # Using and installing CPAN modules
+├── error_handling/                  # Debugging and safe coding
+│   ├── eval_and_die/                # Exception handling with eval
+│   ├── error_codes/                 # System error tracking with $!
+│   └── warnings_and_debugging/      # Using -w, use warnings, and Data::Dumper
+├── perl_ecosystem/                  # Language tools and ecosystem
+│   ├── cpan_modules/                # Using and installing CPAN modules
 │   ├── perlbrew/                    # Managing Perl versions
-│   └── testing-and-linting/         # Test::More and Perl::Critic
+│   └── testing_and_linting/         # Test::More and Perl::Critic
 |── examples/                        # Example scripts and projects
-|   ├── basic-examples/              # Simple scripts demonstrating core concepts
-|   ├── automation-scripts/          # Practical automation tasks
-|   └── regex-examples/              # Regex-based text processing
+|   ├── basic_examples/              # Simple scripts demonstrating core concepts
+|   ├── automation_scripts/          # Practical automation tasks
+|   └── regex_examples/              # Regex-based text processing
 └── projects/
-    ├── small-projects/              # Simple projects to practice concepts
-    ├── medium-projects/             # Intermediate projects to apply knowledge
-    └── large-projects/              # Complex projects to challenge skills
+    ├── small_projects/              # Simple projects to practice concepts
+    ├── medium_projects/             # Intermediate projects to apply knowledge
+    └── large_projects/              # Complex projects to challenge skills
 
 
 ```
