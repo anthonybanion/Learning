@@ -48,6 +48,40 @@
         },
         "group": "build",
         "problemMatcher": []
+      },
+      {
+        "label": "compilar pascal",
+        "type": "shell",
+        "command": "fpc",
+        "args": [
+          "${file}",
+          "-g",
+          "${fileDirname}/${fileBasenameNoExtension}"
+        ],
+        "group": "build",
+        "problemMatcher": {
+          "owner": "fpc",
+          "fileLocation": ["relative", "${fileDirname}"],
+          "pattern": {
+            "regexp": "^(.*\\.pas)\\((\\d+),(\\d+)\\)\\s(Error|Warning):\\s(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+            } 
+          },
+        "detail": "Compila el código Pascal con GDB habilitado"
+      },
+      {
+        "label": "ejecutar pascal",
+        "type": "shell",
+        "command": "${fileDirname}/${fileBasenameNoExtension}",
+        "dependsOn": "compilar pascal",
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        }
       }
     ]
 

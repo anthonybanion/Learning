@@ -32,7 +32,7 @@ Java/
 │   ├── event_handling_model/        # Basics of the event-driven architecture
 │   ├── listeners/                   # Implementing event listeners
 │   └── gui_interactions/            # Handling GUI user interactions
-├── data-structures/                 # Common data structures in Java
+├── data_structures/                 # Common data structures in Java
 │   ├── lists/                       # ArrayList, LinkedList, etc.
 │   ├── queues/                      # FIFO structures
 │   ├── stacks/                      # LIFO structures
