@@ -7,7 +7,7 @@ The content is organized around **paradigms**, and inside those paradigms, we br
 ## 📂 Folder Structure
 
 ```bash
-CSharp/
+C#/
 ├── paradigm_imperative/
 │   ├── basics/               # Syntax, structure, variables, types
 │   ├── operators/            # Arithmetic, logical, relational, bitwise operators
@@ -18,7 +18,7 @@ CSharp/
 │   ├── strings/              # String manipulation, StringBuilder
 │   ├── exceptions/           # Exception handling, try-catch-finally
 │   ├── file_handling/        # Reading/writing files, streams
-│   └── modula_programming/   # Modular programming concepts 
+│   └── modular_programming/   # Modular programming concepts 
 ├── paradigm_oop/
 │   ├── classes_and_objects/  # Class definition, constructors, fields, properties
 │   ├── inheritance/          # Inheriting classes, polymorphism, method overriding

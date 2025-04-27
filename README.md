@@ -169,18 +169,14 @@ If you have improvements, examples, or ideas to share:
 
 All contributions are welcome!
 
-## 📄 License
-
-This project is licensed under the MIT License – see the LICENSE file for details.
-
 ## 👨‍💻 Author
-
-Anthony Bañon
-Analyst in training & Backend Developer enthusiast
+Anthony Bañon — Analyst in training & Backend Developer enthusiast.  
 [GitHub Profile](https://github.com/anthonybanion)
 
-## 🙏 Acknowledgements
+## 📄 License
+This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
 
-- Thanks to the open-source community for resources and inspiration.
-- Special thanks to educators and developers who share their knowledge online.
-- And to anyone learning to code — keep going! You're doing great.
+## 🙏 Acknowledgements
+Thanks to the open-source community for resources and inspiration.  
+Special thanks to educators and developers who share their knowledge online.  
+And to anyone learning to code — keep going! You're doing great!
