@@ -1,7 +1,7 @@
 """
 Description: create a program that calculates VAT
  
-File: iva.py
+File: vatCalculation.py
 Author: Anthony Bañon
 Created: 2025-04-23
 Last Updated: 2025-04-23
@@ -26,7 +26,7 @@ entry_price.pack(pady=10)  # Adds vertical padding
 vat_label =ttk.Label(root, text="Enter the VAT percentage", font=("Arial", 20))
 vat_label.pack(pady=10)
 entry_vat = Entry(root) 
-entry_vat.pack(pady=10)  # Adds vertical padding
+entry_vat.pack(pady=10)  
 
 def generate_iva():
     """
