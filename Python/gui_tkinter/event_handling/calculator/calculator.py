@@ -3,6 +3,7 @@ from tkinter import ttk
 from calculate import *
 
 root = Tk()  # Create the main window
+root.geometry("400x600") 
 title_label =ttk.Label(root, text="Calculator", font=("Arial", 20))  
 title_label.grid(padx=5, row=0, column=1)
 
