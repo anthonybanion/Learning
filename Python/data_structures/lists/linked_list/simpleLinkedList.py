@@ -16,7 +16,7 @@ class Node:
         self.data = data
         self.next = None
 
-class ListaEnlasada:
+class LinkedList:
    
     def __init__(self):
         self.head = None
@@ -73,34 +73,57 @@ class ListaEnlasada:
     def search(self, data):
         current = self.head
         while current:
-            current = current.next
-            if current.data != data:
-                print("Element not found") 
-                return False
-            else:
-                print("Element found")
-                return True
-
-               
             
+            if current.data == data:
+                print("Element found") 
+                return current
+            current = current.next
+        print("Element not found")
+        return None
+        
+    
+
+    def update(self,old_data, new_data):
+        
+        searched = self.search(old_data)
+        if searched is not None:
+            searched.data = new_data
+            print("Element updated")
+            return True
+        return False
+    
+    def lineSort(self):
+        current = self.head
+        while current:
+            current = current.next
+            if current.data < current.next:
+                aux = current.next
+                current.next = current.data
+                current.data = aux
+            
+        
+        
+               
+             
           
       
 
 __main__ = "__main__"
-simpleList = ListaEnlasada() 
-simpleList.append(1)
-simpleList.append(2)
-simpleList.append(3)
+simpleList = LinkedList() 
 simpleList.append(4)
+simpleList.append(2)
+simpleList.append(1)
+simpleList.append(3)
 
-ListaEnlasada.show(simpleList)
+LinkedList.show(simpleList)
 print("Size of the list: ", simpleList.size)
-simpleList.delete(2)
-ListaEnlasada.show(simpleList)
-print("Size of the list: ", simpleList.size)
 
-print("Element found: ", simpleList.search(3))
-
+# simpleList.search(3)
+# old_data = 3
+# new_data = 20
+# simpleList.update(3,20)
+simpleList.lineSort()
+LinkedList.show(simpleList)
 
 ### editar
 
