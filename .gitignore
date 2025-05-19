@@ -17,8 +17,9 @@ Thumbs.db
 *.credentials
 
 # === 🐍 Python ===
-__pycache__/
+**/__pycache__/
 *.py[cod]
+*.pyo
 
 # === ☕ Java ===
 *.class
