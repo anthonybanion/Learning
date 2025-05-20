@@ -1,3 +1,13 @@
+"""
+This script demonstrates basic matrix operations.
+
+File: matrix.py
+Author: Anthony Bañon
+Created: 2025-05-19
+Last Updated: 2025-05-19
+"""
+
+
 #3x3
 matrix = [
     [1, 2, 3],
