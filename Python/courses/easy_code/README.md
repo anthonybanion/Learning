@@ -41,7 +41,7 @@ Each class is documented as a GitHub **Issue** containing:
 
 | Module | Topic                       | Issue Link Placeholder                       |
 | ------ | --------------------------- | -------------------------------------------- |
-| 1      | Introduction                | [ ] Issue #115 – Python Setup & Basics       |
+| 1      | Introduction                | [X] Issue #115 – Python Setup & Basics       |
 | 2      | Lists                       | [ ] Issue #116 – List Manipulation           |
 | 3      | Tuples                      | [ ] Issue #117 – Tuples and Unpacking        |
 | 4      | Strings                     | [ ] Issue #118 – String Methods & Formatting |
@@ -93,7 +93,7 @@ However, suggestions, discussions, and pull requests are welcome to improve the 
 🎥 Format: Videos + Articles + Labs
 🧠 Author
 
-Anthony Banion
+Anthony Bañon
 Software Development Student | Python & Backend Enthusiast
 Argentina 🇦🇷
 Dev.to/anthonybanion

@@ -34,4 +34,4 @@ result = not (
     and (number_one > 100)
     and (number_two < 50)
     )
-print(f"The result is: {not not result}")  
+print(f"The result is: { not result}")  

@@ -25,10 +25,11 @@ print(type(height))  #<class 'float'>
 print(type(is_married))  #<class 'bool'>
 
 #Multiple variables
-
 first_name, age, height, is_married = input("Enter your first name, age, height and marital status (yes/no): ").split(",")
-
-print("Your name is " + first_name)
-print("Your age is " + str(age))
-print("Your height is " + str(height))
-print("Your marital status is " + str(is_married))
+age = int(age)  # Convert age to int
+height = float(height)  # Convert height to float
+is_married = is_married.strip().lower() == "yes"  # Convert is_married to bool
+print(first_name)
+print(age)
+print(height)
+print(is_married)

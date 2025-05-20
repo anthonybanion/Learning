@@ -13,7 +13,7 @@ CONST = 10
 
 number=10
 
-result= number/CONST  # 0.1 because: / It is a floating division operator
+result= number/CONST  # 1.0 because: / It is a floating division operator
 print(f"The result is: {result}")
 
 result = number//CONST  # 1 because: // It is a floor division operator

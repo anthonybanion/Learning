@@ -1,0 +1,10 @@
+#3x3
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matrix[0])  # Get the first row of the matrix
+
+print(matrix[0][0])  # Get the first element of the first row
