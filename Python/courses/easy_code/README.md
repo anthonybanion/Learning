@@ -42,7 +42,7 @@ Each class is documented as a GitHub **Issue** containing:
 | Module | Topic                       | Issue Link Placeholder                       |
 | ------ | --------------------------- | -------------------------------------------- |
 | 1      | Introduction                | [X] Issue #115 – Python Setup & Basics       |
-| 2      | Lists                       | [ ] Issue #116 – List Manipulation           |
+| 2      | Lists                       | [X] Issue #116 – List Manipulation           |
 | 3      | Tuples                      | [ ] Issue #117 – Tuples and Unpacking        |
 | 4      | Strings                     | [ ] Issue #118 – String Methods & Formatting |
 | 5      | Dictionaries                | [ ] Issue #119 – Key-Value Management        |
