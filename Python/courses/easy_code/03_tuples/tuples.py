@@ -1,3 +1,12 @@
+"""
+Demonstrating tuple creation, indexing, and unpacking.
+
+File: tuples.py
+Author: Anthony Bañon
+Created: 2025-05-19
+Last Updated: 2025-05-19
+"""
+
 
 #              0          1     2
 #             -3         -2     -1
