@@ -1,4 +1,4 @@
-name = 'Anhony'
+name = 'Anthony'
 last_name = 'Bañon'
 age = 25
 is_student = True
@@ -52,7 +52,7 @@ print(full_name4)
 
 
 # The format() method can take a set as an argument 
-# but not is RECOMENDED
+# NOT RECOMENDED
 full_name5 = numbered_base.format(
     *{
         name, 

@@ -1,4 +1,4 @@
-name = 'Anhony'
+name = 'Anthony'
 last_name = 'Bañon'
 age = 25
 

@@ -37,12 +37,14 @@ print(title.count('o'))
 
 # returns the index of the first occurrence of 'o' in the string
 print(title.find('o'))
-print(title.find('o', 5, 10))  # starts searching from index 5 and ends at index 10
+print(title.find('o', 5, 10))  # returns the index of the first occurrence of 'o' in the string from index 5 to 10
 
 
-# Sort the startswith and endswith methods
+# startswith() and endswith() methods
+# returns True if the string starts with 'professional'
 print(title.startswith('Professional'))
 
+# returns True if the string ends with 'Course'
 print(title.endswith('Course'))
 
 
