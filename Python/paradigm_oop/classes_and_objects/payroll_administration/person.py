@@ -16,46 +16,41 @@ class Person():
         self.dni=dni
 
     # setter and getter
-    def setName(self):
+    def setName(self, name):
+        self.name=name
+
+    def getName(self):
         return self.name
     
-    def getName(self, name):
-        self.name=name
-    
 
-
-    def setName(self):
-        return self.age
-    
-    def getName(self, age):
+    def setAge(self, age):
         self.age=age
 
-
+    def getAge(self):
+        return self.age
     
-    def setName(self):
+
+    def setLastName(self, last_name):
+        self.last_name=last_name
+
+    def getLastName(self):
         return self.last_name
     
-    def getName(self, last_name):
-        self.last_name=last_name
-    
-    
-    
-    def setName(self):
-        return self.dni
-    
-    def getName(self, dni):
+
+    def setDni(self, dni):
         self.dni=dni
 
-    def __str__(self):
-        return f"Name is: {self.name} \n Last Name: {self.last_name} \n Age: {self.age} \n Dni: {self.dni}"
+    def getDni(self):
+        return self.dni
+    
 
     #method
     def isOlder(self):
         if self.age >= 18:
             print(f"Is Older whit age: {self.age} years")
 
-person1=Person("Fredy", "Stevens", 35, "234567")
+    # string representation
+    def __str__(self):
+        return f"Name is: {self.name} \nLast Name: {self.last_name} \nAge: {self.age} \nDni: {self.dni}"
 
-print(person1)
-
-person1.isOlder()
+    
