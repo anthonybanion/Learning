@@ -47,6 +47,10 @@ Java/
 │   ├── threads/                     # Creating and managing threads
 │   ├── synchronization/            # Preventing race conditions
 │   └── executors/                   # Using thread pools and ExecutorService
+├── network_and_sockets/             # Networking and socket communication in Java
+│   ├── tcp_sockets/                 # TCP connection examples (client-server)
+│   ├── udp_sockets/                 # (Optional) UDP protocol examples
+│   └── multithreaded_servers/       # Concurrent servers using threads
 ├── files_and_serialization/         # File manipulation and object persistence
 │   ├── file_read_write/             # Reading from and writing to files
 │   └── object_serialization/        # Saving and loading Java objects
