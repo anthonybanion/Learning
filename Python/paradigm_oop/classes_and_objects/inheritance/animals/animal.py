@@ -27,3 +27,17 @@ class Cat(Animal):
 
     def __str__(self):
         return f"{self.name} is a cat."
+
+
+
+if __name__ == "__main__":
+    dog = Dog("Buddy")
+    cat = Cat("Whiskers")
+
+    print(dog)  # Buddy is a dog.
+    print(dog.speak())  # Woof!
+    print(dog.eat())  # Buddy is eating.
+
+    print(cat)  # Whiskers is a cat.
+    print(cat.speak())  # Meow!
+    print(cat.eat())  # Whiskers is eating.
