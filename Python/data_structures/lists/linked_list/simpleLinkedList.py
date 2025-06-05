@@ -93,13 +93,19 @@ class LinkedList:
         return False
     
     def lineSort(self):
-        current = self.head
-        while current:
-            current = current.next
-            if current.data < current.next:
-                aux = current.next
-                current.next = current.data
-                current.data = aux
+        if self.head is None:
+            return
+        swapped = True
+        while swapped:
+            swapped = False
+            current = self.head
+            while current.next:
+                if current.data > current.next.data:
+                    current.data, current.next.data = current.next.data, current.data
+                    swapped = True
+                current = current.next
+
+           
             
         
         
