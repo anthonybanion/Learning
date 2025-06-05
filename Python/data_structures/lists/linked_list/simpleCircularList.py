@@ -1,3 +1,14 @@
+"""
+This is simple circular linked list implementation in Python.
+ 
+File: simpleCircularList.py
+Author: Anthony Bañon
+Created: 2025-06-05
+Last Updated: 2025-06-05
+"""
+
+
+
 class Node:
    
     def __init__(self, data):
@@ -69,15 +80,6 @@ class SimpleCircularList:
                 break
         print(f"Element {data} not found")
         return False
-    
-    
-    # def countNode():
-    #     current = self.head
-    #     count = 0
-    #     while current:
-    #         count += 1
-    #         current = current.next
-    #     return print(f"Count of nodes: {count}")
 
     def search(self, data):
         if not self.head:
