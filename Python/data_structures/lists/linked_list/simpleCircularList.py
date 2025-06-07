@@ -130,12 +130,17 @@ if __name__ == "__main__":
     cl.append(10)
     cl.append(20)
     cl.append(30)
+    cl.append(40)
+    cl.append(50)
+    cl.append(60)
     cl.show()  # Output: 10 -> 20 -> 30 -> None
     cl.delete(20)
     cl.show()  # Output: 10 -> 30 -> None
     cl.update(30, 40)
     cl.show()  # Output: 10 -> 40 -> None
-    print(cl.search(10))  # Output: Element found
+    cl.search(60)
+
+    
         
                
              
