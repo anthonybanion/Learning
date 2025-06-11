@@ -1,92 +1,118 @@
+"""
+This module implements a car management system using OOP principles.
+
+File: automotores.py
+Author: Anthony Bañon
+Created: 2025-06-10
+Last Updated: 2025-06-10
+"""
+
+
 import os
 import time
 
-class automotor:
-    def __init__(self, marca, modelo, cant_puertas, cant_combustible, kilometraje):
-        self.marca = marca
-        self.modelo = modelo
-        self.cant_puertas = cant_puertas
-        self.cant_combustible = cant_combustible
-        self.kilometraje = kilometraje
+class Car:
+    def __init__(self, brand, model, doors, fuel_level, mileage):
+        self.brand = brand
+        self.model = model
+        self.doors = doors
+        self.fuel_level = fuel_level  # in liters
+        self.mileage = mileage        # in kilometers
 
     def __str__(self):
-        return f"Marca: {self.marca}, Modelo: {self.modelo}, Cantidad de puertas: {self.cant_puertas}, Cantidad de combustible: {self.cant_combustible}, Kilometraje: {self.kilometraje}"
+        return (f"Brand: {self.brand}, Model: {self.model}, Doors: {self.doors}, "
+                f"Fuel: {self.fuel_level}L, Mileage: {self.mileage} km")
 
-    def cargar_combustible(self, cantidad):
-        self.cant_combustible += cantidad
-        return f"La cantidad de combustible es: {self.cant_combustible}"
-    
-    def arrancar_auto(self):
-        if self.cant_combustible > 0:
-            print("El auto arrancó")
+    def refuel(self, amount):
+        self.fuel_level += amount
+        return f"⛽ Current fuel level: {self.fuel_level}L"
+
+    def start_engine(self):
+        if self.fuel_level > 0:
+            print("✅ Engine started successfully.")
         else:
-            print("No hay combustible")
-    
-    def andar_100km_ciudad(self):
-        if self.cant_combustible >= 10:
-            self.cant_combustible -= 10
-            self.kilometraje += 100
+            print("❌ Cannot start engine. Fuel tank is empty.")
+
+    def drive_city(self):
+        consumption = 10  # liters per 100 km in city
+        if self.fuel_level >= consumption:
+            self.fuel_level -= consumption
+            self.mileage += 100
+            return (f"🛣️ City drive complete. Fuel: {self.fuel_level}L | "
+                    f"Mileage: {self.mileage} km")
+        return "❌ Not enough fuel for 100 km city driving."
+
+    def drive_highway(self):
+        consumption = 8  # liters per 100 km on highway
+        if self.fuel_level >= consumption:
+            self.fuel_level -= consumption
+            self.mileage += 100
+            return (f"🛤️ Highway drive complete. Fuel: {self.fuel_level}L | "
+                    f"Mileage: {self.mileage} km")
+        return "❌ Not enough fuel for 100 km highway driving."
+
+    def city_range(self):
+        return f"🔋 Estimated city range: {self.fuel_level * 10} km"
+
+    def highway_range(self):
+        return f"🔋 Estimated highway range: {self.fuel_level * 12.5} km"
+
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+# --- Main Program ---
+def main():
+    car = Car("Ford", "Fiesta", 4, 90, 200)
+
+    try:
+        fuel = int(input("Enter the amount of fuel to add (L): "))
+        print(car.refuel(fuel))
+    except ValueError:
+        print("❌ Invalid input. Please enter a number.")
+
+    car.start_engine()
+    time.sleep(2)
+    clear_screen()
+
+    print("""
+Select a driving option:
+1. Drive 100 km in city
+2. Drive 100 km on highway
+3. Skip
+    """)
+    try:
+        choice = int(input("Your choice: "))
+        if choice == 1:
+            print(car.drive_city())
+        elif choice == 2:
+            print(car.drive_highway())
         else:
-            print("No hay combustible")
-        return f"La cantidad de combustible es: {self.cant_combustible} y el kilometraje es: {self.kilometraje}"
-    
-    def andar_100km_ruta(self):
-        if self.cant_combustible >= 8:
-            self.cant_combustible -= 8
-            self.kilometraje += 100
+            print("ℹ️ No driving performed.")
+    except ValueError:
+        print("❌ Invalid choice.")
+
+    time.sleep(2)
+    clear_screen()
+
+    print("""
+Check range:
+1. City range
+2. Highway range
+3. Skip
+    """)
+    try:
+        choice = int(input("Your choice: "))
+        if choice == 1:
+            print(car.city_range())
+        elif choice == 2:
+            print(car.highway_range())
         else:
-            print("No hay combustible")
-        return f"La cantidad de combustible es: {self.cant_combustible} y el kilometraje es: {self.kilometraje}"
-
-    def autonomia_ciudad(self):
-        autonomia = self.cant_combustible * 10
-        return f"La autonomía en ciudad es de: {autonomia} km"
-    
-    def autonomia_ruta(self):
-        autonomia = self.cant_combustible * 12.5
-        return f"La autonomía en ruta es de: {autonomia} km"
+            print("ℹ️ No range check performed.")
+    except ValueError:
+        print("❌ Invalid choice.")
 
 
-auto = automotor("Ford", "Fiesta", 4, 90, 200)
-          
-cantidad = int(input("Ingrese la cantidad de combustible: "))
-auto.cargar_combustible(cantidad)
-print(auto.cargar_combustible(cantidad))
-auto.arrancar_auto()
-time.sleep(3)
-os.system('cls' if os.name == 'nt' else 'clear')  # Limpiar pantalla
-
-print(''' Ruta o Ciudad
-        1. Andar 100 km en ciudad
-        2. Andar 100 km en ruta
-        3. No hacer nada
-        ingresa una opción: ''')
-opcion = int(input())
-
-if opcion == 1:
-    print(auto.andar_100km_ciudad())
-   
-elif opcion == 2:
-    print(auto.andar_100km_ruta())
-else:
-    print("No se realizó ninguna acción")
-
-time.sleep(3)
-os.system('cls' if os.name == 'nt' else 'clear') 
-
-print(''' Autonomia en Ciudad o Ruta
-        1. Autonomia en Ciudad
-        2. Autonomia en Ruta
-        3. No consultar nada
-        ingresa una opción: ''')
-opcion = int(input())
-
-if opcion == 1:
-    print(auto.autonomia_ciudad())
-
-elif opcion == 2:
-    print(auto.autonomia_ruta())    
-
-else:
-    print("No se realizó ninguna acción")
-    
+if __name__ == "__main__":
+    main()

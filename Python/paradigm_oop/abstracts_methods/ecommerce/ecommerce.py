@@ -1,128 +1,140 @@
+"""
+This module implements an e-commerce system using 
+OOP principles such as encapsulation, inheritance, 
+polymorphism, composition, and aggregation.
+ 
+File: ecommerce.py
+Author: Anthony Bañon
+Created: 2025-06-10
+Last Updated: 2025-06-10
+"""
+
+
 from abc import ABC, abstractmethod
 
-# Clase abstracta: Persona
-class Persona(ABC):
-    def __init__(self, nombre, dni):
-        self.nombre = nombre
-        self.dni = dni
+# Abstract class: Person
+class Person(ABC):
+    def __init__(self, name, id_number):
+        self.name = name
+        self.id_number = id_number
 
     @abstractmethod
-    def mostrar_informacion(self):
+    def display_info(self):
         pass
 
-# Clase Cliente (Herencia de Persona)
-class Cliente(Persona):
-    def __init__(self, nombre, dni):
-        super().__init__(nombre, dni)
-        self.historial_compras = []  # Lista de pedidos realizados
+# Client class (inherits from Person)
+class Client(Person):
+    def __init__(self, name, id_number):
+        super().__init__(name, id_number)
+        self.order_history = []  # List of past orders
 
-    def mostrar_informacion(self):
-        return f"Cliente: {self.nombre}, dni: {self.dni}"
+    def display_info(self):
+        return f"Client: {self.name}, ID: {self.id_number}"
 
-    def agregar_pedido(self, pedido):
-        self.historial_compras.append(pedido)
+    def add_order(self, order):
+        self.order_history.append(order)
 
-# Clase Empleado (Herencia de Persona)
-class Empleado(Persona):
-    def __init__(self, nombre, dni, puesto):
-        super().__init__(nombre, dni)
-        self.puesto = puesto
-        self.ventas_realizadas = 0
+# Employee class (inherits from Person)
+class Employee(Person):
+    def __init__(self, name, id_number, position):
+        super().__init__(name, id_number)
+        self.position = position
+        self.sales_count = 0
 
-    def mostrar_informacion(self):
-        return f"Empleado: {self.nombre}, dni: {self.dni}, Puesto: {self.puesto}"
+    def display_info(self):
+        return f"Employee: {self.name}, ID: {self.id_number}, Position: {self.position}"
 
-    def registrar_venta(self):
-        self.ventas_realizadas += 1
+    def register_sale(self):
+        self.sales_count += 1
 
-# Clase Producto
-class Producto:
-    def __init__(self, nombre, precio, stock):
-        self.nombre = nombre
-        self.__precio = precio  # Encapsulamiento
-        self.__stock = stock  # Encapsulamiento
+# Product class
+class Product:
+    def __init__(self, name, price, stock):
+        self.name = name
+        self.__price = price  # Encapsulation
+        self.__stock = stock  # Encapsulation
 
     @property
-    def precio(self):
-        return self.__precio
+    def price(self):
+        return self.__price
 
-    @precio.setter
-    def precio(self, nuevo_precio):
-        if nuevo_precio >= 0:
-            self.__precio = nuevo_precio
+    @price.setter
+    def price(self, new_price):
+        if new_price >= 0:
+            self.__price = new_price
 
     @property
     def stock(self):
         return self.__stock
 
-    def reducir_stock(self, cantidad):
-        if cantidad <= self.__stock:
-            self.__stock -= cantidad
+    def decrease_stock(self, quantity):
+        if quantity <= self.__stock:
+            self.__stock -= quantity
         else:
-            raise ValueError("Stock insuficiente")
+            raise ValueError("Insufficient stock")
 
     def __str__(self):
-        return f"{self.nombre}: ${self.__precio}, Stock: {self.__stock}"
+        return f"{self.name}: ${self.__price}, Stock: {self.__stock}"
 
-# Clase Carrito (Composición)
-class Carrito:
+# Cart class (Composition)
+class Cart:
     def __init__(self):
-        self.productos = []  # Lista de productos en el carrito
+        self.items = []  # List of (product, quantity) tuples
 
-    def agregar_producto(self, producto, cantidad):
-        if producto.stock >= cantidad:
-            self.productos.append((producto, cantidad))
+    def add_product(self, product, quantity):
+        if product.stock >= quantity:
+            self.items.append((product, quantity))
         else:
-            raise ValueError(f"No hay suficiente stock para {producto.nombre}")
+            raise ValueError(f"Not enough stock for {product.name}")
 
-    def calcular_total(self):
-        return sum(producto.precio * cantidad for producto, cantidad in self.productos)
+    def calculate_total(self):
+        return sum(product.price * quantity for product, quantity in self.items)
 
-    def vaciar(self):
-        self.productos.clear()
+    def clear(self):
+        self.items.clear()
 
-# Clase Pedido (Agregación)
-class Pedido:
-    def __init__(self, cliente, carrito):
-        self.cliente = cliente
-        self.productos = carrito.productos  # Agregación de productos
-        self.total = carrito.calcular_total()
+# Order class (Aggregation)
+class Order:
+    def __init__(self, client, cart):
+        self.client = client
+        self.items = cart.items  # Aggregation of products
+        self.total = cart.calculate_total()
 
-    def procesar_pedido(self):
-        for producto, cantidad in self.productos:
-            producto.reducir_stock(cantidad)
+    def process_order(self):
+        for product, quantity in self.items:
+            product.decrease_stock(quantity)
 
     def __str__(self):
-        detalles = "\n".join([f"{producto.nombre} x{cantidad}" for producto, cantidad in self.productos])
-        return f"Pedido de {self.cliente.nombre}:\n{detalles}\nTotal: ${self.total:.2f}"
+        details = "\n".join([f"{product.name} x{quantity}" for product, quantity in self.items])
+        return f"Order for {self.client.name}:\n{details}\nTotal: ${self.total:.2f}"
 
-# Ejemplo de uso
+# Example usage
 if __name__ == "__main__":
-    # Crear productos
-    producto1 = Producto("Laptop", 1500, 10)
-    producto2 = Producto("Auriculares", 100, 50)
-    producto3 = Producto("Mouse", 25, 100)
+    # Create products
+    laptop = Product("Laptop", 1500, 10)
+    headphones = Product("Headphones", 100, 50)
+    mouse = Product("Mouse", 25, 100)
 
-    # Crear cliente
-    cliente1 = Cliente("Juan Pérez", "12345678")
+    # Create client
+    client = Client("John Smith", "12345678")
 
-    # Crear carrito
-    carrito = Carrito()
-    carrito.agregar_producto(producto1, 1)
-    carrito.agregar_producto(producto2, 2)
+    # Create cart
+    cart = Cart()
+    cart.add_product(laptop, 1)
+    cart.add_product(headphones, 2)
 
-    # Crear pedido
-    pedido = Pedido(cliente1, carrito)
-    pedido.procesar_pedido()
-    cliente1.agregar_pedido(pedido)
+    # Create order
+    order = Order(client, cart)
+    order.process_order()
+    client.add_order(order)
 
-    # Mostrar información del pedido
-    print(pedido)
+    # Print order information
+    print(order)
 
-    # Crear empleado
-    empleado = Empleado("Ana López", "ana@gmail.com", "Vendedora")
-    empleado.registrar_venta()
+    # Create employee
+    employee = Employee("Anna Lopez", "ana@gmail.com", "Sales Representative")
+    employee.register_sale()
 
-    # Mostrar información de las personas
-    print(cliente1.mostrar_informacion())
-    print(empleado.mostrar_informacion())
+    # Print person info
+    print(client.display_info())
+    print(employee.display_info())

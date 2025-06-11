@@ -1,23 +1,24 @@
-#Brief: Pizza
-#Date: 05/11/2024
-#Version: 1.0
+#Pizza
+#File: pizza.py
+# Created: 2024-11-05
+# Last Updated: 2024-11-05
+#Version: 1.0.1
 
-#la pizeria ofrece piza vegetariana o no vegetariana 
-# los ingredientes para cada tipo de piza son: 
-# ingredientes vegetariano: pimiento y tofu 
-# no vegetariano: peperoni , jamon , y zalmon
-#escribir un programa que pregunte al usuario si quiere una pizza
-#vegetariana y en funcion a su respuesta 
-#le muestre un menu con los ingresdientes
-#solo puede elegir un ingrediente ademas del tomate y la muzarela 
-# que estan en ytodas las piza 
-# al final se debe mostrar por pantalla si la pizza es vegetariana o no
-# y todos los ingredientes que lleva 
+"""
+Statement:
+The pizzeria offers vegetarian or non-vegetarian pizza.
+The ingredients for each type of pizza are:
+Vegetarian ingredients: bell pepper and tofu
+Non-vegetarian: pepperoni, ham, and salmon
+Write a program that asks the user if they want a vegetarian pizza and, based on their answer, shows them a menu with the ingredients.
+They can only choose one ingredient besides the tomato and mozzarella, which are on every pizza.
+At the end, the screen should show whether the pizza is vegetarian or not, along with all the ingredients it contains.
+"""
 
-opcion1 = int(input("Que tipo de pizza desea: \n 1) Vegetariana \n 2) No vegetariana \n Ingrese un ingrediente: "))
-if (opcion1 == 1):
-    ingrediente = input(" Ingredientes \n 1) Pimiento\n 2) Tofu \n Ingrese un ingrediente: ")
-    tipo_piza = "vegetariana"
-elif (opcion1 == 2):
-    ingrediente = input(" Ingredientes \n 1) Pimiento\n 2) Tofu \n Ingrese un ingrediente: ")
-    tipo_piza = "no vegetariana"
+option1 = int(input("What type of pizza do you want: \n 1) Vegetarian \n 2) Non-vegetarian \n Enter a topping:"))
+if (option1 == 1):
+    ingredient = input(" Ingredients \n 1) Pepper\n 2) Tofu \n Enter an ingredient:")
+    tipo_pizza = "vegetarian"
+elif (option1 == 2):
+    ingredient = input(" Ingredients \n 1) Pepperoni\n 2) Ham\n 3) Salmon \n Enter an ingredient: ")
+    tipo_pizza = "non-vegetarian"

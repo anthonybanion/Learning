@@ -1,31 +1,38 @@
-#Brief: Phone call duration
-#Date: 05/11/2024
-#Version: 1.0
+#Phone call duration
+#File: phoneCallDuration.py
+# Created: 2024-11-05
+# Last Updated: 2025-06-10
+#Version: 1.0.1
 
-#REnunciado: Dado la duracion(en minutos) de una llamada telefonica, calcular su costo_total, 
-# de la siguiente manera: Hasta 5 min el costo_total es 0.9. Por encima de 5 min el, 
-#costo_total es 0.9 + 0.2 por cada minuto adicional a los 5 primeros minutos. 
-CUOTA_BASICA = 0.9
-DURACION_BASICA = 5
-CUOTA_PREMIUN = 1.1
-costo_total = 0
+"""
+Statement: 
+Given the duration (in minutes) of a phone call, 
+calculate its total cost as follows: Up to 5 minutes, 
+the total cost is 0.9. Beyond 5 minutes, the total 
+cost is 0.9 + 0.2 for each additional minute beyond 
+the first 5 minutes.
+"""
+BASIC_FEE = 0.9
+BASIC_DURATION = 5
+PREMIUM_FEE = 1.1
+total_cost = 0
 
-duracion = float(input("ingrese la duración de la llamada en minutos: "))
+duration = float(input("Enter the call duration in minutes: "))
 
-if duracion < 0:
-    print("La duración no puede ser negativa")
+if duration < 0:
+    print("The duration cannot be negative")
     exit
 else:
-    if duracion <= 1:
-        costo_total = CUOTA_BASICA
-        print(f"El costo_total de la llamada es: {costo_total}")
+    if duration <= 1:
+        total_cost = BASIC_FEE
+        print(f"The total_cost of the call is: {total_cost}")
 
-    elif (duracion > 1) or (duracion <= DURACION_BASICA):
-        costo_total = CUOTA_BASICA * duracion
-        print(f"El costo_total de la llamada es: {costo_total.__round__(2)}")
+    elif (duration > 1) or (duration <= BASIC_DURATION):
+        total_cost = BASIC_FEE * duration
+        print(f"The total_cost of the call is: {total_cost.__round__(2)}")
 
     else:
-        duracion = duracion - DURACION_BASICA
-        costo_total = DURACION_BASICA*CUOTA_BASICA + (duracion * CUOTA_PREMIUN)
-        print(f"El costo_total de la llamada es: {costo_total.__round__(2)}")
+        duration = duration - BASIC_DURATION
+        total_cost = BASIC_DURATION*BASIC_FEE + (duration * PREMIUM_FEE)
+        print(f"The total_cost of the call is: {total_cost.__round__(2)}")
 

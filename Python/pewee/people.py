@@ -1,3 +1,13 @@
+"""
+This script defines a simple Peewee ORM model for a "Person" entity,
+ 
+File: people.py
+Author: Anthony Bañon
+Created: 2025-06-10
+Last Updated: 2025-06-10
+"""
+
+
 from peewee import *
 from playhouse.mysql_ext import MySQLDatabase
 

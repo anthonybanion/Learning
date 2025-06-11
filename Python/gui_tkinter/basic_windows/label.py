@@ -1,16 +1,18 @@
-#Briefa: Create a label in a window
-#Date: 05/11/2024
+#Create a label in a window
+#File: label.py
+#Created: 2024-11-05
+#Last Updated: 2025-06-10
 #version: 1.0
 
 import tkinter as tk
 
-ventana = tk.Tk()
-ventana.title("My primer Fame")
-ventana.geometry("600x400")
-ventana.configure(bg="lightgreen")
+root = tk.Tk()
+root.title("My primary Frame")
+root.geometry("600x400")
+root.configure(bg="lightgreen")
 
-etiqueta = tk.Label(ventana,text="Hoy es un dia para hacer las cosas bien")
-etiqueta.config(fg="blue", bg="yellow", font=("Arial", 12, "bold"))
-etiqueta.pack()
+label = tk.Label(root,text="Today is a day to do things right")
+label.config(fg="blue", bg="yellow", font=("Arial", 12, "bold"))
+label.pack()
 
-ventana.mainloop()
+root.mainloop()

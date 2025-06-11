@@ -1,18 +1,20 @@
-#Brief: Calculate the IMC
-#Date: 05/11/2024
-#Version: 1.0
+#Calculate the IMC
+#File: calculadoraImc.py
+#Created: 2024-11-05
+#Last Updated: 2025-06-10
+#Version: 1.0.1
 
-peso = float(input("Ingrese su peso: "))
-altura = float(input("Ingrese su altura: "))
-IMC = peso / altura**2
-print("el IMC es: ", IMC)
+weight = float(input("Enter your weight: "))
+height = float(input("Enter your height: "))
+IMC = weight / height**2
+print("BMI is: ", IMC)
 if IMC < 18.5:
-    print("bajo peso")
+    print("underweight")
 elif (IMC >= 18.5) and (IMC < 24.9):
     print("Normal")
 elif (IMC >= 25) and (IMC < 29.9):
-    print("sobrepeso")
+    print("overweight")
 else :
-    print("Obesidad")
+    print("Obesity")
 
 

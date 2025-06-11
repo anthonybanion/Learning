@@ -25,7 +25,7 @@ labelframe = tk.LabelFrame(frame2, text="Primer Label", bg="white", padx=10, pad
 labelframe.configure(width=100, height=100)
 labelframe.pack()
 
-boton2 = tk.Button(labelframe, text="Mundo") 
+boton2 = tk.Button(labelframe, text="Hello world in LabelFrame") 
 boton2.pack()
 
 window.mainloop()

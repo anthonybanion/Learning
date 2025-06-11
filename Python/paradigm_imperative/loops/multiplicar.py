@@ -1,10 +1,13 @@
-# Title: Multiplication Table
-#- Enter a number by keyboard
-#- print the multiplication table of the number entered
-# Date: 21/08/2024
-# Version: 1.0
+# Multiplication Table
+# File: multiplicacion.py
+# Created: 2024-08-21
+# Last Updated: 2025-06-10
+# Version: 1.0.1
 
-
+"""Statement:
+- The program will ask the user for a number
+- The program will print the multiplication table of that number from 1 to 12
+"""
 LIMIT_NUMBER = 13
 
 number = int(input("Enter a number: "))

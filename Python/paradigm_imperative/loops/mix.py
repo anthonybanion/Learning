@@ -2,12 +2,15 @@
 #Date: 05/11/2024
 #Version: 1.0
 
-#escribir un programa, que pida al usuario un numero 
-#entero positivo y muestre por pantalla todos los numeros
-#impares desde 1 hasta ese numero separados por comas.
-numero = int(input("Introduce un numero entero positivo: "))
+"""
+Statement:
+Write a program that prompts the user for a positive 
+integer and displays all odd numbers from 1 to that number, 
+separated by commas.
+"""
+number = int(input("Enter a positive integer: "))
 
-for i in range(1, numero+1, 2):
+for i in range(1, number+1, 2):
     print(i, end=", ")
 
 

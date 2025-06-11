@@ -1,64 +1,66 @@
-#Brief: Game 21
-#Date: 05/11/2024
-#Version: 1.0
+# Game 21
+# File: game21.py
+# Created: 2024-11-05
+# Last Updated: 2025-06-10
+# Version: 1.0.1
 
 import random as rd
 
 LOWER_LIMIT = 1
 HIGH_LIMIT = 13
 
-suma1=0
-suma2=0
-carta5=0
-carta6=0
+sum1=0
+sum2=0
+card5=0
+card6=0
 
-print("JUEGO 21")
-print("El usuario y la maquina reciben dos cartas aleatorias")
-carta1 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
-carta2 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
-print("Primera carta: ", carta1 )
-print("Segunda carta: ", carta2 )
-suma1 = carta1 + carta2
-print("Suma usuario: ", suma1)
-
-
-carta3 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
-carta4 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
-suma2 = carta3 + carta4
+print("GAME 21")
+print("The user and the machine receive two random cards")
+card1 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
+card2 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
+print("First card: ", card1 )
+print("Second card: ", card2 )
+sum1 = card1 + card2
+print("User sum: ", sum1)
 
 
-while suma1 < 21:
-    print("Deseas pedir una carta adicional? (s/n)")
+card3 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
+card4 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
+sum2 = card3 + card4
+
+
+while sum1 < 21:
+    print("Deseas pedir una card adicional? (s/n)")
     respuesta = input()
     if respuesta == "s":
-        carta5 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
-        print("Carta adicional usuario: ", carta5 )
-        suma1 = suma1 + carta5
-        print("Suma usuario: ", suma1)
+        card5 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
+        print("card adicional usuario: ", card5 )
+        sum1 = sum1 + card5
+        print("sum usuario: ", sum1)
     else:
         break
 
-while suma2 < 17:
-    if suma2 < 17:
-        carta6 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
-        suma2 = suma2 + carta6
+while sum2 < 17:
+    if sum2 < 17:
+        card6 = rd.randint(LOWER_LIMIT, HIGH_LIMIT)
+        sum2 = sum2 + card6
     else:
         break
 
-if suma1 > 21:
+if sum1 > 21:
     print("El usuario ha perdido")
-elif suma2 > 21:
+elif sum2 > 21:
     print("El maquina ha perdido")
-elif suma1 == 21:
+elif sum1 == 21:
     print("El usuario ha ganado")
-elif suma2 == 21:
+elif sum2 == 21:
     print("El maquina ha ganado")
 else:
-    if suma1 > suma2:
+    if sum1 > sum2:
         print("El usuario ha ganado")
     else:
         print("El maquina ha ganado")
 
 print("Fin del juego")
-print("usuario: ",carta1, carta2, carta5,"La suma es: ",suma1)
-print("maquina: ", carta3, carta4, carta6,"La suma es: ", suma2)
+print("usuario: ",card1, card2, card5,"La sum es: ",sum1)
+print("maquina: ", card3, card4, card6,"La sum es: ", sum2)

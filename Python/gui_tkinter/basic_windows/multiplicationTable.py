@@ -1,4 +1,4 @@
-#Briefa: Create a calculator in a window
+#Brief: Create a calculator in a window
 #Date: 05/11/2024
 #version: 1.0
 
@@ -14,7 +14,7 @@ def add_table():
         label.config(text="Invalid input!")
 
 ventana = tk.Tk()
-ventana.title("Tabla de Multiplicar")
+ventana.title("Multiplication Table")
 ventana.geometry("300x200")
 
 label = tk.Label(ventana, text="Enter a number:")
@@ -23,7 +23,7 @@ label.pack()
 entry = tk.Entry(ventana)
 entry.pack()
 
-button = tk.Button(ventana, text="Ingrese un valor", command=add_table)
+button = tk.Button(ventana, text="Enter a value", command=add_table)
 button.pack()
 
 ventana.mainloop()

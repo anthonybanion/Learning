@@ -1,11 +1,16 @@
-# Brief: tree
-# Staments:
-#- Enter a number by keyboard
-#- print a triangle of (*)
-#- using the number entered as the base amount
-# Date: 21/08/2024
-# Version: 1.0
+# Tree
+# File: tree.py
+# Created: 2024-08-21
+# Last Updated: 2025-06-10
+# Version: 1.0.1
 
+
+"""
+Statement:
+- Enter a number by keyboard
+- print a triangle of (*)
+- using the number entered as the base amount
+"""
 
 import os
 

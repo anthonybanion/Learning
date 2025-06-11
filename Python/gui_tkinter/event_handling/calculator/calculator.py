@@ -1,3 +1,13 @@
+"""
+A simple calculator GUI using Tkinter.
+ 
+File: calculator.py
+Author: Anthony Bañon
+Created: 2025-06-10
+Last Updated: 2025-06-10
+"""
+
+
 from tkinter import *
 from tkinter import ttk
 from calculate import *

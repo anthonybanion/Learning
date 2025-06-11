@@ -1,12 +1,17 @@
-# Brief: Entrance fee
-# Staments:
-#- The program must ask the user the age and show the price of the ticket 
-#- If the client is under 4, enter for free
-#- If you are between 4-18, you must pay 5 thousand
-#- If you are over 18, you must pay 10 thousand
-#- If you are over 65, enter for free
-# Date: 21/08/2024
+# Entrance fee
+#File: entranceFee.py
+# Created: 2024-08-21
+# Last Updated: 2025-06-10 
 # Version: 1.0
+
+"""
+Statements:
+ The program must ask the user the age and show the price of the ticket
+ If the client is under 4, enter for free
+ If you are between 4-18, you must pay 5 thousand
+ If you are over 18, you must pay 10 thousand
+ If you are over 65, enter for free
+"""
 
 HIGHEST_AGE_LIMIT = 99
 LOWER_AGE_LIMIT = 0

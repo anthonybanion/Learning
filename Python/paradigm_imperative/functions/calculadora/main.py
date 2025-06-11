@@ -1,13 +1,14 @@
 # Brief: Calculator
-# Statement:
-#- Ask the user for two numbers
-#- Ask the user for the operation to perform
-#- Perform the operation
-#- Show the result
 # Date: 20/08/2024
 # Linked file: menu.py
 # Version: 1.0
 
+"""
+Statement:
+This program performs basic arithmetic operations
+It prompts the user for two numbers and an operation
+It then displays the result of the operation
+"""
 
 from menu import Menu
 

@@ -1,207 +1,217 @@
 #Brief: Sistema de Gestión de Biblioteca Digital
-# Este sistema permite gestionar una biblioteca digital, 
-# incluyendo el registro de libros, usuarios y el manejo de préstamos. 
-# Los usuarios pueden tomar libros prestados por un tiempo determinado y 
-# devolverlos. La biblioteca ofrece funciones para agregar libros, 
-# listar los disponibles, registrar usuarios y mostrar los préstamos activos.
 #Date: 25/11/2021
 #Version: 2.0
 
+
+"""
+Statement:
+ This system allows you to manage a digital library,
+ including registering books, users, and managing loans.
+ Users can borrow books for a specified period of time and
+ return them. The library offers functions for adding books,
+ listing available books, registering users, and displaying active loans.
+"""
 from abc import ABC, abstractmethod
 from datetime import datetime, timedelta
 
 
-class Persona(ABC):
-    def __init__(self, nombre):
-        self.__nombre = nombre  
+class Person(ABC):
+    def __init__(self, name):
+        self.__name = name
 
     @abstractmethod
-    def mostrar_informacion(self):
+    def show_info(self):
         pass
 
-    def get_nombre(self):
-        return self.__nombre
+    def get_name(self):
+        return self.__name
 
 
-class Autor(Persona):
-    def __init__(self, nombre):
-        super().__init__(nombre)
-        self._lista_libros = []  # Lista de libros escritos por el autor
+class Author(Person):
+    def __init__(self, name):
+        super().__init__(name)
+        self._books_written = []
 
-    def mostrar_informacion(self):
-        return f'Autor: {self.get_nombre()}'
+    def show_info(self):
+        return f"Author: {self.get_name()}"
 
-    def escribir_libro(self, libro):
-        self._lista_libros.append(libro)
+    def write_book(self, book):
+        self._books_written.append(book)
 
-    def obtener_libros(self):
-        return self._lista_libros
-
-
-class Usuario(Persona):
-    def __init__(self, nombre, email):
-        super().__init__(nombre)
-        self._email = email  
-        self._lista_libros_prestados = [] # Lista de libros prestados al usuario
-
-    def mostrar_informacion(self):
-        return f'Usuario: {self.get_nombre()}, Email: {self._email}'
-
-    def prestar_libro(self, libro):
-        self._lista_libros_prestados.append(libro)
-
-    def devolver_libro(self, libro):
-        if libro in self._lista_libros_prestados:
-            self._lista_libros_prestados.remove(libro)
-
-    def obtener_libros_prestados(self):
-        return self._lista_libros_prestados
+    def get_books(self):
+        return self._books_written
 
 
-class Libro:
-    def __init__(self, titulo, autor, numero_paginas):
-        self.__titulo = titulo  
-        self.__autor = autor  # Autor es ahora una instancia de la clase Autor
-        self.__numero_paginas = numero_paginas  
-        self.__prestado = False  
+class User(Person):
+    def __init__(self, name, email):
+        super().__init__(name)
+        self._email = email
+        self._borrowed_books = []
+
+    def show_info(self):
+        return f"User: {self.get_name()}, Email: {self._email}"
+
+    def borrow_book(self, book):
+        self._borrowed_books.append(book)
+
+    def return_book(self, book):
+        if book in self._borrowed_books:
+            self._borrowed_books.remove(book)
+
+    def get_borrowed_books(self):
+        return self._borrowed_books
+
+
+class Book:
+    def __init__(self, title, author, page_count):
+        self.__title = title
+        self.__author = author
+        self.__page_count = page_count
+        self.__is_borrowed = False
 
     def __str__(self):
-        estado = "Prestado" if self.__prestado else "Disponible"
-        return f'{self.__titulo} - {self.__autor.get_nombre()} - {self.__numero_paginas} páginas - {estado}'
+        status = "Borrowed" if self.__is_borrowed else "Available"
+        return f"{self.__title} - {self.__author.get_name()} - {self.__page_count} pages - {status}"
 
-    def marcar_prestado(self):
-        self.__prestado = True
+    def mark_as_borrowed(self):
+        self.__is_borrowed = True
 
-    def marcar_devuelto(self):
-        self.__prestado = False
+    def mark_as_returned(self):
+        self.__is_borrowed = False
 
-    def get_titulo(self):
-        return self.__titulo
+    def get_title(self):
+        return self.__title
 
-    def get_estado(self):
-        return self.__prestado
+    def is_borrowed(self):
+        return self.__is_borrowed
 
-    def get_autor(self):
-        return self.__autor
-
-
-class Prestamo:
-    def __init__(self, usuario, libro, fecha_prestamo, fecha_devolucion):
-        self._usuario = usuario  
-        self._libro = libro  
-        self.__fecha_prestamo = fecha_prestamo 
-        self.__fecha_devolucion = fecha_devolucion  
-
-    def mostrar_informacion(self):
-        return (f'Préstamo del libro "{self._libro.get_titulo()}" a {self._usuario.get_nombre()}. '
-                f'Fecha de préstamo: {self.__fecha_prestamo.strftime("%Y-%m-%d")}, '
-                f'Fecha de devolución: {self.__fecha_devolucion.strftime("%Y-%m-%d")}.')
+    def get_author(self):
+        return self.__author
 
 
-class CatalogoLibros:
+class Loan:
+    def __init__(self, user, book, borrow_date, return_date):
+        self._user = user
+        self._book = book
+        self.__borrow_date = borrow_date
+        self.__return_date = return_date
+
+    def show_info(self):
+        return (f'Loan of "{self._book.get_title()}" to {self._user.get_name()} - '
+                f'Borrowed on: {self.__borrow_date.strftime("%Y-%m-%d")}, '
+                f'Due by: {self.__return_date.strftime("%Y-%m-%d")}')
+
+
+class BookCatalog:
     def __init__(self):
-        self._libros = []
+        self._books = []
 
-    def agregar_libro(self, libro):
-        self._libros.append(libro)
+    def add_book(self, book):
+        self._books.append(book)
 
-    def buscar_libro(self, titulo):
-        return [libro for libro in self._libros if titulo.lower() in libro.get_titulo().lower()]
+    def search_by_title(self, title):
+        return [book for book in self._books if title.lower() in book.get_title().lower()]
 
-    def listar_libros(self):
-        return "\n".join(str(libro) for libro in self._libros)
+    def list_books(self):
+        return "\n".join(str(book) for book in self._books)
 
 
-class GestorUsuarios:
+class UserManager:
     def __init__(self):
-        self._usuarios = []
+        self._users = []
 
-    def agregar_usuario(self, usuario):
-        self._usuarios.append(usuario)
+    def add_user(self, user):
+        self._users.append(user)
 
-    def buscar_usuario(self, nombre):
-        return [usuario for usuario in self._usuarios if nombre.lower() in usuario.get_nombre().lower()]
+    def search_by_name(self, name):
+        return [user for user in self._users if name.lower() in user.get_name().lower()]
 
-    def listar_usuarios(self):
-        return "\n".join(usuario.mostrar_informacion() for usuario in self._usuarios)
+    def list_users(self):
+        return "\n".join(user.show_info() for user in self._users)
 
 
-class Biblioteca:
+class Library:
     def __init__(self):
-        self.catalogo = CatalogoLibros()
-        self.usuarios = GestorUsuarios()
-        self._prestamos = []
+        self.catalog = BookCatalog()
+        self.user_manager = UserManager()
+        self._loans = []
 
-    def registrar_libro(self, libro):
-        self.catalogo.agregar_libro(libro)
+    def register_book(self, book):
+        self.catalog.add_book(book)
 
-    def registrar_usuario(self, usuario):
-        self.usuarios.agregar_usuario(usuario)
+    def register_user(self, user):
+        self.user_manager.add_user(user)
 
-    def realizar_prestamo(self, usuario, libro, fecha_prestamo, fecha_devolucion):
-        if libro not in self.catalogo._libros:
-            raise ValueError("Libro no encontrado en la biblioteca.")
-        if libro.get_estado():
-            raise ValueError("Libro ya está prestado.")
-        libro.marcar_prestado()
-        usuario.prestar_libro(libro)
-        prestamo = Prestamo(usuario, libro, fecha_prestamo, fecha_devolucion)
-        self._prestamos.append(prestamo)
+    def make_loan(self, user, book, borrow_date, return_date):
+        if book not in self.catalog._books:
+            raise ValueError("Book not found in catalog.")
+        if book.is_borrowed():
+            raise ValueError("Book is currently borrowed.")
+        book.mark_as_borrowed()
+        user.borrow_book(book)
+        loan = Loan(user, book, borrow_date, return_date)
+        self._loans.append(loan)
 
-    def devolver_libro(self, usuario, libro):
-        for prestamo in self._prestamos:
-            if prestamo._libro == libro and prestamo._usuario == usuario:
-                libro.marcar_devuelto()
-                usuario.devolver_libro(libro)
-                self._prestamos.remove(prestamo)
+    def return_book(self, user, book):
+        for loan in self._loans:
+            if loan._book == book and loan._user == user:
+                book.mark_as_returned()
+                user.return_book(book)
+                self._loans.remove(loan)
                 return
-        raise ValueError("Préstamo no encontrado.")
+        raise ValueError("Loan not found.")
 
-    def mostrar_prestamos(self):
-        return "\n".join(prestamo.mostrar_informacion() for prestamo in self._prestamos)
-
-
-# Código principal
-biblioteca = Biblioteca()
-
-# Crear autores
-autor1 = Autor("Antoine de Saint-Exupéry")
-autor2 = Autor("Gabriel García Márquez")
-
-# Crear libros y asignarles un autor
-libro1 = Libro("El principito", autor1, 96)
-libro2 = Libro("Cien años de soledad", autor2, 417)
+    def list_loans(self):
+        return "\n".join(loan.show_info() for loan in self._loans)
 
 
-# Asignar el libro a la lista de libros del autor correspondiente
-autor1.escribir_libro(libro1)
-autor2.escribir_libro(libro2)
+# --- Main Script ---
 
-# Crear y registrar libros en la biblioteca
-biblioteca.registrar_libro(libro1)
-biblioteca.registrar_libro(libro2)
+library = Library()
 
-# Crear y registrar usuarios
-usuario1 = Usuario("Juan Pérez", "juan.perez@example.com")
-usuario2 = Usuario("Mario", "mario@gmail.com")
-biblioteca.registrar_usuario(usuario1)
+# Authors
+author1 = Author("Antoine de Saint-Exupéry")
+author2 = Author("Gabriel García Márquez")
 
-# Realizar préstamo
-fecha_hoy = datetime.now()
-fecha_devolucion = fecha_hoy + timedelta(days=7)
-biblioteca.realizar_prestamo(usuario1, biblioteca.catalogo.buscar_libro("El principito")[0], fecha_hoy, fecha_devolucion)
-biblioteca.realizar_prestamo(usuario2, biblioteca.catalogo.buscar_libro("El principito")[0], fecha_hoy, fecha_devolucion)
-# Mostrar información
-print("Libros en la biblioteca:")
-print(biblioteca.catalogo.listar_libros())
+# Books
+book1 = Book("The Little Prince", author1, 96)
+book2 = Book("One Hundred Years of Solitude", author2, 417)
 
-print("\nPréstamos realizados:")
-print(biblioteca.mostrar_prestamos())
-# Devolver libro
-# biblioteca.devolver_libro(usuario1, biblioteca.catalogo.buscar_libro("El principito")[0])
+author1.write_book(book1)
+author2.write_book(book2)
 
-print("\nEstado actualizado de los libros:")
-print(biblioteca.catalogo.listar_libros())
+# Register books
+library.register_book(book1)
+library.register_book(book2)
 
-# print(f"Libros de {autor1.get_nombre()}:")
-# print([libro.get_titulo() for libro in autor1.obtener_libros()])
+# Users
+user1 = User("John Smith", "john.smith@example.com")
+user2 = User("Mario", "mario@gmail.com")
+
+library.register_user(user1)
+library.register_user(user2)
+
+# Make loan
+today = datetime.now()
+due_date = today + timedelta(days=7)
+
+library.make_loan(user1, library.catalog.search_by_title("The Little Prince")[0], today, due_date)
+
+try:
+    library.make_loan(user2, library.catalog.search_by_title("The Little Prince")[0], today, due_date)
+except ValueError as e:
+    print(f"Error: {e}")
+
+# Display
+print("Books in the catalog:")
+print(library.catalog.list_books())
+
+print("\nActive loans:")
+print(library.list_loans())
+
+# Uncomment to test return
+# library.return_book(user1, book1)
+
+print("\nUpdated book status:")
+print(library.catalog.list_books())
+

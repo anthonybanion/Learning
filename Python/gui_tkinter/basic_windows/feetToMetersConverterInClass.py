@@ -1,5 +1,5 @@
-#Brief: 
-#Detail:
+#This script creates a simple GUI application
+# using Tkinter that converts feet to meters.
 #Date: 04/11/2024
 #Version: 1.0
 

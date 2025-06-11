@@ -1,9 +1,12 @@
-# Title: Polyndrome word
-# - Enter a word by keyboard
-# - print if the word is polyndrome or not
 # Date: 21/08/2024
 # Version: 1.0
 
+"""
+Statement:
+Title: Polyndrome word
+- Enter a word by keyboard
+- print if the word is polyndrome or not 
+"""
 
 save_word1 = ""
 save_word2 = ""

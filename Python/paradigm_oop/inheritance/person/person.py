@@ -1,165 +1,161 @@
-#Brief: Inheritance in Python
-#Date: 05/11/2024
-#Version: 1.0
+# This file is part of a Python project demonstrating OOP principles.
+# File: person.py
+# Created: 2024-11-05  
+# Last Updated: 2025-06-10
+# Version: 1.0.1
 
 
-from abc import abstractmethod
-class Persona:
-    def __init__(self, nombre, apellido, dni, edad):  #constructor
-        self.nombre = nombre
-        self.apellido = apellido
+from abc import ABC, abstractmethod
+
+# Base class
+class Person:
+    def __init__(self, first_name, last_name, dni, age):
+        self.first_name = first_name
+        self.last_name = last_name
         self.dni = dni
-        self.__edad = edad
+        self.__age = age
 
-    def __str__(self):  #sobrecarga de operadores
-        return f'{self.nombre} {self.apellido} {self.dni}{ self.__edad}'
+    def __str__(self):
+        return f'{self.first_name} {self.last_name} {self.dni} {self.__age}'
+
+    # Getters
+    def get_first_name(self):
+        return self.first_name
     
-    def get_nombre(self):
-        return self.nombre
-    
-    def get_apellido(self):
-        return self.apellido
+    def get_last_name(self):
+        return self.last_name
     
     def get_dni(self):
         return self.dni
     
-    def get_edad(self):
-        return self.edad
+    def get_age(self):
+        return self.__age
+
+    # Setters
+    def set_first_name(self, first_name):
+        self.first_name = first_name
     
-    def set_nombre(self, nombre):
-        self.nombre = nombre
-    
-    def set_apellido(self, apellido):
-        self.apellido = apellido
+    def set_last_name(self, last_name):
+        self.last_name = last_name
 
     def set_dni(self, dni):
         self.dni = dni
 
-    def set_edad(self, edad):
-        self.__edad = edad
-    
-    #metodo perzonalizados
+    def set_age(self, age):
+        self.__age = age
 
-    def hablar(self):
-        return f'Hola soy {self.nombre} {self.apellido} y tengo {self.edad} años'
+    # Custom methods
+    def speak(self):
+        return f'Hi, I am {self.first_name} {self.last_name} and I am {self.__age} years old.'
     
-    def esMayor(self):
-        if self.__edad > 18:
-            return True
-        else:
-            return False
+    def is_adult(self):
+        return self.__age >= 18
     
-    def presentarse(self):
-        return f'Hola soy {self.nombre} {self.apellido}'
+    def introduce(self):
+        return f'Hi, I am {self.first_name} {self.last_name}'
 
-class Habilidad:
+
+# Abstract class for skills
+class Skill(ABC):
     @abstractmethod
-    def cantar(self):
+    def sing(self):
         pass
+
     @abstractmethod
-    def bailar(self):
+    def dance(self):
         pass
-        
-
-class Empleado(Persona, Habilidad):
-    def __init__(self, nombre, apellido, dni, edad, sueldo, antiguedad, legajo):
-        super().__init__(nombre, apellido, dni, edad,)
-        self.sueldo = sueldo
-        self.antiguedad = antiguedad
-        self.legajo = legajo
-
-    def __str__(self):
-        return f'{super().__str__()} {self.sueldo} {self.antiguedad} {self.legajo}'
-
-    def get_sueldo(self):
-        return self.sueldo
-
-    def set_sueldo(self, sueldo):
-        self.sueldo = sueldo
-    
-    #metodo perzonalizados
-    def hablar(self):
-        return super().hablar() + 'con antiguedad'+ str(self.antiguedad) + 'y sueldo'+ str(self.sueldo)
-    
-    def vacaciones(self):
-        if self.antiguedad > 5:
-            return 'Tiene vacaciones'
-        else:
-            return 'No tiene vacaciones'
-        
-    def bonificacion(self):
-        if self.antiguedad > 5:
-            return self.sueldo * 0.1
-        else:
-            return self.sueldo * 0.05
-    
-    def cantar(self):
-        return 'Canta empleado'
-    
-    def bailar(self):
-        return 'Baila empleado'
 
 
-class Aministrador(Persona, Habilidad):
-    def __init__(self, nombre, apellido, dni, edad, cargo):
-        super().__init__(nombre, apellido, dni, edad,)
-        self.cargo = cargo
+# Employee class
+class Employee(Person, Skill):
+    def __init__(self, first_name, last_name, dni, age, salary, seniority, employee_id):
+        super().__init__(first_name, last_name, dni, age)
+        self.salary = salary
+        self.seniority = seniority
+        self.employee_id = employee_id
 
     def __str__(self):
-        return f'{super().__str__()} {self.cargo}'
+        return f'{super().__str__()} {self.salary} {self.seniority} {self.employee_id}'
 
-    def get_cargo(self):
-        return self.cargo
+    def get_salary(self):
+        return self.salary
 
-    def set_cargo(self, cargo):
-        self.cargo = cargo
-    
+    def set_salary(self, salary):
+        self.salary = salary
 
-    def hablar(self):
-        return super().hablar() + ' y soy un administrador'
-    
-    def cantar(self):
-        return 'Canta administrador'
-    
-    def bailar(self):
-        return 'Baila administrador'
+    def speak(self):
+        return super().speak() + f', with {self.seniority} years of seniority and a salary of {self.salary}.'
+
+    def has_vacation(self):
+        return 'Has vacation' if self.seniority > 5 else 'No vacation'
+
+    def bonus(self):
+        return self.salary * 0.1 if self.seniority > 5 else self.salary * 0.05
+
+    def sing(self):
+        return 'Employee sings'
+
+    def dance(self):
+        return 'Employee dances'
 
 
-class Alumno(Persona):
-    def __init__(self, nombre, apellido, dni, edad, legajo, carrera, anio):
-        super().__init__(nombre, apellido, dni, edad,)
-        self.legajo=legajo
-        self.carrera=carrera
-        self.anio=anio
+# Administrator class
+class Administrator(Person, Skill):
+    def __init__(self, first_name, last_name, dni, age, position):
+        super().__init__(first_name, last_name, dni, age)
+        self.position = position
+
     def __str__(self):
-        return f'{super().__str__()} {self.legajo} {self.carrera} {self.anio}'
-    
-    
+        return f'{super().__str__()} {self.position}'
 
-Alumno1=Alumno("mario", "Prez", "23423", 45, "2423", "analista", 456)
-print(Alumno1)
+    def get_position(self):
+        return self.position
 
+    def set_position(self, position):
+        self.position = position
 
+    def speak(self):
+        return super().speak() + ' and I am an administrator.'
 
+    def sing(self):
+        return 'Administrator sings'
 
-
-
-persona1=Empleado('Juan', 'Perez', 12345678, 30, 50000, 5, 1234)
-
-persona2=Aministrador("Perez", "Juan", 12345678, 30, 'Gerente')
-
-persona1.__edad=25
-
-print(persona1)
-
-print(persona2)
-
-print(persona1.bailar())
-print(persona2.bailar())
-print(persona1.cantar())
-print(persona2.cantar())
+    def dance(self):
+        return 'Administrator dances'
 
 
+# Student class
+class Student(Person):
+    def __init__(self, first_name, last_name, dni, age, student_id, career, year):
+        super().__init__(first_name, last_name, dni, age)
+        self.student_id = student_id
+        self.career = career
+        self.year = year
 
-if persona1.esMayor():
-    print('Es mayor de edad')   
+    def __str__(self):
+        return f'{super().__str__()} {self.student_id} {self.career} {self.year}'
+
+
+# Example usage
+student1 = Student("Mario", "Perez", "23423", 45, "2423", "Systems Analyst", 3)
+print(student1)
+
+employee1 = Employee("John", "Smith", 12345678, 30, 50000, 5, 1234)
+admin1 = Administrator("Smith", "John", 12345678, 30, "Manager")
+
+# This line does nothing due to name mangling
+employee1.__age = 25  # Incorrect way to set private attribute
+employee1.set_age(25)  # Correct way
+
+print(employee1)
+print(admin1)
+
+print(employee1.dance())
+print(admin1.dance())
+print(employee1.sing())
+print(admin1.sing())
+
+if employee1.is_adult():
+    print('Is an adult')
+else:
+    print('Is not an adult')

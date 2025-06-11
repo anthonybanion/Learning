@@ -1,14 +1,16 @@
-#Briefa: Create a window
-#Date: 05/11/2024
+#Create first window
+#File: window.py
+#Created: 2024-11-05
+#Last updated: 2025-06-10
 #version: 1.0
 
 import tkinter as tk
 
-ventana = tk.Tk()
-ventana.title("Mi primera ventana")
-ventana.geometry("600x400+10+10")
-ventana.minsize(400, 200)
-ventana.maxsize(800, 600)
-ventana.configure(bg="lightblue")
+root = tk.Tk()
+root.title("My primary root")
+root.geometry("600x400+10+10")
+root.minsize(400, 200)
+root.maxsize(800, 600)
+root.configure(bg="lightblue")
 
-ventana.mainloop()
+root.mainloop()
