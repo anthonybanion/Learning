@@ -146,4 +146,5 @@ replit.nix
 !**/*.txt
 !**/.gitignore
 !**/README.md
+!**/*.png
 

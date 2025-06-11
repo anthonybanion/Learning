@@ -4,58 +4,44 @@
 
 import sqlite3
 
-def abrir_conexion():
-    conexion=sqlite3.connect('Python/Tkinter/student-administration/alumnos.db')
-    return conexion
+def open_connection():
+    connection = sqlite3.connect('Python/gui_tkinter/mini_projects/student_administration/students.db')
+    return connection
 
-
-def crear_tabla_yearOftudy():
-    conexion = abrir_conexion()
-    cursor=conexion.cursor()
-    cursor.execute('''CREATE TABLE IF NOT EXISTS "yearOftudy" (
+def create_year_of_study_table():
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute('''CREATE TABLE IF NOT EXISTS "yearOfStudy" (
                     "id" INTEGER NOT NULL UNIQUE,
                     "year" TEXT NOT NULL,
                     PRIMARY KEY("id" AUTOINCREMENT))''')
-    conexion.commit()
-    conexion.close()
-    return print(f"La tabla a sido creada")
+    connection.commit()
+    connection.close()
+    print("The table has been created")
 
+def insert_default_years():
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute('''INSERT INTO yearOfStudy(id, year) VALUES("1","first"),("2","second"),("3","third")''')
+    connection.commit()
+    connection.close()
 
+def list_years_of_study():
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute('''SELECT * FROM yearOfStudy''')
+    result = cursor.fetchall()
+    connection.commit()
+    connection.close()
+    return result
 
+def delete_year_of_study(id):
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute("DELETE FROM yearOfStudy WHERE id = ?", (id,))
+    connection.commit()
+    connection.close()
 
-# def crear_yearOftudy():
-#     conexion = abrir_conexion()
-#     cursor=conexion.cursor()
-
-#     cursor.execute(''' INSERT INTO yearOftudy(id, year) VALUES("1","primero"),("2","segundo"),("3","tercero") ''')
-#     conexion.commit()
-#     conexion.close()
-
-
-def listar_yearOftudy():
-    conexion = abrir_conexion()
-    cursor=conexion.cursor()
-
-    cursor.execute(''' SELECT * FROM yearOftudy''')
-    lista=cursor.fetchall()
-    # for row in lista:
-    #     print(f'id: {row[0]}')
-    #     print(f'nombre: {row[1]}')
-    #     print('----------')
-
-    conexion.commit()
-    conexion.close()
-    return lista
-
-def eliminar_yearOftudy(id):
-    conexion = abrir_conexion()
-    cursor=conexion.cursor()
-    cursor.execute("DELETE FROM yearOftudy WHERE id=? ",(id,))
-    conexion.commit()
-    conexion.close()
-
-# abrir_conexion()
-# crear_tabla_yearOftudy()
-
-# listar_yearOftudy()
-
+# open_connection()
+# create_year_of_study_table()
+# list_years_of_study()
