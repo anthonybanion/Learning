@@ -1,3 +1,15 @@
+"""
+This script defines a base class `GeometricFigure` 
+and three derived classes: `Circle`, `Rectangle`, 
+and `Triangle`.
+ 
+File: calculateArea.py
+Author: Anthony Bañon
+Created: 2025-06-10
+Last Updated: 2025-06-10
+"""
+
+
 class GeometricFigure:
     def calculateArea(self):
         pass
