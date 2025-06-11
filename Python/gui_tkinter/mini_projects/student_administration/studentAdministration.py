@@ -1,85 +1,64 @@
-#Briefa: Create a CRUD with sqlite3
-#Date: 05/11/2024
-#version: 1.0
+# #Briefa: Create a CRUD with sqlite3
+# #Date: 05/11/2024
+# #version: 1.0
 
 import sqlite3
 
-def abrir_conexion():
-    conexion=sqlite3.connect('Python/Tkinter/student-administration/alumnos.db')
-    return conexion
+def open_connection():
+    connection = sqlite3.connect('Python/gui_tkinter/mini_projects/student_administration/students.db')
+    return connection
 
-
-def crear_tabla_alumnos():
-    conexion = abrir_conexion()
-    cursor=conexion.cursor()
-    cursor.execute('''CREATE TABLE IF NOT EXISTS "alumnos" (
+def create_students_table():
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute('''CREATE TABLE IF NOT EXISTS "students" (
                     "id" INTEGER NOT NULL UNIQUE,
-                    "nombre" TEXT NOT NULL,
-                    "apellido" TEXT NOT NULL,
+                    "first_name" TEXT NOT NULL,
+                    "last_name" TEXT NOT NULL,
                     "dni" TEXT NOT NULL UNIQUE,
                     PRIMARY KEY("id" AUTOINCREMENT))''')
 
-    conexion.commit()
-    conexion.close()
-    return print(f"La tabla a sido creada")
+    connection.commit()
+    connection.close()
+    print("The table has been created")
 
+def insert_student(id, first_name, last_name, dni):
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute('''INSERT INTO students VALUES(?,?,?,?)''', (id, first_name, last_name, dni))
+    connection.commit()
+    connection.close()
 
+def list_students():
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute('''SELECT * FROM students''')
+    result = cursor.fetchall()
+    connection.commit()
+    connection.close()
+    return result
 
+def delete_student(id):
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute("DELETE FROM students WHERE id = ?", (id,))
+    connection.commit()
+    connection.close()
 
-def crear_alumnos(id,nombre,apellido,dni):
-    conexion = abrir_conexion()
-    cursor=conexion.cursor()
+def update_student(id, first_name, last_name, dni):
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute("UPDATE students SET first_name = ? WHERE id = ?", (first_name, id))
+    cursor.execute("UPDATE students SET last_name = ? WHERE id = ?", (last_name, id))
+    cursor.execute("UPDATE students SET dni = ? WHERE id = ?", (dni, id))
+    connection.commit()
+    connection.close()
 
-    cursor.execute(''' INSERT INTO alumnos VALUES(?,?,?,?)''',(id, nombre, apellido, dni))
-    conexion.commit()
-    conexion.close()
-
-
-def listar_alumnos():
-    conexion = abrir_conexion()
-    cursor=conexion.cursor()
-
-    cursor.execute(''' SELECT * FROM alumnos''')
-    lista=cursor.fetchall()
-    # for row in lista:
-    #     print(f'id: {row[0]}')
-    #     print(f'nombre: {row[1]}')
-    #     print(f'apellido: {row[0]}')
-    #     print(f'dni: {row[0]}')
-    #     print('----------')
-
-    conexion.commit()
-    conexion.close()
-    return lista
-
-def eliminar_alumnos(id):
-    conexion = abrir_conexion()
-    cursor=conexion.cursor()
-    cursor.execute("DELETE FROM alumnos WHERE id=? ",(id,))
-    conexion.commit()
-    conexion.close()
-
-def editar_alumnos(id, nombre, apellido, dni):
-    conexion = abrir_conexion()
-    cursor=conexion.cursor()
-    cursor.execute("UPDATE alumnos SET nombre=? WHERE id=?",(nombre,id))
-    cursor.execute("UPDATE alumnos SET apellido=? WHERE id=?",(apellido,id))
-    cursor.execute("UPDATE alumnos SET dni=? WHERE id=?",(dni,id))
-    conexion.commit()
-    conexion.close()
-
-def buscar_alumnos(id):
-    conexion = abrir_conexion()
-    cursor=conexion.cursor()
-    cursor.execute("SELECT * FROM alumnos WHERE id=?",(id,))
-    lista=cursor.fetchall()
-    # for row in lista:
-    #     print(f'id: {row[0]}')
-    #     print(f'nombre: {row[1]}')
-    #     print(f'apellido: {row[2]}')
-    #     print(f'dni: {row[3]}')
-    #     print('----------')
-    conexion.commit()
-    conexion.close()
-    return lista
-
+def search_student(id):
+    connection = open_connection()
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM students WHERE id = ?", (id,))
+    result = cursor.fetchall()
+    connection.commit()
+    connection.close()
+    return result
