@@ -1,3 +1,13 @@
+"""
+Implementation of a double linked list in Python.
+ 
+File: doubleLinkedList.py
+Author: Anthony Bañon
+Created: 2025-06-11
+Last Updated: 2025-06-11
+"""
+
+
 class Node:
    
     def __init__(self, data):

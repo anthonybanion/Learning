@@ -1,5 +1,5 @@
 """
-Description: 
+A simple implementation of a singly linked list in Python.
  
 File: nodo.py
 Author: Anthony Bañon
