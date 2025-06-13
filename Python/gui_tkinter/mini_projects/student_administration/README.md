@@ -27,9 +27,9 @@ Each student is assigned a name, surname, DNI (ID number), and year of study. Th
 
 <div align="center">
 
-<img src="../../assets/images/student_administration/add_student.png" width="300" style="margin: 10px; display:inline-block;"/>
-<img src="../../assets/images/student_administration/view_students.png" width="300" style="margin: 10px; display:inline-block;"/>
-<img src="../../assets/images/student_administration/search_student.png" width="300" style="margin: 10px; display:inline-block;"/>
+<img src="../../../../Assets/images/student_administration/add_student.png" width="300" style="margin: 10px; display:inline-block;"/>
+<img src="../../../../Assets/images/student_administration/view_students.png" width="300" style="margin: 10px; display:inline-block;"/>
+<img src="../../../../Assets/images/student_administration/search_student.png" width="300" style="margin: 10px; display:inline-block;"/>
 
 </div>
 

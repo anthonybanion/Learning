@@ -147,3 +147,8 @@ replit.nix
 !**/.gitignore
 !**/README.md
 !**/*.png
+!**/*.jpg
+!**/*.jpeg
+!**/*.gif
+!**/*.svg
+!LICENSE
