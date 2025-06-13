@@ -41,7 +41,7 @@ Python/
 │   ├── standard_library/              # Exploring powerful built-in modules
 │   └── pip_and_venv/                  # Package management and virtual environments
 ├── testing/                           # Ensuring code quality
-│   ├── unittest/                      # Using built-in unittest module 
+│   ├── unittest/                      # Using built-in unittest module
 │   ├── pytest/                        # Simplified third-party testing
 │   ├── assertions/                    # Using assert statements
 │   └── logging_and_debugging/         # Print, logging, pdb
@@ -79,8 +79,9 @@ Python/
 └── projects/
     ├── small_projects/              # Simple projects to practice concepts
     ├── medium_projects/             # Intermediate projects to apply knowledge
-    └── large_projects/              # Complex projects to challenge skills 
+    └── advanced_projects/              # Complex projects to challenge skills
 ```
+
 ## 🎯 Objectives
 
 - Understand Python through clean and idiomatic examples

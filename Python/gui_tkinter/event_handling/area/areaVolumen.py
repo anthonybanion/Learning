@@ -1,6 +1,6 @@
 """
-Description: The program calculates the area of ​​a circle and the volume 
-            of a cylinder using the same function.
+The program calculates the area of ​​a circle and the volume 
+of a cylinder using the same function.
  
 File: circuloArea.py
 Author: Anthony Bañon

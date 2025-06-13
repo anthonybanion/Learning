@@ -1,3 +1,14 @@
+"""
+This module defines classes for domestic animals, 
+demonstrating inheritance and polymorphism.
+
+File: domestic_animal.py
+Author: Anthony Bañon
+Created: 2025-06-10
+Last Updated: 2025-06-10
+"""
+
+
 class Animal:
     def __init__(self, name):
         self.name = name

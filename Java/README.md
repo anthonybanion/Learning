@@ -71,7 +71,12 @@ Java/
 │   ├── naming_conventions/          # Standard naming styles for code readability
 │   ├── code_style/                  # Formatting and organization
 │   └── exception_handling/          # Effective error management strategies
-└── README.md                        # Overview and objectives of the Java learning path
+├── README.md                     # Overview and instructions for this module
+└── projects/
+    ├── small_projects/                 # Simple projects to practice concepts
+    ├── medium_projects/                # Intermediate projects to apply knowledge
+    └── large_projects/                 # Complex projects to challenge skills
+
 ```
 
 ## 🎯 Objectives
