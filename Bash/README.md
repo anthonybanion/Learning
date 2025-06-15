@@ -1,4 +1,4 @@
-# 🐚 Bash Learning Modules  
+# 🐚 Bash Learning Modules
 
 This section contains categorized resources, scripts, and examples to learn and practice **Bash scripting and command-line usage** in Unix/Linux environments.
 
@@ -13,21 +13,22 @@ Bash/
 ├── conditionals/              # if, else, ifel, case
 ├── loops/                     # for, while, until, select
 ├── functions/                 # Defining and using functions
-├── io_redirection/            # stdin, stdout, stderr, pipes, redirection operators
-├── arrays_and_strings/        # Array usage, string manipulation
-├── file_handling/             # Reading, writing, and processing files
-├── system_commands/           # Useful system tools (top, ps, df, etc.)
-├── process_management/        # Job control, background/foreground, signals
-├── user_and_permissions/      # Managing users, groups, file permissions
+├── redirection/               # stdin, stdout, stderr, pipes, redirection operators
+├── arrays/                    # Array usage and manipulation
+├── strings/                   # String manipulation and processing
+├── file/                      # Reading, writing, and processing files
+├── commands/                  # Useful system tools (top, ps, df, etc.)
+├── process/                   # Job control, background/foreground, signals
+├── permissions/               # Managing users, groups, file permissions
 ├── networking/                # Network tools: ping, curl, wget, etc.
-├── package_management/        # Tools like apt, dpkg, pacman, yum
+├── package/                   # Tools like apt, dpkg, pacman, yum
 ├── automation/                # Cron jobs, backups, maintenance scripts
 ├── security/                  # Basic hardening, SSH, secure scripts
-├── testing_and_debugging/     # Exit codes, `set -x`, `test`, echo debugging
+├── testing/     # Exit codes, `set -x`, `test`, echo debugging
 └── projects/
     ├── small_projects/        # Simple projects to practice concepts
     ├── medium_projects/       # Intermediate projects to apply knowledge
-    └── large_projects/        # Complex projects to challenge skills
+    └── advanced_projects/     # Complex projects to challenge skills
 
 
 ```
@@ -49,4 +50,3 @@ Bash/
 <div align="right" style="font-size: 2em;">
     <a href="../README.md">⬅️ Back</a>
 </div>
-

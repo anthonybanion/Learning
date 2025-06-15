@@ -1,0 +1,143 @@
+[
+    {
+      "title": "System Requirements",
+      "description": "Define general system requirements for the platform and future projects.",
+      "due_on": "2028-01-01T00:00:00Z"
+    },
+    {
+      "title": "User Requirements",
+      "description": "Identify and document user needs and expectations.",
+      "due_on": "2028-02-01T00:00:00Z"
+    },
+    {
+      "title": "Analysis Phase",
+      "description": "Perform system analysis and define specifications.",
+      "due_on": "2028-03-01T00:00:00Z"
+    },
+    {
+      "title": "System Design",
+      "description": "Define architecture, modules, and interactions.",
+      "due_on": "2028-04-01T00:00:00Z"
+    },
+    {
+      "title": "UI/UX Design",
+      "description": "Create mockups, wireframes, and prototypes.",
+      "due_on": "2028-05-01T00:00:00Z"
+    },
+    {
+      "title": "Frontend Development",
+      "description": "Implement layouts, interactions, and logic in the client side.",
+      "due_on": "2028-06-01T00:00:00Z"
+    },
+    {
+      "title": "Backend Development",
+      "description": "Develop APIs, database models, and server-side logic.",
+      "due_on": "2028-07-01T00:00:00Z"
+    },
+    {
+      "title": "Database Design",
+      "description": "Model and create the database schema.",
+      "due_on": "2028-08-01T00:00:00Z"
+    },
+    {
+      "title": "Server Configuration",
+      "description": "Configure web servers and backend environments.",
+      "due_on": "2028-09-01T00:00:00Z"
+    },
+    {
+      "title": "Testing Phase",
+      "description": "Execute unit tests, integration tests, and system tests.",
+      "due_on": "2028-10-01T00:00:00Z"
+    },
+    {
+      "title": "Documentation",
+      "description": "Write user guides, developer docs, and API references.",
+      "due_on": "2028-11-01T00:00:00Z"
+    },
+    {
+      "title": "CI/CD & DevOps",
+      "description": "Implement automated deployment, testing and integration.",
+      "due_on": "2028-12-01T00:00:00Z"
+    },
+    {
+      "title": "Implementation Phase",
+      "description": "Deploy system to production or target environment.",
+      "due_on": "2029-01-01T00:00:00Z"
+    },
+    {
+      "title": "Maintenance & Support",
+      "description": "Provide ongoing support, updates, and fixes.",
+      "due_on": "2029-02-01T00:00:00Z"
+    },
+    {
+      "title": "Release 1.0",
+      "description": "First stable release with core features.",
+      "due_on": "2029-03-01T00:00:00Z"
+    },
+    {
+      "title": "Release 2.0",
+      "description": "Major upgrade with new modules and improvements.",
+      "due_on": "2029-06-01T00:00:00Z"
+    },
+    {
+      "title": "Research & Innovation",
+      "description": "Explore new technologies or future features.",
+      "due_on": "2029-09-01T00:00:00Z"
+    },
+    {
+      "title": "Final Review",
+      "description": "Conduct a final review of the project before release.",
+      "due_on": "2029-10-01T00:00:00Z"
+    },
+    {
+      "title": "Project Closure",
+      "description": "Wrap up the project, document lessons learned.",
+      "due_on": "2029-12-01T00:00:00Z"
+    },
+    {
+      "title": "Post-Release Support",
+      "description": "Provide support and updates after the release.",
+      "due_on": "2030-01-01T00:00:00Z"
+    },
+    {
+      "title": "Feedback & Iteration",
+      "description": "Gather user feedback and plan for future iterations.",
+      "due_on": "2030-03-01T00:00:00Z"
+    },
+    {
+      "title": "Security Audit",
+      "description": "Conduct a security audit of the system.",
+      "due_on": "2030-06-01T00:00:00Z"
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "Identify and implement performance improvements.",
+      "due_on": "2030-09-01T00:00:00Z"
+    },
+    {
+      "title": "User Training",
+      "description": "Provide training sessions for users.",
+      "due_on": "2030-12-01T00:00:00Z"
+    },
+    {
+      "title": "Community Engagement",
+      "description": "Engage with the community for feedback and contributions.",
+      "due_on": "2031-03-01T00:00:00Z"
+    },
+    {
+      "title": "Future Planning",
+      "description": "Plan for future versions and features.",
+      "due_on": "2031-06-01T00:00:00Z"
+    },
+    {
+      "title": "Legacy Support",
+      "description": "Provide support for older versions of the system.",
+      "due_on": "2031-09-01T00:00:00Z"
+    },
+    {
+      "title": "End of Life",
+      "description": "Officially end support for the project.",
+      "due_on": "2032-01-01T00:00:00Z"
+    }
+  ]
+  
