@@ -33,70 +33,85 @@ If you're just starting out or brushing up on your skills, feel free to explore 
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
           height="40px"
           alt="Python"
+          title="Python"
         />
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
           height="40px"
           alt="Java"
+          title="Java"
         />
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
           height="40px"
           alt="PHP"
+          title="PHP"
         />
         <img 
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/perl/perl-original.svg" 
             height="40px"
             alt="Perl"
+            title="Perl"
           />
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
           height="40px"
           alt="C"
+          title="C"
         />
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
           height="40px"
           alt="C++"
+          title="C++"
         />
         <img 
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" 
             height="40px"
-            alt="Csharp"/>
+            alt="Csharp"
+            title="Csharp"
+        />
         <img
           src="https://cdn.simpleicons.org/gnubash/purple"
           height="40px"
           alt="Bash"
+          title="Bash"
         />
         <img
           src="https://pseint.sourceforge.net/logo-header.png"
           height="40px"
           alt="PSeInt"
+          title="PSeInt"
         />
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
           height="40px"
           alt="JavaScript"
+          title="JavaScript"
         />
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
           height="40px"
           alt="TypeScript"
+          title="TypeScript"
         />
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
           height="40px"
           alt="HTML5"
+          title="HTML5"
         />
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
           height="40px"
           alt="CSS3"
+          title="CSS3"
         />
         <img 
             src="https://www.freepascal.org/pic/logo.gif" 
             height="40px" 
             alt="Free Pascal"
+            title="Free Pascal"
         />
       </p>
 
