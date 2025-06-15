@@ -1,4 +1,4 @@
-# 🐍 Python Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="40px" alt="Python"/> Python Language Learning Modules
 
 Python is a powerful, multi-paradigm programming language. It supports imperative, object-oriented, and functional programming styles, making it an ideal language for both beginners and professionals.
 
@@ -41,7 +41,7 @@ Python/
 │   ├── standard_library/              # Exploring powerful built-in modules
 │   └── pip_and_venv/                  # Package management and virtual environments
 ├── testing/                           # Ensuring code quality
-│   ├── unittest/                      # Using built-in unittest module 
+│   ├── unittest/                      # Using built-in unittest module
 │   ├── pytest/                        # Simplified third-party testing
 │   ├── assertions/                    # Using assert statements
 │   └── logging_and_debugging/         # Print, logging, pdb
@@ -79,8 +79,9 @@ Python/
 └── projects/
     ├── small_projects/              # Simple projects to practice concepts
     ├── medium_projects/             # Intermediate projects to apply knowledge
-    └── large_projects/              # Complex projects to challenge skills 
+    └── advanced_projects/              # Complex projects to challenge skills
 ```
+
 ## 🎯 Objectives
 
 - Understand Python through clean and idiomatic examples

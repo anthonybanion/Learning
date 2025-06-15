@@ -1,6 +1,6 @@
-# 💻 C# Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" height="40px" alt="Csharp"/> C# Language Learning Modules
 
-This section is dedicated to learning **C#**, a modern, object-oriented, imperative programming language. C# also supports **functional programming**, **concurrent programming**, and various other paradigms. 
+This section is dedicated to learning **C#**, a modern, object-oriented, imperative programming language. C# also supports **functional programming**, **concurrent programming**, and various other paradigms.
 
 The content is organized around **paradigms**, and inside those paradigms, we break down further topics for a deep dive into the language.
 
@@ -11,14 +11,14 @@ C#/
 ├── paradigm_imperative/
 │   ├── basics/               # Syntax, structure, variables, types
 │   ├── operators/            # Arithmetic, logical, relational, bitwise operators
-│   ├── conditionals/         # if, else, switch 
+│   ├── conditionals/         # if, else, switch
 │   ├── loops/                # for, while, foreach
 │   ├── functions/            # Methods, parameters, return values, method overloading
 │   ├── data_structures/      # Arrays, lists, dictionaries, sets, queues
 │   ├── strings/              # String manipulation, StringBuilder
 │   ├── exceptions/           # Exception handling, try-catch-finally
 │   ├── file_handling/        # Reading/writing files, streams
-│   └── modular_programming/   # Modular programming concepts 
+│   └── modular_programming/   # Modular programming concepts
 ├── paradigm_oop/
 │   ├── classes_and_objects/  # Class definition, constructors, fields, properties
 │   ├── inheritance/          # Inheriting classes, polymorphism, method overriding
@@ -74,8 +74,6 @@ C#/
     └── large_projects/       # Complex projects to challenge skills
 
 ```
-
-
 
 ## 🎯 Objectives
 

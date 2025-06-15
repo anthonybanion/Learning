@@ -1,13 +1,3 @@
-"""
-Description: 
- 
-File: calculate.py
-Author: Anthony Bañon
-Created: 2025-05-17
-Last Updated: 2025-05-17
-"""
-
-
 from math import *
 
 def adidition(numberOne,numberTwo):
@@ -35,4 +25,4 @@ def triangleArea(base,height):
     return f"The triangle area is: {base*height/2}"
 
 # def circleArea(radio):
-#     return f"The circle area is: f{Math.pi*(radio**2)}"
+#     return f"The circle area is: f{Math.py*(radio**2)}"

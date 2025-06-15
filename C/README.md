@@ -1,4 +1,4 @@
-# 🧠 C Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="40px" alt="C"/> C Language Learning Modules
 
 This section is focused on learning the **C programming language** in a structured and modular way, using **paradigms** and **subcategories** for clarity and depth.
 
@@ -60,6 +60,7 @@ C/
 - Build reusable, modular code with a solid debugging/testing approach
 
 ## 📌 Requirements
+
 - C compiler (like gcc or clang)
 - Basic terminal/CLI skills
 - gdb and valgrind installed (for debugging and memory checking)

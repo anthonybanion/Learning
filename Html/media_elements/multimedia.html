@@ -1,0 +1,70 @@
+<!--@brief this program shows how to use multimedia
+    @adding audio from local area
+    @version 2.0
+    @date 12/01/2024-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <center>
+      <h1>Multimedia</h1>
+      <div>
+        <h2>Import video from an external website</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/9ruw7l2b_Tw?si=wGP7oNkvIRnkvhkd"
+          title="Megaman"
+          frameborder="0"
+          allow="autoplay"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <h2>Import video from local area</h2>
+        <p>Here would be a local file in format (.mp4, .webm, .ogg)</p>
+        <video
+          width="560"
+          height="315"
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          controls
+          title="Big Buck Bunny"
+          frameborder="0"
+          allow="autoplay"
+          allowfullscreen
+        ></video>
+      </div>
+      <div>
+        <video width="560" height="315" controls autoplay loop muted>
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div>
+        <h2>Import audio from local area</h2>
+        <p>Here would be a local file in format (.mp3 .ogg, .wav)</p>
+        <audio
+          src="https://www.w3schools.com/html/horse.mp3"
+          controls
+          autoplay
+        ></audio>
+      </div>
+      <div>
+        <h2>Import audio from an external website</h2>
+        <audio controls autoplay loop muted style="width: 560px">
+          <source
+            src="https://upload.wikimedia.org/wikipedia/commons/4/47/Beethoven_Moonlight_sonata.ogg"
+            type="audio/ogg"
+          />
+        </audio>
+      </div>
+    </center>
+  </body>
+</html>

@@ -17,8 +17,9 @@ Thumbs.db
 *.credentials
 
 # === 🐍 Python ===
-__pycache__/
+**/__pycache__/
 *.py[cod]
+*.pyo
 
 # === ☕ Java ===
 *.class
@@ -145,4 +146,9 @@ replit.nix
 !**/*.txt
 !**/.gitignore
 !**/README.md
-
+!**/*.png
+!**/*.jpg
+!**/*.jpeg
+!**/*.gif
+!**/*.svg
+!LICENSE

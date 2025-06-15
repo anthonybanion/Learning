@@ -1,4 +1,4 @@
-# 💻 C++ Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" height="40px" alt="C++"/> C++ Language Learning Modules
 
 C++ is a powerful, high-performance language that supports **imperative**, **object-oriented**, and **generic** programming paradigms. It's widely used for systems programming, game development, and performance-critical applications.
 
@@ -68,6 +68,7 @@ C++/
     └── large_projects/       # Complex projects to challenge skills
 
 ```
+
 ## 🎯 Objectives
 
 - Master the imperative paradigm with basic syntax and functions
@@ -88,4 +89,3 @@ C++/
 <div align="right" style="font-size: 2em;">
     <a href="../README.md">⬅️ Back</a>
 </div>
-

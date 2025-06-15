@@ -1,4 +1,4 @@
-# 🟦 Pascal Language Learning Modules
+# <img src="https://www.freepascal.org/pic/logo.gif" height="40px" alt="Free Pascal"/> Pascal Language Learning Modules
 
 Pascal is a structured, statically typed, imperative programming language designed for teaching good programming practices and data structures. It's widely used in academic settings and is known for its clarity and strong typing.
 
@@ -67,7 +67,7 @@ Pascal/
 - Explore Pascal-style object-oriented programming (via Free Pascal or Delphi)
 - Practice using Pascal's built-in data structures and standard units
 
-    Prepare for academic use or competitive programming exercises
+  Prepare for academic use or competitive programming exercises
 
 ## 📚 Recommended Resources
 

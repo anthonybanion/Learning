@@ -1,4 +1,4 @@
-# 🟣 Perl Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/perl/perl-original.svg" height="40px" alt="Perl"/> Perl Language Learning Modules
 
 Perl is a powerful and flexible multi-paradigm scripting language known for its strength in text manipulation, file processing, and system administration tasks. It supports imperative, procedural, and object-oriented programming styles.
 
@@ -67,6 +67,7 @@ Perl/
 
 
 ```
+
 ## 🎯 Objectives
 
 - Master Perl's imperative and procedural features
