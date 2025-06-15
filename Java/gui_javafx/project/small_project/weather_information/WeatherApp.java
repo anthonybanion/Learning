@@ -1,4 +1,4 @@
-package gui_javafx.weather_information;
+package gui_javafx.project.small_project.weather_information;
 
 import javafx.application.Application;
 import javafx.application.Platform;
