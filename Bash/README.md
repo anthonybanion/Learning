@@ -1,4 +1,4 @@
-# 🐚 Bash Learning Modules
+# <img src="https://cdn.simpleicons.org/gnubash/purple" height="40px" alt="Bash"/> Bash Learning Modules
 
 This section contains categorized resources, scripts, and examples to learn and practice **Bash scripting and command-line usage** in Unix/Linux environments.
 

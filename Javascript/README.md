@@ -1,4 +1,4 @@
-# 🟨 JavaScript Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="40px" alt="JavaScript"/> JavaScript Language Learning Modules
 
 JavaScript is a high-level, interpreted language used widely for **web development**, **server-side programming**, and **desktop/mobile applications** via various runtimes and frameworks.
 
@@ -75,6 +75,7 @@ JavaScript/
     └── test_driven_development/      # TDD principles and practices
 
 ```
+
 ## 🎯 Objectives
 
 - Learn JavaScript from core syntax to advanced paradigms

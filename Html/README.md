@@ -1,4 +1,4 @@
-# 🌐 HTML Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="40px" alt="HTML5"/> HTML Language Learning Modules
 
 HTML (HyperText Markup Language) is the standard markup language used to create web pages and applications. It defines the **structure** and **semantics** of web content and serves as the foundation for web development alongside CSS and JavaScript.
 

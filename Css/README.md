@@ -1,4 +1,4 @@
-# 🎨 CSS Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="40px" alt="CSS3"/> CSS Language Learning Modules
 
 CSS (Cascading Style Sheets) is the cornerstone of web styling. While it doesn't follow programming paradigms like imperative or object-oriented, it can be organized and scaled through architectural **methodologies** that bring structure and maintainability to complex projects.
 
@@ -62,11 +62,11 @@ CSS/
 
 ## 📝 Methodology Summary
 
-|Methodology	|Description|
-|---|---|
-|BEM	|A naming convention that promotes component-based structure and clarity using Block__Element--Modifier|
-|OOCSS	|Focuses on separating structure and skin, promoting reusability of objects and patterns|
-|SMACSS	|A scalable methodology that breaks CSS into categories like base, layout, module, state, and theme|
+| Methodology | Description                                                                                              |
+| ----------- | -------------------------------------------------------------------------------------------------------- |
+| BEM         | A naming convention that promotes component-based structure and clarity using Block\_\_Element--Modifier |
+| OOCSS       | Focuses on separating structure and skin, promoting reusability of objects and patterns                  |
+| SMACSS      | A scalable methodology that breaks CSS into categories like base, layout, module, state, and theme       |
 
 <div align="right" style="font-size: 2em;">
     <a href="../README.md">⬅️ Back</a>

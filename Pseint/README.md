@@ -1,4 +1,4 @@
-# 📄 PSeInt Language Learning Modules
+# <img src="https://pseint.sourceforge.net/logo-header.png" height="40px" alt="PSeInt"/> PSeInt Language Learning Modules
 
 PSeInt (Pseudo Intérprete) is a tool designed for beginners to learn programming logic through pseudocode. It focuses on structured programming and helps to build algorithmic thinking before jumping into real programming languages.
 
@@ -13,7 +13,7 @@ PSeInt/
 ├── basics/                        # Introduction to pseudocode syntax and structure
 ├── conditionals/                  # Conditional structures
 ├── loops/                         # Repetitive structures
-├── procedures/                    # Modular programming 
+├── procedures/                    # Modular programming
 ├── arrays/                        # Simple arrays (Vectores)
 ├── matrices/                      # Matrices
 ├── traversals/                    # Iterating over arrays/matrices
@@ -41,7 +41,7 @@ PSeInt/
 
 ```
 
-## 🎯 Objectives 
+## 🎯 Objectives
 
 - Master the fundamentals of programming logic using pseudocode
 - Learn structured programming: sequence, selection, and iteration
@@ -56,7 +56,6 @@ PSeInt/
 - 🔗 Libro de Algoritmos (Argentina)
 - 🔗 Ejercicios PSeInt - UTN Resueltos
 - 🔗 Guía práctica de Pseudocódigo (PDF)
-
 
 <div align="right" style="font-size: 2em;">
     <a href="../README.md">⬅️ Back</a>

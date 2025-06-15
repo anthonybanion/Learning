@@ -1,4 +1,4 @@
-# 🐘 PHP Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" height="40px" alt="PHP"/> PHP Language Learning Modules
 
 PHP is a general-purpose scripting language especially suited for web development. It supports multiple paradigms, including imperative, procedural, and object-oriented programming. Its syntax is C-style, and it integrates natively with HTML and web servers like Apache and Nginx.
 

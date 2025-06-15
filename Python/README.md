@@ -1,4 +1,4 @@
-# 🐍 Python Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="40px" alt="Python"/> Python Language Learning Modules
 
 Python is a powerful, multi-paradigm programming language. It supports imperative, object-oriented, and functional programming styles, making it an ideal language for both beginners and professionals.
 

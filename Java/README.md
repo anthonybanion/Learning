@@ -1,4 +1,4 @@
-# ☕ Java Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" height="40px" alt="Java"/> Java Language Learning Modules
 
 Java is a powerful, object-oriented programming language known for its **platform independence**, **rich API**, and extensive use in **enterprise**, **mobile**, and **desktop** development.
 

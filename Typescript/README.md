@@ -1,4 +1,4 @@
-# 🟦 TypeScript Language Learning Modules
+# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" height="40px" alt="TypeScript"/> TypeScript Language Learning Modules
 
 TypeScript is a strongly typed superset of JavaScript that compiles to plain JavaScript. It enables developers to write safer, scalable, and more maintainable applications by adding **static typing**, **advanced type inference**, and **powerful tooling** to the JavaScript ecosystem.
 
