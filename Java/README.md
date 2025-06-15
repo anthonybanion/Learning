@@ -47,22 +47,42 @@ Java/
 │   ├── threads/                     # Creating and managing threads
 │   ├── synchronization/            # Preventing race conditions
 │   └── executors/                   # Using thread pools and ExecutorService
-├── network_and_sockets/             # Networking and socket communication in Java
+├── network/                         # Networking and socket communication in Java
 │   ├── tcp_sockets/                 # TCP connection examples (client-server)
 │   ├── udp_sockets/                 # (Optional) UDP protocol examples
 │   └── multithreaded_servers/       # Concurrent servers using threads
-├── files_and_serialization/         # File manipulation and object persistence
-│   ├── file_read_write/             # Reading from and writing to files
+├── files/                           # File manipulation and object persistence
+│   ├── read_write/                  # Reading from and writing to files
 │   └── object_serialization/        # Saving and loading Java objects
 ├── gui_swing/                       # Java Swing for desktop GUI apps
-│   ├── basic_windows/               # Creating basic windows and frames
-│   ├── layout_managers/             # Organizing GUI components
-│   ├── components/                  # Buttons, labels, text fields, etc.
-│   └── event_handling/              # Responding to GUI events
+│   ├── basic/                       # Creating basic windows and frames
+│   ├── components/                  # Swing components (buttons, labels, etc.)
+│   ├── layouts/                     # Layout managers for organizing components
+│   ├── event_handling/              # Handling user events (clicks, key presses)
+│   ├── menus_and_toolbars/          # Creating menus and toolbars
+│   ├── dialogs/                     # Creating dialog boxes (alerts, input, etc.)
+│   ├── graphics/                    # Drawing shapes and images
+│   ├── tables_and_lists/            # Displaying data in tables and lists
+│   ├── forms_and_validation/        # Building forms and validating input
+│   ├── custom_components/           # Creating reusable Swing components
+│   ├── accessibility/               # Making GUIs accessible
+│   ├── themes/                      # Customizing the appearance of Swing apps
+│   └── advanced_topics/             # Advanced Swing features (drag-and-drop, etc.)
 ├── gui-javafx/                      # JavaFX framework for modern GUI apps
-│   ├── application_structure/       # Setting up a JavaFX project
-│   ├── scenes_and_layouts/          # Designing the UI structure
+│   ├── basics/                       # Introduction to JavaFX and its components
+│   ├── structure/                   #  Basic structure of a JavaFX application
+│   ├── css/                         # Styling JavaFX applications with CSS
+│   ├── fxml/                        # Using FXML for UI design
 │   ├── controls/                    # JavaFX UI controls (buttons, sliders, etc.)
+│   ├── layouts/                     # Layouts for organizing UI components
+│   ├── containers/                  #  Grouping UI elements (VBox, HBox, etc.)
+│   ├── event_handling/              # Handling user interactions in JavaFX
+│   ├── graphics/                    # Drawing shapes and graphics in JavaFX
+│   ├── multimedia/                  #  Playing audio and video in JavaFX
+│   ├── webview/                     # Embedding web content in JavaFX apps
+│   ├── custom_controls/             # Creating reusable UI components
+│   ├── charts_and_graphs/           # Visualizing data with JavaFX charts
+│   ├── dialogs_and_popups/          # Creating dialog boxes and pop-up windows
 │   └── animations_and_effects/      # Adding animations and visual effects
 ├── annotations_and_reflection/      # Advanced Java features for meta-programming
 │   ├── custom_annotations/          # Creating and using annotations

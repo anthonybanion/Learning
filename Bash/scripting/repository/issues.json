@@ -1,0 +1,143 @@
+[
+    {
+      "title": "Review System Requirements",
+      "body": "Analyze and document functional and non-functional system requirements.",
+      "labels": ["documentation", "analysis"]
+    },
+    {
+      "title": "Gather User Requirements",
+      "body": "Interview or research end-user needs and expectations.",
+      "labels": ["analysis", "ux"]
+    },
+    {
+      "title": "Create Initial Mockups",
+      "body": "Design early visual drafts of the interface using Figma, Balsamiq, or similar tools.",
+      "labels": ["frontend", "design", "ux"]
+    },
+    {
+      "title": "Build Interactive Prototype",
+      "body": "Develop a functional prototype (via Figma or code) that simulates user navigation.",
+      "labels": ["frontend", "ux", "prototype"]
+    },
+    {
+      "title": "Design Database Model",
+      "body": "Design ER diagrams and apply normalization. Prepare the physical database model.",
+      "labels": ["backend", "database"]
+    },
+    {
+      "title": "Define Project Architecture",
+      "body": "Establish project layers, dependencies, and architecture patterns (MVC, REST, etc.).",
+      "labels": ["backend", "architecture"]
+    },
+    {
+      "title": "Setup Development Environment",
+      "body": "Install dependencies and configure tools like Docker, Composer, npm, etc.",
+      "labels": ["tooling", "devops"]
+    },
+    {
+      "title": "Develop Authentication Module",
+      "body": "Implement user registration, login, logout, and password recovery features.",
+      "labels": ["backend", "security"]
+    },
+    {
+      "title": "Design and Implement REST API",
+      "body": "Create endpoints, apply validations, build controllers, and document using OpenAPI or Swagger.",
+      "labels": ["api", "backend"]
+    },
+    {
+      "title": "HTML/CSS Layout for Main Site",
+      "body": "Structure the main page layout according to the prototype using HTML and CSS.",
+      "labels": ["frontend", "layout"]
+    },
+    {
+      "title": "Integrate Frontend Framework",
+      "body": "Setup and integrate a frontend framework like Vue, React, or Angular, and connect it to the backend.",
+      "labels": ["frontend", "development"]
+    },
+    {
+      "title": "Internationalization and Localization",
+      "body": "Add multi-language support and manage translations using external files.",
+      "labels": ["localization", "frontend"]
+    },
+    {
+      "title": "Write Unit Tests (Backend)",
+      "body": "Create unit tests for logic and controllers using PHPUnit, Jest, or similar.",
+      "labels": ["testing", "backend"]
+    },
+    {
+      "title": "End-to-End Testing (Frontend)",
+      "body": "Simulate user flows with tools like Cypress, Playwright, or Selenium.",
+      "labels": ["testing", "frontend"]
+    },
+    {
+      "title": "Accessibility Audit",
+      "body": "Ensure the site is accessible (screen readers, keyboard navigation, color contrast, etc.).",
+      "labels": ["accessibility", "frontend"]
+    },
+    {
+      "title": "Prepare Production Deployment",
+      "body": "Configure CI/CD pipelines, prepare environment variables, and perform final checks.",
+      "labels": ["devops", "production"]
+    },
+    {
+      "title": "Write Technical Documentation",
+      "body": "Create or update README, contribution guide, API routes, and environment setup.",
+      "labels": ["documentation", "chore"]
+    },
+    {
+      "title": "Write End-User Documentation",
+      "body": "Prepare user manuals, video tutorials, or basic usage instructions.",
+      "labels": ["documentation", "ux"]
+    },
+    {
+      "title": "Collect Feedback and Suggest Improvements",
+      "body": "Gather user feedback and identify areas for improvement.",
+      "labels": ["feedback", "ux", "improvement"]
+    },
+    {
+      "title": "Performance Optimization",
+      "body": "Improve load times, optimize queries, reduce asset sizes, and enhance speed.",
+      "labels": ["performance", "optimization"]
+    },
+    {
+      "title": "Security Audit",
+      "body": "Check for common vulnerabilities such as XSS, SQL injection, CSRF, etc.",
+      "labels": ["security", "backend"]
+    },
+    {
+      "title": "Create Contribution Guidelines",
+      "body": "Setup CONTRIBUTING.md with rules and tips for contributors.",
+      "labels": ["community", "documentation"]
+    },
+    {
+      "title": "Publish Stable Release",
+      "body": "Tag and publish a new release version. Write a changelog and announce updates.",
+      "labels": ["release", "production"]
+    },
+    {
+      "title": "Sprint Planning",
+      "body": "Define the current sprint goals, tasks, and timelines.",
+      "labels": ["sprint", "management"]
+    },
+    {
+      "title": "Retrospective Meeting",
+      "body": "Discuss what went well, what didn't, and how to improve in the next sprint.",
+      "labels": ["sprint", "management"]
+    },
+    {
+      "title": "Community Engagement",
+      "body": "Engage with users on forums, social media, or GitHub discussions.",
+      "labels": ["community", "feedback"]
+    },
+    {
+      "title": "Plan for Future Features",
+      "body": "Brainstorm and prioritize features for the next version.",
+      "labels": ["planning", "future"]
+    },
+    {
+      "title": "End of Life Planning",
+      "body": "Document the end-of-life process and communicate it to users.",
+      "labels": ["planning", "documentation"]
+    } 
+  ]
+  

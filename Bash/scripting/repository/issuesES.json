@@ -1,0 +1,188 @@
+[
+    {
+      "title": "Revisión de Requisitos del Sistema",
+      "body": "Analizar y documentar requisitos funcionales y no funcionales del sistema.",
+      "labels": ["documentación", "análisis"]
+    },
+    {
+      "title": "Recolección de Requisitos del Usuario",
+      "body": "Entrevistar o investigar las necesidades del usuario final.",
+      "labels": ["análisis", "ux"]
+    },
+    {
+      "title": "Diseño de Mockups Iniciales",
+      "body": "Crear los primeros bocetos visuales de la interfaz con herramientas como Figma, Balsamiq, etc.",
+      "labels": ["frontend", "diseño", "ux"]
+    },
+    {
+      "title": "Prototipo Navegable",
+      "body": "Construir un prototipo funcional (Figma o código) que simule la navegación del sistema.",
+      "labels": ["frontend", "ux", "prototipo"]
+    },
+    {
+      "title": "Modelado de Base de Datos",
+      "body": "Diseñar entidad-relación y normalización. Crear el modelo físico.",
+      "labels": ["backend", "base de datos"]
+    },
+    {
+      "title": "Diseño de Arquitectura del Proyecto",
+      "body": "Establecer capas, dependencias, patrones (MVC, REST, etc.) y estructura general.",
+      "labels": ["backend", "arquitectura"]
+    },
+    {
+      "title": "Configuración del Entorno de Desarrollo",
+      "body": "Instalar dependencias, configurar Docker, Composer, npm, etc.",
+      "labels": ["tooling", "devops"]
+    },
+    {
+      "title": "Desarrollo del Módulo de Autenticación",
+      "body": "Implementar registro, login, logout y recuperación de contraseña.",
+      "labels": ["backend", "seguridad"]
+    },
+    {
+      "title": "Diseño e implementación de API REST",
+      "body": "Crear endpoints, validaciones, controladores y documentación con OpenAPI o Swagger.",
+      "labels": ["api", "backend"]
+    },
+    {
+      "title": "Maquetado HTML/CSS del Sitio Principal",
+      "body": "Maquetar la estructura principal de la página web siguiendo el prototipo.",
+      "labels": ["frontend", "maquetado"]
+    },
+    {
+      "title": "Integración de Framework Frontend",
+      "body": "Integrar Vue, React o similar y comunicar con API backend.",
+      "labels": ["frontend", "desarrollo"]
+    },
+    {
+      "title": "Traducción e Internacionalización",
+      "body": "Agregar soporte multiidioma y gestionar textos en archivos externos.",
+      "labels": ["localización", "frontend"]
+    },
+    {
+      "title": "Escribir Tests Unitarios Backend",
+      "body": "Testear funciones y controladores usando PHPUnit o Jest.",
+      "labels": ["testing", "backend"]
+    },
+    {
+      "title": "Tests End-to-End Frontend",
+      "body": "Simular flujos completos con Cypress, Playwright o Selenium.",
+      "labels": ["testing", "frontend"]
+    },
+    {
+      "title": "Revisión de Accesibilidad Web",
+      "body": "Verificar que el sitio sea accesible (lectores de pantalla, navegación con teclado).",
+      "labels": ["accesibilidad", "frontend"]
+    },
+    {
+      "title": "Preparar despliegue en Producción",
+      "body": "Configurar CI/CD, entorno de producción, revisión final antes de publicación.",
+      "labels": ["devops", "producción"]
+    },
+    {
+      "title": "Documentación Técnica del Proyecto",
+      "body": "Escribir README, contribuciones, rutas de API, entorno, etc.",
+      "labels": ["documentación", "chore"]
+    },
+    {
+      "title": "Documentación para Usuarios Finales",
+      "body": "Manual de uso, video tutoriales o instrucciones básicas.",
+      "labels": ["documentación", "ux"]
+    },
+    {
+      "title": "Feedback y Mejora Continua",
+      "body": "Recopilar retroalimentación de usuarios y proponer mejoras.",
+      "labels": ["feedback", "ux", "mejora continua"]
+    },
+    {
+      "title": "Optimización de Rendimiento",
+      "body": "Revisar tiempos de carga, consultas lentas, tamaño de assets.",
+      "labels": ["performance", "mejora continua"]
+    },
+    {
+      "title": "Revisión de Seguridad",
+      "body": "Auditar vulnerabilidades comunes (XSS, SQLi, CSRF, etc.).",
+      "labels": ["seguridad", "backend"]
+    },
+    {
+      "title": "Crear Plantilla de Contribución",
+      "body": "Configurar archivo CONTRIBUTING.md con guía para colaboradores.",
+      "labels": ["comunidad", "documentación"]
+    },
+    {
+      "title": "Publicar versión estable",
+      "body": "Taguear y publicar release. Crear changelog y anunciar cambios.",
+      "labels": ["release", "producción"]
+    },
+    {
+      "title": "Planificación del Sprint Actual",
+      "body": "Definir tareas y objetivos para el sprint.",
+      "labels": ["sprint", "gestión"]
+    },
+    {
+      "title": "Revisión del Sprint Anterior",
+      "body": "Analizar qué se logró y qué no. Ajustar el backlog.",
+      "labels": ["sprint", "gestión"]
+    },
+    {
+      "title": "Reunión de Retrospectiva",
+      "body": "Discutir lo que funcionó y lo que no en el último sprint.",
+      "labels": ["sprint", "gestión"]
+    },
+    {
+      "title": "Planificación de la Hoja de Ruta",
+      "body": "Definir objetivos a largo plazo y tareas futuras.",
+      "labels": ["hoja de ruta", "gestión"]
+    },
+    {
+      "title": "Investigación de Nuevas Tecnologías",
+      "body": "Explorar nuevas herramientas o tecnologías para el proyecto.",
+      "labels": ["investigación", "innovación"]
+    },
+    {
+      "title": "Auditoría de Código",
+      "body": "Revisar el código en busca de mejoras o refactorizaciones.",
+      "labels": ["refactorización", "mejora continua"]
+    },
+    {
+      "title": "Revisión de Código por Pares",
+      "body": "Solicitar revisión de código a un compañero antes de fusionar.",
+      "labels": ["revisión", "colaboración"]
+    },
+    {
+      "title": "Documentación de API",
+      "body": "Actualizar o crear documentación para la API del proyecto.",
+      "labels": ["documentación", "api"]
+    },
+    {
+      "title": "Planificación de la Capacitación del Usuario",
+      "body": "Preparar sesiones de capacitación para usuarios finales.",
+      "labels": ["capacitación", "comunidad"]
+    },
+    {
+      "title": "Auditoría de Seguridad",
+      "body": "Realizar una auditoría de seguridad del sistema.",
+      "labels": ["auditoría", "seguridad"]
+    },
+    {
+      "title": "Optimización de Recursos",
+      "body": "Identificar y aplicar mejoras en el uso de recursos del sistema.",
+      "labels": ["optimización", "rendimiento"]
+    },
+    {
+      "title": "Compromiso con la Comunidad",
+      "body": "Interactuar con usuarios en foros, redes sociales o discusiones de GitHub.",
+      "labels": ["comunidad", "feedback"]
+    },
+    {
+      "title": "Planificación para Futuras Funcionalidades",
+      "body": "Lluvia de ideas y priorización de nuevas funcionalidades.",
+      "labels": ["planificación", "futuro"]
+    },
+    {
+      "title": "Documentación del Proceso de Fin de Vida",
+      "body": "Documentar el proceso de fin de vida y comunicarlo a los usuarios.",
+      "labels": ["planificación", "documentación"]
+    }
+  ]
+  

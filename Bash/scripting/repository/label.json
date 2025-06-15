@@ -1,0 +1,61 @@
+[
+    
+    {"name": "documentation", "description": "Improvements or additions to documentation", "color": "7ED957"},
+    {"name": "api-docs", "description": "Changes related to API documentation", "color": "7ED957"},
+    {"name": "wiki", "description": "Updates or tasks related to the project wiki", "color": "7ED957"},
+  
+    
+    {"name": "bug", "description": "Something isn't working", "color": "FF2500"},
+    {"name": "hotfix", "description": "Urgent fixes that need to be applied immediately", "color": "FF2500"},
+    {"name": "blocker", "description": "Blocks progress on other tasks", "color": "FF2500"},
+  
+    
+    {"name": "backend", "description": "Server-side logic or APIs", "color": "052FFF"},
+    {"name": "api", "description": "Changes related to APIs", "color": "052FFF"},
+    {"name": "refactor", "description": "Code improvements without changing behavior", "color": "052FFF"},
+    {"name": "build", "description": "Changes related to the build system or dependencies", "color": "052FFF"},
+  
+    
+    {"name": "frontend", "description": "Client-side changes", "color": "00BFFF"},
+    {"name": "design", "description": "UI/UX design tasks", "color": "00BFFF"},
+    {"name": "ux", "description": "User experience improvements", "color": "00BFFF"},
+    {"name": "accessibility", "description": "Accessibility enhancements", "color": "00BFFF"},
+    {"name": "style", "description": "Styling or visual polish", "color": "00BFFF"},
+  
+    
+    {"name": "ci/cd", "description": "Continuous Integration and Deployment", "color": "8E44AD"},
+    {"name": "devops", "description": "DevOps related tasks", "color": "8E44AD"},
+    {"name": "tooling", "description": "Developer tooling changes", "color": "8E44AD"},
+  
+    {"name": "testing", "description": "Testing and coverage", "color": "FFA500"},
+    {"name": "quality", "description": "Quality assurance", "color": "FFA500"},
+  
+    
+    {"name": "enhancement", "description": "New features or improvements", "color": "00CED1"},
+    {"name": "performance", "description": "Performance improvements", "color": "00CED1"},
+    {"name": "chore", "description": "Routine or maintenance tasks", "color": "00CED1"},
+    {"name": "migration", "description": "Codebase or DB migrations", "color": "00CED1"},
+  
+    
+    {"name": "sprint", "description": "Sprint planning or related tasks", "color": "FFD700"},
+    {"name": "epic", "description": "Large feature or grouped tasks", "color": "FFD700"},
+    {"name": "milestone", "description": "Related to project goals/milestones", "color": "FFD700"},
+  
+    
+    {"name": "question", "description": "Questions or clarifications", "color": "FF69B4"},
+    {"name": "feedback", "description": "User or team feedback", "color": "FF69B4"},
+    {"name": "help wanted", "description": "Looking for contributors or assistance", "color": "FF69B4"},
+  
+    
+    {"name": "android", "description": "Android specific changes", "color": "32CD32"},
+    {"name": "ios", "description": "iOS specific changes", "color": "1E90FF"},
+    {"name": "desktop", "description": "Desktop application changes", "color": "6A5ACD"},
+    {"name": "web", "description": "Web platform development", "color": "4682B4"},
+  
+    
+    {"name": "community", "description": "Community discussions", "color": "FF1493"},
+    {"name": "research", "description": "Research and investigation", "color": "9370DB"},
+    {"name": "localization", "description": "Language or translation updates", "color": "FF6347"},
+    {"name": "security", "description": "Security improvements", "color": "B60205"}
+  ]
+  
