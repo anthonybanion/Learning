@@ -1,14 +1,3 @@
-"""
-This module contains functions for basic arithmetic 
-operations and geometric calculations.
- 
-File: calculate.py
-Author: Anthony Bañon
-Created: 2025-06-10
-Last Updated: 2025-06-10
-"""
-
-
 from math import *
 
 def adidition(numberOne,numberTwo):
