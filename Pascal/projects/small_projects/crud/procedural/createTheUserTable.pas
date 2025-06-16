@@ -36,9 +36,10 @@ begin
     WriteLn('✅ Table "users" created successfully.');
 
   except
-    on E: Exception do
-      WriteLn('❌ Error creating table: ', E.Message);
+      on E: Exception do
+        WriteLn('❌ Error creating table: ', E.Message);
   end;
+  
 
   Query.Free;
 end;
