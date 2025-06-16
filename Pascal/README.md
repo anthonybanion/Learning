@@ -52,11 +52,10 @@ Pascal/
 │   ├── turbo_pascal/                # Legacy Turbo Pascal specific syntax
 │   ├── free_pascal/                 # Modern open-source Pascal implementation
 │   └── object_pascal/               # OOP enhancements used in Delphi
-└── examples/                        # Example programs and exercises
-    ├── basic_examples/              # Simple programs demonstrating core concepts
-    ├── algorithms/                  # Common algorithms implemented in Pascal
-    ├── data_structures/             # Examples of using data structures
-    └── projects/                    # Larger projects to practice skills
+└── projects/
+    ├── small_projects/                 # Simple projects to practice concepts
+    ├── medium_projects/                # Intermediate projects to apply knowledge
+    └── large_projects/                 # Complex projects to challenge skills
 
 ```
 
