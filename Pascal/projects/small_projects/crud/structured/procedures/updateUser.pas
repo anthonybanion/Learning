@@ -26,9 +26,10 @@ begin
           ReadLn(firstName);
           WriteLn('Enter new last name (or press Enter to keep current): ');
           ReadLn(lastName);
-          serviceToUpdateUser.update(global.id, firstName, lastName);
+          
           if (firstName <> '') or (lastName <> '') then
             begin
+                serviceToUpdateUser.update(global.id, firstName, lastName);
                 WriteLn('User updated successfully.');
             end
           else
