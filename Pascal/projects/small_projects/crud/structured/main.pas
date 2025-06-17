@@ -3,16 +3,13 @@ program main;
 {$mode objfpc}{$H+}
 
 uses
-  SysUtils,
   databaseConnection,   // connect to the database
   createTheUserTable,   // create the table using the already opened connection
-  createUser;           // create a new user
+  menu;
 begin
   ConnectToDB;
   CreateUsersTable;
-  createUser.createUser;
+  menu.menu;
 
   SQLiteConn.Close;
-
-  WriteLn('👋 Program finished.');
 end.
