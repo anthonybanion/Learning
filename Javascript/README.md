@@ -11,7 +11,7 @@ This directory is organized by **programming paradigms**, **core topics**, and *
 ```bash
 JavaScript/
 ├── paradigm_imperative/             # Flow control, variables, functions, and logic
-│   ├── variables_and_types/         # let, const, var and primitive types
+│   ├── variables/                    # let, const, var and primitive types
 │   ├── conditionals/                # if, switch, and ternary operations
 │   ├── loops/                       # for, while, do-while, for...of, for...in
 │   ├── functions/                   # Function declarations and expressions
@@ -69,10 +69,15 @@ JavaScript/
 │   ├── naming_conventions/          # Standard naming guidelines
 │   ├── code_style/                  # Linting and formatting with Prettier/ESLint
 │   └── performance_tips/            # Writing efficient JavaScript
-└── testing_and_debugging/           # Unit testing and debugging techniques
-    ├── unit_testing/                # Writing tests with Jest or Mocha
-    ├── debugging_tools/              # Chrome DevTools, Node.js debugging
-    └── test_driven_development/      # TDD principles and practices
+├── testing_and_debugging/           # Unit testing and debugging techniques
+│   ├── unit_testing/                # Writing tests with Jest or Mocha
+│   ├── debugging_tools/              # Chrome DevTools, Node.js debugging
+│   └── test_driven_development/      # TDD principles and practices
+└── projects/
+    ├── small_projects/              # Simple projects to practice concepts
+    ├── medium_projects/             # Intermediate projects to apply knowledge
+    └── advanced_projects/              # Complex projects to challenge skills
+
 
 ```
 
