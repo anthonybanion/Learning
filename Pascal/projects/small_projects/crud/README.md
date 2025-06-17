@@ -32,58 +32,26 @@ The project is designed to be a learning resource and includes two versions:
 ## 🗂️ Project Structure
 
 ```bash
-crud/
-├── procedural/              # 💡 Procedural implementation
-│   ├── main.pas             # Main program file
-│   ├── db_connection.pas    # SQLite connection handling
-│   ├── crud_operations.pas  # Create, Read, Update, Delete logic
-│   └── schema.sql           # SQL script to create database structure
-│
-├── oop/                     # 🧱 Object-Oriented implementation
-│   ├── main.pas
-│   ├── database.pas         # Database connection class
-│   ├── user.pas             # User class (domain model)
-│   ├── user_repository.pas  # Class for CRUD operations on users
-│   └── schema.sql
-│
-├── database/                # 🗃️ SQLite files and backups
-│   └── users.db             # SQLite database file
-│
-├── docs/                    # 📚 Documentation (optional)
-│   └── README.pdf
-│
-├── LICENSE                  # 📄 MIT License
-└── README.md                # 📘 Project overview (this file)
+structured/
+|
+├── structured/              # Procedural implementation
+├──  oop/                    # Object-Oriented implementation
+├── LICENSE                  # MIT License
+└── README.md                # Project overview (this file)
 ```
 
 ---
 
-## 🚀 How to Run
+## Subfolders
 
-    This project requires Free Pascal Compiler (FPC) and the sqlite3 library installed.
-
-### 🧪 Compile & Run (Procedural)
-
-```bash
-cd procedural
-fpc main.pas
-./main
-```
-
-### 🧱 Compile & Run (OOP)
-
-```bash
-cd oop
-fpc main.pas
-./main
-```
+- [structured/](./structured/README.md): Contains the procedural implementation of the CRUD operations.
+- [oop/](./oop/README.md): Contains the object-oriented implementation of the CRUD operations.
 
 ---
 
 ## 🔓 License
 
-This project is licensed under the MIT License.
-Feel free to use, modify, and distribute it!
+[MIT License](../../../../LICENSE) — free to use, modify and distribute.
 
 ---
 
@@ -98,3 +66,9 @@ Pull requests are welcome. If you find a bug or have an idea for improvement, fe
 - This is a console-based CRUD application.
 - Ideal for those learning database programming with Pascal.
 - The project will be expanded to support more entities and GUI options in the future.
+
+---
+
+<div align="right" style="font-size: 2em;">
+    <a href="../../../README.md">⬅️ Back to Pascal</a>
+</div>

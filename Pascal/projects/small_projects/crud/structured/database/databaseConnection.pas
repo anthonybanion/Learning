@@ -5,7 +5,7 @@ unit databaseConnection;
 interface
 
 uses
-  Classes, SysUtils, sqlite3conn, sqldb;
+  Classes, SysUtils, sqlite3conn, sqldb, global;
 
 var
   SQLiteConn: TSQLite3Connection;
@@ -17,13 +17,16 @@ implementation
 
 procedure ConnectToDB;
 begin
+
+  global.dbPath := './database/users.db'; // Set the database path
+
 // The connection is started
   SQLiteConn := TSQLite3Connection.Create(nil);
   SQLTransaction := TSQLTransaction.Create(nil);
 
   try
     // Path to the SQLite database file
-    SQLiteConn.DatabaseName := '../database/users.db';
+    SQLiteConn.DatabaseName :=  global.dbPath;
 
     // Associate the transaction
     SQLiteConn.Transaction := SQLTransaction;
