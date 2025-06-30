@@ -1,3 +1,15 @@
+{*
+  
+  This unit provides a service to read user 
+  details from the database by their DNI.
+  
+  File: serviceToReadUserByDni.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 unit serviceToReadUserByDni;
 
 {$mode objfpc}{$H+}
@@ -12,10 +24,13 @@ uses
   Classes, SysUtils, sqlite3conn, sqldb, db, databaseConnection;
 
 function readingServiceByDni(const Dni: String): String;
-{ 
-  This function reads a user from the database using their DNI.
-  It returns a string with user details if found, or a "not found" message.
-}
+{*
+  Reads user details from the database by their DNI.
+  
+  @param dni The DNI of the user to read.
+  @return A string with the user details or a "not found" message.
+*}
+
 var
   Query: TSQLQuery;
 begin

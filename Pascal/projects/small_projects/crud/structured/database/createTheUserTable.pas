@@ -1,3 +1,15 @@
+{*
+  
+  This unit contains the procedure to create the 
+  "users" table in the SQLite database.
+  
+  File: createTheUserTable.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 unit createTheUserTable;
 
 {$mode objfpc}{$H+}
@@ -13,6 +25,14 @@ uses
   databaseConnection; // We import the unit where SQLiteConn and SQLTransaction are
 
 procedure CreateUsersTable;
+{*
+  Creates the "users" table in the SQLite database 
+  if it does not exist.
+
+  @param None
+  @return None
+*}
+
 var
   Query: TSQLQuery;
 begin

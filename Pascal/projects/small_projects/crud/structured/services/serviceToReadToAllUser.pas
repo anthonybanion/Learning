@@ -1,3 +1,15 @@
+{*
+  
+  This unit provides a service to read all users 
+  from the database.
+  
+  File: serviceToReadToAllUser.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 unit serviceToReadToAllUser;
 
 {$mode objfpc}{$H+}
@@ -14,10 +26,13 @@ uses
     SysUtils, sqlite3conn, sqldb, db, databaseConnection;
 
 function readingServiceToAllUser(): TStringList;
-{ 
-  This function reads all users from the database.
-  It returns a list of strings with user details.
-}
+{*
+  Reads all users from the database and returns a 
+  
+  list of user details.
+  @return A TStringList containing user details.
+*}
+
 var
   Query: TSQLQuery;
   UserList: TStringList;

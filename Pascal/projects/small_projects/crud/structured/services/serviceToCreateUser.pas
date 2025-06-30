@@ -1,3 +1,15 @@
+{*
+  
+  This unit provides a service to create a new user 
+  in the database.
+  
+  File: serviceToCreateUser.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 unit serviceToCreateUser;
 
 {$mode objfpc}{$H+}
@@ -12,8 +24,15 @@ uses
   Classes, SysUtils, sqlite3conn, sqldb, db, databaseConnection;
 
 function creationService(firstName, lastName, dni: string): String;
-{ This function creates a new user in the database.
-  It returns a message indicating the success or failure of the operation. }
+{*
+  Creates a new user in the database with the provided details.
+
+  @param firstName The first name of the user.
+  @param lastName The last name of the user.
+  @param dni The DNI of the user.
+  @return A message indicating the success or failure of the operation.
+*}
+
 var
   Query: TSQLQuery;
 

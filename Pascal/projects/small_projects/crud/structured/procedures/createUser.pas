@@ -1,3 +1,15 @@
+{*
+  
+  This unit contains the procedure to create 
+  a new user in the database.
+  
+  File: createUser.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 unit createUser;
 
 {$mode objfpc}{$H+}
@@ -11,8 +23,14 @@ uses
   serviceToCreateUser, global;
 
 procedure create;
-{ This procedure creates a new user in the database.
-  It returns a message indicating the success or failure of the operation. }
+{*
+  Creates a new user in the database with the provided details.
+
+  @param firstName The first name of the user.
+  @param lastName The last name of the user.
+  @param dni The DNI of the user.
+  @return A message indicating the success or failure of the operation.
+*}
 
 begin
     Write('Enter first name: ');
