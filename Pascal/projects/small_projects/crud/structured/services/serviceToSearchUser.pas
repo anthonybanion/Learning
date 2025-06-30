@@ -1,3 +1,15 @@
+{*
+  
+  This unit provides a service to search for a user 
+  in the database by their DNI (National ID).
+  
+  File: serviceToSearchUser.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 unit serviceToSearchUser;
 
 {$mode objfpc}{$H+}
@@ -12,6 +24,13 @@ uses
   Classes, SysUtils, sqlite3conn, sqldb, db, databaseConnection, global;
 
 function searchService(dni: String): Boolean;
+{*
+  Searches for a user in the database by their DNI.
+  
+  @param dni The DNI of the user to search for.
+  @return True if the user is found, False otherwise.
+*}
+
 var
   Query: TSQLQuery;
   begin

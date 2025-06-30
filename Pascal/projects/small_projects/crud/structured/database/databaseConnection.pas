@@ -1,3 +1,14 @@
+{*
+  
+  This unit establishes a connection to an SQLite database
+  
+  File: databaseConnection.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 unit databaseConnection;
 
 {$mode objfpc}{$H+}
@@ -16,6 +27,13 @@ procedure ConnectToDB;
 implementation
 
 procedure ConnectToDB;
+{*
+  Connects to the SQLite database using the specified path.
+
+  @param dbPath The path to the SQLite database file.
+  @return None
+*}
+
 begin
 
   global.dbPath := './database/users.db'; // Set the database path

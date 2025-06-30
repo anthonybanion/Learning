@@ -1,3 +1,15 @@
+{*
+  
+  This program is a simple CRUD application in Pascal 
+  that connects to an SQLite database.
+  
+  File: main.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 program main;
 
 {$mode objfpc}{$H+}

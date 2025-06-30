@@ -1,3 +1,16 @@
+{*
+  
+  This unit provides a menu for a CRUD application 
+  that allows users to create, update, read, 
+  and delete user records.
+  
+  File: menu.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 unit menu;
 
 {$mode objfpc}{$H+}
@@ -8,10 +21,16 @@ procedure menu;
 
 implementation
 
-uses  
-  createUser, updateUser, readAllUsers, readUserByDni, global;     
+uses
+  createUser, updateUser, readAllUsers, readUserByDni, deleteUser, global;
 
 procedure menu;
+{*
+  Displays the main menu for the CRUD application.
+
+  @return None
+*}
+
 var
     option : Integer;
 begin
@@ -41,13 +60,13 @@ begin
                     readAllUsers.readAll;
                 end;
             5: begin
-                WriteLn('Exiting the program...');
+                    deleteUser.deleteUser;
                 end;
             else
                 WriteLn('Invalid option, please try again.');
         end;
 
-    until (option = 5);
+    until (option = 6);
 
   WriteLn('👋 Program finished.');
 end;

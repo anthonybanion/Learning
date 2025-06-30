@@ -1,3 +1,15 @@
+{*
+  
+  This unit provides a procedure to update an 
+  existing user in the database.
+  
+  File: updateUser.pas
+  Author: Anthony Bañon
+  Created: 2025-06-30
+  Last Updated: 2025-06-30
+*}
+
+
 unit updateUser;
 
 {$mode objfpc}{$H+}
@@ -11,8 +23,14 @@ uses
   serviceToUpdateUser, searchUser, global;
 
 procedure update;
-{ This procedure updates an existing user in the database.
-  It returns a message indicating the success or failure of the operation. }
+{*
+  Updates an existing user in the database.
+
+  @param id The ID of the user to update.
+  @param firstName The new first name of the user.
+  @param lastName The new last name of the user.
+*}
+
 var 
    dni: String;
    firstName, lastName: String;
