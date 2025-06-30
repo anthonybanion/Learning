@@ -4,14 +4,14 @@ unit serviceToUpdateUser;
 
 interface
 
-procedure update(id: Integer; firstName, lastName : string);
+procedure updateService(id: Integer; firstName, lastName : string);
 
 implementation
 
 uses
   Classes, SysUtils, sqlite3conn, sqldb, db, databaseConnection;
 
-procedure update(id: Integer; firstName, lastName : string);
+procedure updateService(id: Integer; firstName, lastName : string);
 { This procedure updates an existing user in the database.
   It returns a message indicating the success or failure of the operation. }
 var

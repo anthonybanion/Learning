@@ -3,14 +3,14 @@ unit createUser;
 {$mode objfpc}{$H+}
 
 interface
-procedure createUser;
+procedure create;
 
 implementation
 
 uses
   serviceToCreateUser, global;
 
-procedure createUser;
+procedure create;
 { This procedure creates a new user in the database.
   It returns a message indicating the success or failure of the operation. }
 
@@ -21,7 +21,7 @@ begin
     ReadLn(global.lastName);
     Write('Enter DNI: ');
     ReadLn(global.dni);
-    WriteLn(serviceToCreateUser.create(global.firstName, global.lastName, global.dni));
+    WriteLn(serviceToCreateUser.creationService(global.firstName, global.lastName, global.dni));
     global.firstName := '';
     global.lastName := '';
     global.dni := '';

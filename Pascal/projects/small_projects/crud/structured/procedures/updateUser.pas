@@ -3,14 +3,14 @@ unit updateUser;
 {$mode objfpc}{$H+}
 
 interface
-procedure updateUser;
+procedure update;
 
 implementation
 
 uses
   serviceToUpdateUser, searchUser, global;
 
-procedure updateUser;
+procedure update;
 { This procedure updates an existing user in the database.
   It returns a message indicating the success or failure of the operation. }
 var 
@@ -19,16 +19,17 @@ var
 begin
     Write('Enter DNI: ');
     ReadLn(dni);
-    if searchUser.searchUser(dni) then
+    if searchUser.search(dni) then
       begin
           WriteLn('User found:');
           WriteLn('Enter new first name (or press Enter to keep current): ');
           ReadLn(firstName);
           WriteLn('Enter new last name (or press Enter to keep current): ');
           ReadLn(lastName);
-          serviceToUpdateUser.update(global.id, firstName, lastName);
+          
           if (firstName <> '') or (lastName <> '') then
             begin
+                serviceToUpdateUser.updateService(global.id, firstName, lastName);
                 WriteLn('User updated successfully.');
             end
           else
