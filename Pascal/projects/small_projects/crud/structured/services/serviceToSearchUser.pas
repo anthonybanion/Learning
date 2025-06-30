@@ -4,14 +4,14 @@ unit serviceToSearchUser;
 
 interface
 
-function search(dni: String): Boolean;
+function searchService(dni: String): Boolean;
 
 implementation
 
 uses
   Classes, SysUtils, sqlite3conn, sqldb, db, databaseConnection, global;
 
-function search(dni: String): Boolean;
+function searchService(dni: String): Boolean;
 var
   Query: TSQLQuery;
   begin

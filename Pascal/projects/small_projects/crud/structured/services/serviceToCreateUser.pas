@@ -4,14 +4,14 @@ unit serviceToCreateUser;
 
 interface 
 
-function create(firstName, lastName, dni: string): String;
+function creationService(firstName, lastName, dni: string): String;
 
 implementation
 
 uses
   Classes, SysUtils, sqlite3conn, sqldb, db, databaseConnection;
 
-function create(firstName, lastName, dni: string): String;
+function creationService(firstName, lastName, dni: string): String;
 { This function creates a new user in the database.
   It returns a message indicating the success or failure of the operation. }
 var

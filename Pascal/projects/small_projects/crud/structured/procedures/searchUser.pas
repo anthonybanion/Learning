@@ -1,21 +1,21 @@
-unit SearchUser;
+unit searchUser;
 
 {$mode objfpc}{$H+}
 
 interface
 
-function searchUser(dni : String): Boolean;
+function search(dni : String): Boolean;
 
 implementation
 
 uses
     global, serviceToSearchUser;
 
-function searchUser(dni : String): Boolean;
+function search(dni : String): Boolean;
 begin
 
   // Call the search function from the global unit
-  if serviceToSearchUser.search(dni) then
+  if serviceToSearchUser.searchService(dni) then
     begin
         WriteLn('User found:');
         WriteLn('First Name: ', global.firstName);
