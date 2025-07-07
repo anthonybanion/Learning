@@ -114,22 +114,23 @@ class LinkedList:
           
       
 
-__main__ = "__main__"
-simpleList = LinkedList() 
-simpleList.append(4)
-simpleList.append(2)
-simpleList.append(1)
-simpleList.append(3)
+if __name__ == "__main__":
+    simpleList = LinkedList() 
+    simpleList.append(4)
+    simpleList.append(2)
+    simpleList.append(1)
+    simpleList.append(3)
 
-LinkedList.show(simpleList)
-print("Size of the list: ", simpleList.size)
+    LinkedList.show(simpleList)
+    print("Size of the list: ", simpleList.size)
 
-# simpleList.search(3)
-# old_data = 3
-# new_data = 20
-# simpleList.update(3,20)
-simpleList.lineSort()
-LinkedList.show(simpleList)
+    # simpleList.search(3)
+    # old_data = 3
+    # new_data = 20
+    # simpleList.update(3,20)
+    simpleList.lineSort()
+    LinkedList.show(simpleList)
 
-### editar
-
+    ### editar
+    simpleList.update(4, 5)
+    LinkedList.show(simpleList)
