@@ -9,7 +9,8 @@ Last Updated: 2025-04-24
 
 
 
-
+from graphviz import Digraph
+import os
 class Node:
    
     def __init__(self, data):
@@ -105,9 +106,31 @@ class LinkedList:
                     swapped = True
                 current = current.next
 
-           
+    def draw(self, filename="linked_list"):
+        dot = Digraph(comment='Singly Linked List')
+
+        current = self.head
+        count = 0
+
+        while current:
+            node_name = f"node{count}"
+            dot.node(node_name, str(current.data))
+
+            if current.next:
+                dot.edge(f"node{count}", f"node{count+1}")
             
+            current = current.next
+            count += 1
         
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        output_path = os.path.join(current_dir, filename)
+
+        dot.render(output_path, format='png', cleanup=True)
+        print(f"Diagram saved as {output_path}.png")
+
+        # dot.render(filename, format='png', cleanup=True)
+        # print(f"Diagram saved as {filename}.png")
+
         
                
              
@@ -134,3 +157,5 @@ if __name__ == "__main__":
     ### editar
     simpleList.update(4, 5)
     LinkedList.show(simpleList)
+    simpleList.draw("linked_list_diagram")
+

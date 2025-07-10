@@ -21,6 +21,15 @@ Thumbs.db
 *.py[cod]
 *.pyo
 
+# === Entornos virtuales ===
+venv/
+.env/
+.venv/
+env/
+ENV/
+Python/venv/
+
+
 # === ☕ Java ===
 *.class
 *.jar
