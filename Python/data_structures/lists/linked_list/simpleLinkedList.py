@@ -11,6 +11,7 @@ Last Updated: 2025-04-24
 
 from graphviz import Digraph
 import os
+
 class Node:
    
     def __init__(self, data):
@@ -106,7 +107,7 @@ class LinkedList:
                     swapped = True
                 current = current.next
 
-    def draw(self, filename="linked_list"):
+    def draw(self, filename="simpleLinkedList"):
         dot = Digraph(comment='Singly Linked List')
 
         current = self.head
@@ -157,5 +158,5 @@ if __name__ == "__main__":
     ### editar
     simpleList.update(4, 5)
     LinkedList.show(simpleList)
-    simpleList.draw("linked_list_diagram")
+    simpleList.draw("simpleLinkedList")
 
