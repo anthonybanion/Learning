@@ -15,9 +15,10 @@ class BinaryNode:
         self.left = node_left
         self.right = node_right
 
-    def __eq__(self, other: 'BinaryNode')->bool:
-        return other is not None and self.elem == other.elem and \
-            self.left == other.left and self.right == other.right
+    
+    # def __eq__(self, other: 'BinaryNode')->bool:
+    #     return other is not None and self.elem == other.elem and \
+    #         self.left == other.left and self.right == other.right
             
 class BinaryTree:
     def __init__(self)->None:     
