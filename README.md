@@ -1,104 +1,204 @@
-# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="40px" alt="Python"/> Python Language Learning Modules
+# Learning
 
-Python is a powerful, multi-paradigm programming language. It supports imperative, object-oriented, and functional programming styles, making it an ideal language for both beginners and professionals.
-
-This directory is structured to explore **each paradigm separately**, highlighting core features, best practices, and idiomatic Python.
+> A personal repository for exploring and practicing programming languages.
 
 ---
 
-## 📂 Folder Structure
+## 📚 Table of Contents
 
-```bash
-Python/
-├── paradigm_imperative/               # Imperative programming in Python
-│   ├── variables/                     # Dynamic typing, basic data types
-│   ├── conditionals/                  # if, elif, else statements
-│   ├── loops/                         # for, while, break, continue
-│   ├── functions/                     # Defining and calling functions
-│   ├── scopes/                        # Local, global, and nonlocal scope
-│   ├── exceptions/                    # Try-except blocks and error handling
-│   └── io_operations/                 # Input/output operations with files and user input
-├── paradigm_oop/                      # Object-Oriented Programming (OOP)
-│   ├── classes_and_objects/           # Class definitions and object instantiation
-│   ├── inheritance/                   # Inheritance and polymorphism
-│   ├── encapsulation/                 # Private, protected, public
-│   ├── magic_methods/                 # Special methods like __init__, __str__, etc.
-│   └── abstract_classes/              # Using ABCs and interfaces
-├── paradigm_functional/               # Functional Programming
-│   ├── first_class_functions/         # Functions as arguments and return values
-│   ├── pure_functions/                # Side-effect-free logic
-│   ├── recursion/                     # Recursion over loops
-│   ├── lambda_and_higher_order/       # Lambda, map, filter, reduce
-│   └── immutability/                  # Immutable types and structures
-├── data_structures/                   # Problem-solving techniques
-│   ├── lists/                         # List operations and comprehensions
-│   ├── tuples_and_sets/               # Tuples, sets, and set theory basics
-│   ├── dictionaries/                  # Key-value structures
-│   ├── stacks_and_queues/             # Using lists or collections module
-│   └── sorting_and_searching/         # Basic algorithms implemented in Python
-├── modules_and_packages/              # Organizing code and creating reusable components
-│   ├── custom_modules/                # Writing and importing own modules
-│   ├── standard_library/              # Exploring powerful built-in modules
-│   └── pip_and_venv/                  # Package management and virtual environments
-├── testing/                           # Ensuring code quality
-│   ├── unittest/                      # Using built-in unittest module
-│   ├── pytest/                        # Simplified third-party testing
-│   ├── assertions/                    # Using assert statements
-│   └── logging_and_debugging/         # Print, logging, pdb
-├── type-hints_and_annotations/        # Type-safe coding
-│   ├── basic_type_hints/              # Optional typing with `: type`
-│   └── static_analysis_tools/         # mypy, Pyright, etc.
-├── concurrency_and_parallelism/      # Async programming and threading
-│   ├── threading/                     # Threading and the GIL
-│   ├── multiprocessing/               # Process-based parallelism
-│   ├── async_and_await/               # Asynchronous programming with async/await
-│   └── asyncio/                       # Event loop and async libraries
-├── gui_tkinter/                       # Building GUI applications with Tkinter
-│   ├── basic_windows/                 # Creating basic windows and frames
-│   ├── widgets/                       # Buttons, labels, text fields, etc.
-│   ├── layout_management/             # Organizing GUI components; pack, grid, place
-│   ├── event_handling/                # Responding to GUI events,  Clicks, keypresses
-│   ├── canvas_and_drawing/            # Drawing shapes and images
-│   ├── advanced_widgets/              # Advanced widgets and features, Treeview, Notebook, Spinbox, ...
-│   ├── utils/                         # Funciones auxiliares reutilizables
-│   ├── assets/                        # Imágenes, íconos, sonidos, etc.
-│   ├── themes/                        # Estilos personalizados, dark/light themes
-│   └─ mini_projects/                  # Mini aplicaciones funcionales con GUI
-├── web_development/                   # Web development basics
-│   ├── http_nd_requests/             # Making HTTP requests
-│   ├── web_scraping/                  # Scraping data from websites
-│   ├── REST_apis/                     # Building and consuming REST APIs
-│   ├── web_frameworks/                # Overview of Flask, Django, FastAPI
-│   └── templating/                    # Jinja2 and other templating engines
-├── data_science_and_ml/              # Data science and machine learning basics
-│   ├── numpy_and_pandas/              # Data manipulation with NumPy and Pandas
-│   ├── data_visualization/            # Matplotlib, Seaborn, Plotly
-│   ├── scikit_learn/                  # Machine learning with scikit-learn
-│   ├── tensorflow_and_keras/          # Deep learning with TensorFlow and Keras
-│   └── data_cleaning_and_preprocessing/ # Data cleaning techniques
-└── projects/
-    ├── small_projects/              # Simple projects to practice concepts
-    ├── medium_projects/             # Intermediate projects to apply knowledge
-    └── advanced_projects/              # Complex projects to challenge skills
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Folder Structure](#folder-structure)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
+- [Acknowledgements](#acknowledgements)
+
+---
+
+## 🚀 Introduction
+
+This repository contains my learning journey through various programming languages. Each folder includes exercises, mini-projects, and code snippets that helped me grasp the fundamentals and advanced features of each language.
+
+The purpose of this repository is to reinforce my understanding while creating a source of inspiration and reference for others who are also learning programming.
+
+If you're just starting out or brushing up on your skills, feel free to explore the contents and use them to support your learning path.
+
+---
+
+ <h2 align="center">💻 Technologies Used</h2>
+      <p align="center">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+          height="40px"
+          alt="Python"
+          title="Python"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+          height="40px"
+          alt="Java"
+          title="Java"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+          height="40px"
+          alt="PHP"
+          title="PHP"
+        />
+        <img 
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/perl/perl-original.svg" 
+            height="40px"
+            alt="Perl"
+            title="Perl"
+          />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+          height="40px"
+          alt="C"
+          title="C"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+          height="40px"
+          alt="C++"
+          title="C++"
+        />
+        <img 
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" 
+            height="40px"
+            alt="Csharp"
+            title="Csharp"
+        />
+        <img
+          src="https://cdn.simpleicons.org/gnubash/purple"
+          height="40px"
+          alt="Bash"
+          title="Bash"
+        />
+        <img
+          src="https://pseint.sourceforge.net/logo-header.png"
+          height="40px"
+          alt="PSeInt"
+          title="PSeInt"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          height="40px"
+          alt="JavaScript"
+          title="JavaScript"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+          height="40px"
+          alt="TypeScript"
+          title="TypeScript"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+          height="40px"
+          alt="HTML5"
+          title="HTML5"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          height="40px"
+          alt="CSS3"
+          title="CSS3"
+        />
+        <img 
+            src="https://www.freepascal.org/pic/logo.gif" 
+            height="40px" 
+            alt="Free Pascal"
+            title="Free Pascal"
+        />
+      </p>
+
+---
+
+## 📁 Folder Structure
+
+The folder structure is organized by language:
+
+```
+Learning/
+│
+├── Assets/        # Contains images, icons, and other resources
+├── Bash/          # Bash scripts and exercises
+├── C/             # C programming examples and exercises
+├── C#/            # C# programming examples and exercises
+├── C++/           # C++ programming examples and exercises
+├── Css/           # CSS stylesheets and examples
+|── Html/          # HTML files and examples
+├── Java/          # Java programming examples and exercises
+├── Javascript/    # JavaScript code snippets and exercises
+├── Pascal/        # Pascal programming examples and exercises
+├── Perl/          # Perl scripts and exercises
+├── Php/           # PHP scripts and web applications
+├── Pseint/        # PSeint pseudocode examples
+├── Python/        # Python scripts and exercises
+├── README.md
+└── LICENSE
+
 ```
 
-## 🎯 Objectives
+---
 
-- Understand Python through clean and idiomatic examples
-- Explore multiple paradigms with real use cases
-- Reinforce good habits through testing, error handling, and type hints
-- Develop a solid base for jumping into frameworks like Django, FastAPI, or Flask (in another repo 😉)
+## Subfolders
 
-## 📚 Recommended Resources
+- [Assets](./Assets/README.md)
+- [Bash](./Bash/README.md)
+- [C](./C/README.md)
+- [C#](./C%23/README.md)
+- [C++](./C++/README.md)
+- [CSS](./Css/README.md)
+- [HTML](./Html/README.md)
+- [Java](./Java/README.md)
+- [JavaScript](./Javascript/README.md)
+- [Pascal](./Pascal/README.md)
+- [Perl](./Perl/README.md)
+- [PHP](./Php/README.md)
+- [PSeInt](./Pseint/README.md)
+- [Python](./Python/README.md)
 
-- 🔗 Official Python Docs
-- 🔗 Real Python Tutorials
-- 🔗 Python for Everybody (Coursera)
-- 🔗 PyBites Platform
-- 🔗 pytest Documentation
-- 🔗 Python Package Index (PyPI)
-- 🔗 Python Cheatsheet
+---
 
-<div align="right" style="font-size: 2em;">
-    <a href="../README.md">⬅️ Back</a>
-</div>
+## 🛠 Getting Started
+
+You can clone the repository using:
+
+```bash
+git clone https://github.com/anthonybanion/Learning.git
+
+```
+
+Then navigate into any folder and explore the code. Some projects might require specific compilers or interpreters depending on the language (e.g., GCC for C/C++, Python, PHP, etc.).
+
+## 🤝 Contributing
+
+This is a personal repository, but I'm open to collaboration!
+If you have improvements, examples, or ideas to share:
+
+    1. Fork the repository
+
+    2. Create a new branch
+
+    3. Submit a pull request
+
+All contributions are welcome!
+
+## 👨‍💻 Author
+
+Anthony Bañon — Analyst in training & Backend Developer enthusiast.  
+[GitHub Profile](https://github.com/anthonybanion)
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+Thanks to the open-source community for resources and inspiration.  
+Special thanks to educators and developers who share their knowledge online.  
+And to anyone learning to code — keep going! You're doing great!
